@@ -1,0 +1,46 @@
+html {
+	font-size: 62.5%;
+}
+body {
+	background: $offWhite;
+}
+ 
+a { 
+	color: $grey; 
+	text-decoration: none;
+}
+
+p {
+	font-family: $baseFont;
+	@include font-size(14, 25);
+}
+
+img {
+	width: 100%;
+	height: auto;
+}
+
+// Button Default
+.button {
+	display: block;
+	background: $grey;
+	box-shadow: 1px 1px 0 #333;
+	border: 1px  $slate;
+	font-weight: bold;
+	// text-shadow: 1px 1px 1px #9B021F;
+	color: $offWhite;
+	font-family: $baseFont;
+	text-align: center;
+	font-weight: bold;
+	@include font-size(20, 40);
+}
+
+.inner-wrapper {
+	width: 100%;
+	max-width: 960px;
+	margin: 0 auto;
+	overflow: hidden;
+	z-index: 10;
+}
+
+

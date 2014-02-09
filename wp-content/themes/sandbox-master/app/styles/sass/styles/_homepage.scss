@@ -1,0 +1,110 @@
+.row {
+	&.top {	
+		position: relative;
+		position: relative;
+		min-height: 325px;
+		margin: percentage(45/960) 0;
+		
+		.intro-outer {
+
+			img.intro-bg {
+				position: absolute;
+				top: -72px;
+				left: 50px;
+				// width: 760px;
+				opacity: .7;
+				z-index: 0;
+			}
+	
+			.intro {
+				position: relative;
+				top: 105px;
+				border-left-width: 180px;
+				padding: 25px;
+				z-index: 2;
+
+				h1 {
+					@include font-size(32, 42);
+					font-family: $baseFont;
+					text-shadow: 1px 1px 1px #333;
+					color: $slate;
+					margin: 25px 0;
+				}
+				p {
+					color: $teal;
+					font-family: $baseFont;
+					font-weight: bold;
+					@include font-size(18, 25);
+					a {
+						border-bottom: 1px dashed $teal;
+						color: $white;
+					}
+				}
+			}
+
+		} // end intro outer 
+
+		.recipe {
+			margin: 45px 0 0 0;
+			position: absolute;
+			right: 0;
+			top: 50px;			
+			z-index: 2;
+			h1 {
+				font-family: $sun;
+				color: $red;
+				@include font-size(32, 32);
+				text-shadow: 1px 1px 1px #333;
+				span.teal { color: $teal; }
+			}
+
+		}
+	}
+	&.bottom {	
+		position: relative;
+		z-index: 3;
+		.callouts {
+			&.inner-wrapper { overflow: visible; }
+
+
+			.callout {
+				padding: percentage(10/960) percentage(25/960) percentage(25/960) percentage(25/960);
+				a { @extend .button; }
+				&.the-doctor {
+					background: $teal;
+					h1 {
+						border: 1px dashed $slate;
+						display: block;
+						padding: 10px;
+						margin-top: 15px;
+						@include font-size(32, 32);
+						color: #FFF;
+						text-shadow: 1px 1px 1px #13897A;						
+					}
+					p {
+						color: $offWhite;
+						@include font-size(14, 24);
+						text-shadow: 1px 1px 1px #13897A;
+					}
+				}
+				&.chemistry {
+					max-height: 400px;					
+					img.beaker-holder {
+						position: relative;
+						top: -133px;
+						width: percentage(500/320);	
+						max-width: 300px;	
+					}
+				}
+				ul.callout {
+					margin: 0;
+					padding: 0;
+					li {
+					}
+				}
+				
+			}
+		}
+	}
+} // end row
+

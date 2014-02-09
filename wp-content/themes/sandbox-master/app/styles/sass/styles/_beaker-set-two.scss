@@ -1,0 +1,77 @@
+section {
+	&.beaker-set-two {
+		position: relative;
+		min-height: 699px;
+		z-index: 0;
+
+		img { height: auto; }
+
+		.beaker-content {
+			float: left;
+			margin: percentage(50/960) 0 0 percentage(350/960);			
+		}
+
+		&.beaker-set-two {
+
+			.beaker-holder-container {
+				position: absolute;
+				left: 100px;
+				width: 300px;
+
+				.beaker-holder {
+					max-width: 300px;
+				}
+
+				.stir {
+					max-width: 35px;
+					position: absolute;
+					top: 1px;
+					left: 153px;
+				}	
+
+			} // end beaker holder container --
+			
+			.beaker-container {		
+				position: absolute;
+				top: 208px;
+				left: 70px;
+				.beaker {
+						.beaker-1 {
+						max-width: 160px;
+						position: absolute;
+						top: 0;
+						left: 0;
+							img {
+								width: 200px;
+							}						
+						}
+						.beaker-1-top {
+							display: none;
+							max-width: 68px;
+							position: absolute;
+							top: 9px;
+							left: 48px;					
+						}
+					}
+
+				.beaker-contents {
+					position: absolute;
+					top: 100px;
+					left: 10px;
+					img {
+						width: 180px;
+					}				
+				}
+			}
+
+			.table {
+				max-width: 825px;
+				position: absolute;
+				left: 0;
+				bottom: 83px;				
+			}
+
+		} // end beaker set one row
+
+	} // end beaker row
+} // end section

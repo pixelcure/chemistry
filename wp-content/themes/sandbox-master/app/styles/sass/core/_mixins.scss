@@ -1,0 +1,167 @@
+//Global Bubbles
+@mixin bubble($color: "") {
+	background: $color;
+	border: 1px solid $lightGrey;
+	@include border-radius(6px);
+	color:$darkGrey;
+	@include font-size(14,24);
+	padding: 20px;
+	position: relative;
+	width: 100%;
+	@if $color != "" {
+		background-color: $color;
+	}
+	@else {
+		background-color: #fff;
+	}
+}
+
+//Global Buttons
+@mixin button($color: "") {
+	color: white;
+	cursor: pointer;
+	border: 0;
+	@include border-radius(4px);
+	color: #fff!important;
+	@include inline-block();
+	font-family: $oswaldRegular;
+	@include font-size(20);
+	font-weight:normal;
+	height: auto;
+	hyphens: auto;
+	-webkit-hyphens: auto;
+	-moz-hyphens: auto;
+	-ms-hyphens: auto;
+	padding: 4px 20px;
+	text-align: center;
+	text-transform: uppercase;
+	// word-wrap: break-word;
+	// -ms-word-break: break-all;
+	// word-break: break-all;
+	// word-break: break-word;
+	@if $color != "" {
+		background-color: $color;
+	}
+	@else {
+		background-color: $orange;
+		$color: $orange;
+		color: white;
+	}
+	&:hover {
+		background-color: darken($color, 5%);
+		color: #fff;
+	}
+	&:active {
+		background-color: darken($color, 10%);
+	}
+	a {
+		color: #fff;
+		font-family: $oswaldRegular;
+	}
+}
+
+// //Correctly output Font-Face with the bulletproof syntax
+// @mixin font-face($font-name, $font-files, $weight: false, $style: false) {
+// 	@font-face {
+// 		font-family: $font-name;
+// 		src: url($fonts_dir + "/" + $font-files + ".eot");
+// 		src: url($fonts_dir + "/" + $font-files + ".eot?#iefix") format("embedded-opentype"), url($fonts_dir + "/" + $font-files + ".woff") format("woff"), url($fonts_dir + "/" + $font-files + ".ttf") format("truetype");
+// 		@if $weight {
+// 			font-weight: $weight;
+// 		}
+// 		@else {
+// 			font-weight: normal;
+// 		}
+// 		@if $style {
+// 			font-style: $style;
+// 		}
+// 		@else {
+// 			font-style: normal;
+// 		}
+// 	}
+// }
+
+//Mixin to easily convert font-size and optionally line height into rems with a px fallback. Ex. @include font-size(12, 20);
+@mixin font-size($sizeValue: 1.6, $line: $sizeValue * 1.5, $important: "not-important") {
+	@if $important == "not-important" {
+		font-size: $sizeValue * 1 + px;
+		line-height: $line * 1 + px;
+		font-size: $sizeValue / 10 + rem;
+		line-height: $line / 10 + rem;
+	}
+	@else {
+		font-size: $sizeValue * 1 + px !important;
+		line-height: $line * 1 + px !important;
+		font-size: $sizeValue / 10 + rem !important;
+		line-height: $line / 10 + rem !important;
+	}
+}
+
+@mixin gradient-create($type, $colorOne, $colorTwo) {
+	@if $type == "horizontal" {
+		$experimental-support-for-svg: true;
+		@include filter-gradient($colorOne, $colorTwo, vertical);
+		@include background-image(linear-gradient(top, $colorOne 0%, $colorTwo 100%));
+		@include background-image(-ms-linear-gradient(top, $colorOne 0%, $colorTwo 100%));
+		background-color: $colorTwo;
+	}
+	@else {
+		$experimental-support-for-svg: true;
+		@include filter-gradient($colorOne, $colorTwo, vertical);
+		@include background-image(radial-gradient(center, ellipse cover, $colorOne 0%, $colorTwo 100%));
+		@include background-image(-ms-radial-gradient(center, ellipse cover, $colorOne 0%, $colorTwo 100%));
+		background-color: $colorTwo;
+	}
+}
+
+@mixin hover($color) {
+	&:visited {
+		color: $color;
+	}
+	&:hover {
+		color: darken($color, 5%);
+	}
+	&:active {
+		color: darken($color, 10%);
+	}
+}
+
+// ---------------------------------------------------------------------------------------------------------------------
+//
+//  Author: Rafal Bromirski
+//  www: http://paranoida.com/
+//  twitter: http://twitter.com/paranoida
+//  dribbble: http://dribbble.com/paranoida
+//
+//  Licensed under a MIT License
+//
+// ---------------------------------------------------------------------------------------------------------------------
+//
+// Requirements:
+//   Sass 3.2.0+
+//
+//  Version:
+//   1.2.3                                    // developed on 10/03/2013
+//
+// Mixins:
+//   @ min-screen(width)                      // shortcut for @media screen and (min-width ...)
+//   @ max-screen(width)                      // shortcut for @media screen and (max-width ...)
+//   @ screen(min-width, max-width)           // shortcut for @media screen and (min-width ...) and (max-width ...)
+
+@mixin screen($res-min, $res-max) {
+	@media screen and (min-width: $res-min) and (max-width: $res-max) {
+		@content;
+	}
+}
+
+@mixin max-screen($res) {
+	@media screen and (max-width: $res) {
+		@content;
+	}
+}
+
+@mixin min-screen($res) {
+	@media screen and (min-width: $res) {
+		@content;
+	}
+}

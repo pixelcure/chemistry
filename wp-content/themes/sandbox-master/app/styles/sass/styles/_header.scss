@@ -1,0 +1,22 @@
+.outer-header {
+	background: $offWhite;
+	border-bottom: 3px solid $red;
+	position: relative;
+	height: 105px;
+	width: 100%;
+	z-index: 2;
+	.header {
+		padding-top: 5px;
+
+		aside.logo {
+			&.col.span_6 {
+				border-left-width: 0;
+			}
+			width: percentage(190/960);
+			max-width: percentage(300/960);
+		}
+		.inner-wrapper { width: 100%!important; }
+		
+	}
+
+}

@@ -1,0 +1,48 @@
+/* Waiting for the Sunrise Typeface */
+@import url(http://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise);
+/* Mako Typeface */
+@import url(http://fonts.googleapis.com/css?family=Mako);
+/* Base Font */
+$baseFont : "Mako", Arial, Sans-serif;
+$sun : 'Waiting for the Sunrise', Arial, sans-serif;
+
+// Mixins, Normalize, Gridpak 12 column grid
+@import "core/mixins.scss";
+@import "core/normalize.scss";
+@import "core/gridpak.scss";
+
+// Global Helpers
+@import "core/helpers.scss";
+@import "core/colorPallete.scss";
+
+// WP Styles
+@import "core/wp/login.scss";
+@import "core/wp/dashboard.scss";
+ 
+// IE Styes
+@import "core/ie/ie7.scss";
+@import "core/ie/ie8.scss";
+@import "core/ie/ie9.scss";
+
+// Partials
+@import "styles/layout.scss";
+@import "styles/header.scss";
+@import "styles/footer.scss";
+@import "styles/inner.scss";
+@import "styles/homepage.scss";
+
+// Homepage Lab
+@import "styles/beaker-set-default.scss";
+@import "styles/beaker-set-two.scss";
+//@import "styles/beaker-set-three.scss";
+
+
+
+
+.col:first-child {
+
+	border-left-width: 0;
+	@include max-screen(1133px){
+		border-left-width: 80px;
+	}
+}

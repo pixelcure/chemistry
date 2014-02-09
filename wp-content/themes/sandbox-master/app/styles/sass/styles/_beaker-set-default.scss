@@ -1,0 +1,78 @@
+section {
+	&.beaker-row {
+		position: relative;
+		min-height: 699px;
+		z-index: 0;
+
+		img { height: auto; }
+
+		.beaker-content {
+			float: right;
+			width: percentage(400/960);
+			margin: percentage(50/960) percentage(350/960) 0 0;
+			h1 {
+				color: $teal;
+				@include font-size(38, 38);
+			}
+			a.learn-more { @extend .button; width: 50%; }			
+		}		
+
+		&.beaker-set-default {
+
+			.beaker-holder-container {
+				position: absolute;
+				right: 100px;
+				width: 300px;
+
+				.beaker-holder {
+					max-width: 300px;
+				}
+
+				.stir {
+					max-width: 35px;
+					position: absolute;
+					top: 1px;
+					left: 106px;
+				}	
+
+			} // end beaker holder container --
+			
+			.beaker-container {		
+				position: absolute;
+				top: 265px;
+				left: 45px;
+				.beaker {
+						.beaker-1 {
+							max-width: 160px;
+							position: absolute;
+							top: 0;
+							left: 0;							
+						}
+						.beaker-1-top {
+							display: none;
+							max-width: 68px;
+							position: absolute;
+							top: 9px;
+							left: 48px;					
+						}
+					}
+
+				.beaker-contents {
+					max-width: 145px;
+					position: absolute;
+					top: 63px;
+					left: 7px;					
+				}
+			}
+
+			.table {
+				max-width: 825px;
+				position: absolute;
+				right: 0;
+				bottom: 83px;				
+			}
+
+		} // end beaker set one row
+
+	} // end beaker row
+} // end section
