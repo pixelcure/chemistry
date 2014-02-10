@@ -1,0 +1,641 @@
+Searching 15214 files for "chemistry"
+
+/Applications/MAMP/htdocs/pixelcure2014/wp-content/themes/chemistry/404.php:
+    4   *
+    5   * @package WordPress
+    6:  * @subpackage chemistry    7:  * @since Sandbox 2.0
+    8   */
+    9  get_header(); ?>
+
+/Applications/MAMP/htdocs/pixelcure2014/wp-content/themes/chemistry/app/bower_components/modernizr/feature-detects/iframe-sandbox.js:
+    1  // Test for `sandbox` attribute in iframes.
+    2  //
+    3: // Spec: http://www.whatwg.org/specs/web-apps/current-work/multipage/the-iframe-element.html#attr-iframe-chemistry    4: 
+    5  Modernizr.addTest('sandbox', 'sandbox' in document.createElement('iframe'));
+    6  
+
+/Applications/MAMP/htdocs/pixelcure2014/wp-content/themes/chemistry/archive.php:
+    4   *
+    5   * @package WordPress
+    6:  * @subpackage chemistry    7:  * @since Sandbox 2.0
+    8   */
+    9  get_header(); ?>
+
+/Applications/MAMP/htdocs/pixelcure2014/wp-content/themes/chemistry/author.php:
+    4   *
+    5   * @package WordPress
+    6:  * @subpackage chemistry    7:  * @since Sandbox 2.0
+    8   */
+    9  get_header(); ?>
+
+/Applications/MAMP/htdocs/pixelcure2014/wp-content/themes/chemistry/comments.php:
+    4   *
+    5   * @package WordPress
+    6:  * @subpackage chemistry    7:  * @since Sandbox 2.0
+    8   */
+    9  ?>
+
+/Applications/MAMP/htdocs/pixelcure2014/wp-content/themes/chemistry/footer.php:
+    4   *
+    5   * @package WordPress
+    6:  * @subpackage chemistry    7:  * @since Sandbox 2.0
+    8   */
+    9  ?>
+
+/Applications/MAMP/htdocs/pixelcure2014/wp-content/themes/chemistry/functions.php:
+    2  /*
+    3   * @package WordPress
+    4:  * @subpackage chemistry    5:  * @since Sandbox 2.0
+    6   */
+    7  
+
+/Applications/MAMP/htdocs/pixelcure2014/wp-content/themes/chemistry/header.php:
+    4   *
+    5   * @package WordPress
+    6:  * @subpackage chemistry    7:  * @since Sandbox 2.0
+    8   */
+    9  ?><!DOCTYPE HTML>
+
+/Applications/MAMP/htdocs/pixelcure2014/wp-content/themes/chemistry/includes/functions-deactivate.php:
+    6   *
+    7   * @package WordPress
+    8:  * @subpackage chemistry    9:  * @since Sandbox 2.0
+   10   */
+   11  
+
+/Applications/MAMP/htdocs/pixelcure2014/wp-content/themes/chemistry/includes/functions-extend.php:
+    6   *
+    7   * @package WordPress
+    8:  * @subpackage chemistry    9:  * @since Sandbox 2.0
+   10   */
+   11  
+
+/Applications/MAMP/htdocs/pixelcure2014/wp-content/themes/chemistry/includes/functions-utility.php:
+    6   *
+    7   * @package WordPress
+    8:  * @subpackage chemistry    9:  * @since Sandbox 2.0
+   10   */
+   11  
+
+/Applications/MAMP/htdocs/pixelcure2014/wp-content/themes/chemistry/includes/options/global.php:
+    6   *
+    7   * @package WordPress
+    8:  * @subpackage chemistry    9:  * @since Sandbox 2.0
+   10   */
+   11  
+
+/Applications/MAMP/htdocs/pixelcure2014/wp-content/themes/chemistry/includes/options/slider.php:
+    7   *
+    8   * @package WordPress
+    9:  * @subpackage chemistry   10:  * @since Sandbox 2.0
+   11   */
+   12  
+
+/Applications/MAMP/htdocs/pixelcure2014/wp-content/themes/chemistry/includes/types/meta.php:
+    6   *
+    7   * @package WordPress
+    8:  * @subpackage chemistry    9:  * @since Sandbox 2.0
+   10   */
+   11  
+
+/Applications/MAMP/htdocs/pixelcure2014/wp-content/themes/chemistry/includes/types/type-pages.php:
+    6   *
+    7   * @package WordPress
+    8:  * @subpackage chemistry    9:  * @since Sandbox 2.0
+   10   */
+   11   /************************************************************************************/
+
+/Applications/MAMP/htdocs/pixelcure2014/wp-content/themes/chemistry/includes/types/type-posts.php:
+    6   *
+    7   * @package WordPress
+    8:  * @subpackage chemistry    9:  * @since Sandbox 2.0
+   10   */
+   11   /************************************************************************************/
+
+/Applications/MAMP/htdocs/pixelcure2014/wp-content/themes/chemistry/includes/types/type-sample.php:
+    6   *
+    7   * @package WordPress
+    8:  * @subpackage chemistry    9:  * @since Sandbox 2.0
+   10   */
+   11  
+
+/Applications/MAMP/htdocs/pixelcure2014/wp-content/themes/chemistry/includes/types/type.php:
+    6   *
+    7   * @package WordPress
+    8:  * @subpackage chemistry    9:  * @since Sandbox 2.0
+   10   */
+   11  
+
+/Applications/MAMP/htdocs/pixelcure2014/wp-content/themes/chemistry/includes/widgets/widget-sample.php:
+    6   *
+    7   * @package WordPress
+    8:  * @subpackage chemistry    9:  * @since Sandbox 2.0
+   10   */
+   11  
+
+/Applications/MAMP/htdocs/pixelcure2014/wp-content/themes/chemistry/index.php:
+    4   *
+    5   * @package WordPress
+    6:  * @subpackage chemistry    7:  */
+    8  
+    9  	get_header(); 
+
+/Applications/MAMP/htdocs/pixelcure2014/wp-content/themes/chemistry/loops/loop-sample.php:
+    4   *
+    5   * @package WordPress
+    6:  * @subpackage chemistry    7:  * @since Sandbox 2.0
+    8   */
+    9  ?>
+
+/Applications/MAMP/htdocs/pixelcure2014/wp-content/themes/chemistry/loops/loop.php:
+    4   *
+    5   * @package WordPress
+    6:  * @subpackage chemistry    7:  * @since Sandbox 2.0
+    8   */
+    9  ?>
+
+/Applications/MAMP/htdocs/pixelcure2014/wp-content/themes/chemistry/page.php:
+    4   *
+    5   * @package WordPress
+    6:  * @subpackage chemistry    7:  * @since Sandbox 2.0
+    8   */
+    9  get_header(); ?>
+
+/Applications/MAMP/htdocs/pixelcure2014/wp-content/themes/chemistry/README.md:
+    1: chemistry    2: =======
+    3  
+    4  This is the WordPress "Sandbox" theme, originally developed at Genuine Interactive.
+
+/Applications/MAMP/htdocs/pixelcure2014/wp-content/themes/chemistry/search.php:
+    4   *
+    5   * @package WordPress
+    6:  * @subpackage chemistry    7:  * @since Sandbox 2.0
+    8   */
+    9  get_header(); ?>
+
+/Applications/MAMP/htdocs/pixelcure2014/wp-content/themes/chemistry/searchform.php:
+    4   *
+    5   * @package WordPress
+    6:  * @subpackage chemistry    7:  * @since Sandbox 2.0
+    8   */
+    9  ?>
+
+/Applications/MAMP/htdocs/pixelcure2014/wp-content/themes/chemistry/sidebar.php:
+    4   *
+    5   * @package WordPress
+    6:  * @subpackage chemistry    7:  * @since Sandbox 2.0
+    8   */
+    9  ?>
+
+/Applications/MAMP/htdocs/pixelcure2014/wp-content/themes/chemistry/single-samples.php:
+    4   *
+    5   * @package WordPress
+    6:  * @subpackage chemistry    7:  * @since Sandbox 2.0
+    8   */
+    9  get_header(); ?>
+
+/Applications/MAMP/htdocs/pixelcure2014/wp-content/themes/chemistry/single.php:
+    4   *
+    5   * @package WordPress
+    6:  * @subpackage chemistry    7:  * @since Sandbox 2.0
+    8   */
+    9  get_header(); ?>
+
+/Applications/MAMP/htdocs/pixelcure2014/wp-content/themes/chemistry/style.css:
+    1  /*
+    2: Theme Name: chemistry    3: Theme URI: http://www.wordpress.org
+    4  Author: Genuine Interactive
+    5  Author URI: http://www.genuineinteractive.com
+
+/Applications/MAMP/htdocs/pixelcure2014/wp-content/themes/chemistry/templates/sample.php:
+    5   * Template Name: Sample
+    6   * @package WordPress
+    7:  * @subpackage chemistry    8:  * @since Sandbox 2.0
+    9   */
+   10  get_header(); ?>
+
+31 matches across 31 files
+
+
+Searching 15053 files for "chemistry"
+
+/Applications/MAMP/htdocs/pixelcure2014/wp-content/themes/chemistry/404.php:
+    4   *
+    5   * @package WordPress
+    6:  * @subpackage chemistry    7:  * @since Sandbox 2.0
+    8   */
+    9  get_header(); ?>
+
+/Applications/MAMP/htdocs/pixelcure2014/wp-content/themes/chemistry/archive.php:
+    4   *
+    5   * @package WordPress
+    6:  * @subpackage chemistry    7:  * @since Sandbox 2.0
+    8   */
+    9  get_header(); ?>
+
+/Applications/MAMP/htdocs/pixelcure2014/wp-content/themes/chemistry/author.php:
+    4   *
+    5   * @package WordPress
+    6:  * @subpackage chemistry    7:  * @since Sandbox 2.0
+    8   */
+    9  get_header(); ?>
+
+/Applications/MAMP/htdocs/pixelcure2014/wp-content/themes/chemistry/comments.php:
+    4   *
+    5   * @package WordPress
+    6:  * @subpackage chemistry    7:  * @since Sandbox 2.0
+    8   */
+    9  ?>
+
+/Applications/MAMP/htdocs/pixelcure2014/wp-content/themes/chemistry/footer.php:
+    4   *
+    5   * @package WordPress
+    6:  * @subpackage chemistry    7:  * @since Sandbox 2.0
+    8   */
+    9  ?>
+
+/Applications/MAMP/htdocs/pixelcure2014/wp-content/themes/chemistry/functions.php:
+    2  /*
+    3   * @package WordPress
+    4:  * @subpackage chemistry    5:  * @since Sandbox 2.0
+    6   */
+    7  
+
+/Applications/MAMP/htdocs/pixelcure2014/wp-content/themes/chemistry/header.php:
+    4   *
+    5   * @package WordPress
+    6:  * @subpackage chemistry    7:  * @since Sandbox 2.0
+    8   */
+    9  ?><!DOCTYPE HTML>
+
+/Applications/MAMP/htdocs/pixelcure2014/wp-content/themes/chemistry/includes/functions-deactivate.php:
+    6   *
+    7   * @package WordPress
+    8:  * @subpackage chemistry    9:  * @since Sandbox 2.0
+   10   */
+   11  
+
+/Applications/MAMP/htdocs/pixelcure2014/wp-content/themes/chemistry/includes/functions-extend.php:
+    6   *
+    7   * @package WordPress
+    8:  * @subpackage chemistry    9:  * @since Sandbox 2.0
+   10   */
+   11  
+
+/Applications/MAMP/htdocs/pixelcure2014/wp-content/themes/chemistry/includes/functions-utility.php:
+    6   *
+    7   * @package WordPress
+    8:  * @subpackage chemistry    9:  * @since Sandbox 2.0
+   10   */
+   11  
+
+/Applications/MAMP/htdocs/pixelcure2014/wp-content/themes/chemistry/includes/options/global.php:
+    6   *
+    7   * @package WordPress
+    8:  * @subpackage chemistry    9:  * @since Sandbox 2.0
+   10   */
+   11  
+
+/Applications/MAMP/htdocs/pixelcure2014/wp-content/themes/chemistry/includes/options/slider.php:
+    7   *
+    8   * @package WordPress
+    9:  * @subpackage chemistry   10:  * @since Sandbox 2.0
+   11   */
+   12  
+
+/Applications/MAMP/htdocs/pixelcure2014/wp-content/themes/chemistry/includes/types/meta.php:
+    6   *
+    7   * @package WordPress
+    8:  * @subpackage chemistry    9:  * @since Sandbox 2.0
+   10   */
+   11  
+
+/Applications/MAMP/htdocs/pixelcure2014/wp-content/themes/chemistry/includes/types/type-pages.php:
+    6   *
+    7   * @package WordPress
+    8:  * @subpackage chemistry    9:  * @since Sandbox 2.0
+   10   */
+   11   /************************************************************************************/
+
+/Applications/MAMP/htdocs/pixelcure2014/wp-content/themes/chemistry/includes/types/type-posts.php:
+    6   *
+    7   * @package WordPress
+    8:  * @subpackage chemistry    9:  * @since Sandbox 2.0
+   10   */
+   11   /************************************************************************************/
+
+/Applications/MAMP/htdocs/pixelcure2014/wp-content/themes/chemistry/includes/types/type-sample.php:
+    6   *
+    7   * @package WordPress
+    8:  * @subpackage chemistry    9:  * @since Sandbox 2.0
+   10   */
+   11  
+
+/Applications/MAMP/htdocs/pixelcure2014/wp-content/themes/chemistry/includes/types/type.php:
+    6   *
+    7   * @package WordPress
+    8:  * @subpackage chemistry    9:  * @since Sandbox 2.0
+   10   */
+   11  
+
+/Applications/MAMP/htdocs/pixelcure2014/wp-content/themes/chemistry/includes/widgets/widget-sample.php:
+    6   *
+    7   * @package WordPress
+    8:  * @subpackage chemistry    9:  * @since Sandbox 2.0
+   10   */
+   11  
+
+/Applications/MAMP/htdocs/pixelcure2014/wp-content/themes/chemistry/index.php:
+    4   *
+    5   * @package WordPress
+    6:  * @subpackage chemistry    7:  */
+    8  
+    9  	get_header(); 
+
+/Applications/MAMP/htdocs/pixelcure2014/wp-content/themes/chemistry/loops/loop-sample.php:
+    4   *
+    5   * @package WordPress
+    6:  * @subpackage chemistry    7:  * @since Sandbox 2.0
+    8   */
+    9  ?>
+
+/Applications/MAMP/htdocs/pixelcure2014/wp-content/themes/chemistry/loops/loop.php:
+    4   *
+    5   * @package WordPress
+    6:  * @subpackage chemistry    7:  * @since Sandbox 2.0
+    8   */
+    9  ?>
+
+/Applications/MAMP/htdocs/pixelcure2014/wp-content/themes/chemistry/page.php:
+    4   *
+    5   * @package WordPress
+    6:  * @subpackage chemistry    7:  * @since Sandbox 2.0
+    8   */
+    9  get_header(); ?>
+
+/Applications/MAMP/htdocs/pixelcure2014/wp-content/themes/chemistry/README.md:
+    1: chemistry    2: =======
+    3  
+    4  This is the WordPress "Sandbox" theme, originally developed at Genuine Interactive.
+
+/Applications/MAMP/htdocs/pixelcure2014/wp-content/themes/chemistry/search.php:
+    4   *
+    5   * @package WordPress
+    6:  * @subpackage chemistry    7:  * @since Sandbox 2.0
+    8   */
+    9  get_header(); ?>
+
+/Applications/MAMP/htdocs/pixelcure2014/wp-content/themes/chemistry/searchform.php:
+    4   *
+    5   * @package WordPress
+    6:  * @subpackage chemistry    7:  * @since Sandbox 2.0
+    8   */
+    9  ?>
+
+/Applications/MAMP/htdocs/pixelcure2014/wp-content/themes/chemistry/sidebar.php:
+    4   *
+    5   * @package WordPress
+    6:  * @subpackage chemistry    7:  * @since Sandbox 2.0
+    8   */
+    9  ?>
+
+/Applications/MAMP/htdocs/pixelcure2014/wp-content/themes/chemistry/single-samples.php:
+    4   *
+    5   * @package WordPress
+    6:  * @subpackage chemistry    7:  * @since Sandbox 2.0
+    8   */
+    9  get_header(); ?>
+
+/Applications/MAMP/htdocs/pixelcure2014/wp-content/themes/chemistry/single.php:
+    4   *
+    5   * @package WordPress
+    6:  * @subpackage chemistry    7:  * @since Sandbox 2.0
+    8   */
+    9  get_header(); ?>
+
+/Applications/MAMP/htdocs/pixelcure2014/wp-content/themes/chemistry/style.css:
+    1  /*
+    2: Theme Name: chemistry    3: Theme URI: http://www.wordpress.org
+    4  Author: Genuine Interactive
+    5  Author URI: http://www.genuineinteractive.com
+
+/Applications/MAMP/htdocs/pixelcure2014/wp-content/themes/chemistry/templates/sample.php:
+    5   * Template Name: Sample
+    6   * @package WordPress
+    7:  * @subpackage chemistry    8:  * @since Sandbox 2.0
+    9   */
+   10  get_header(); ?>
+
+30 matches across 30 files
+
+
+Searching 15053 files for "chemistry"
+
+/Applications/MAMP/htdocs/pixelcure2014/wp-content/themes/chemistry/404.php:
+    4   *
+    5   * @package WordPress
+    6:  * @subpackage chemistry    7:  * @since Sandbox 2.0
+    8   */
+    9  get_header(); ?>
+
+/Applications/MAMP/htdocs/pixelcure2014/wp-content/themes/chemistry/archive.php:
+    4   *
+    5   * @package WordPress
+    6:  * @subpackage chemistry    7:  * @since Sandbox 2.0
+    8   */
+    9  get_header(); ?>
+
+/Applications/MAMP/htdocs/pixelcure2014/wp-content/themes/chemistry/author.php:
+    4   *
+    5   * @package WordPress
+    6:  * @subpackage chemistry    7:  * @since Sandbox 2.0
+    8   */
+    9  get_header(); ?>
+
+/Applications/MAMP/htdocs/pixelcure2014/wp-content/themes/chemistry/comments.php:
+    4   *
+    5   * @package WordPress
+    6:  * @subpackage chemistry    7:  * @since Sandbox 2.0
+    8   */
+    9  ?>
+
+/Applications/MAMP/htdocs/pixelcure2014/wp-content/themes/chemistry/footer.php:
+    4   *
+    5   * @package WordPress
+    6:  * @subpackage chemistry    7:  * @since Sandbox 2.0
+    8   */
+    9  ?>
+
+/Applications/MAMP/htdocs/pixelcure2014/wp-content/themes/chemistry/functions.php:
+    2  /*
+    3   * @package WordPress
+    4:  * @subpackage chemistry    5:  * @since Sandbox 2.0
+    6   */
+    7  
+
+/Applications/MAMP/htdocs/pixelcure2014/wp-content/themes/chemistry/header.php:
+    4   *
+    5   * @package WordPress
+    6:  * @subpackage chemistry    7:  * @since Sandbox 2.0
+    8   */
+    9  ?><!DOCTYPE HTML>
+
+/Applications/MAMP/htdocs/pixelcure2014/wp-content/themes/chemistry/includes/functions-deactivate.php:
+    6   *
+    7   * @package WordPress
+    8:  * @subpackage chemistry    9:  * @since Sandbox 2.0
+   10   */
+   11  
+
+/Applications/MAMP/htdocs/pixelcure2014/wp-content/themes/chemistry/includes/functions-extend.php:
+    6   *
+    7   * @package WordPress
+    8:  * @subpackage chemistry    9:  * @since Sandbox 2.0
+   10   */
+   11  
+
+/Applications/MAMP/htdocs/pixelcure2014/wp-content/themes/chemistry/includes/functions-utility.php:
+    6   *
+    7   * @package WordPress
+    8:  * @subpackage chemistry    9:  * @since Sandbox 2.0
+   10   */
+   11  
+
+/Applications/MAMP/htdocs/pixelcure2014/wp-content/themes/chemistry/includes/options/global.php:
+    6   *
+    7   * @package WordPress
+    8:  * @subpackage chemistry    9:  * @since Sandbox 2.0
+   10   */
+   11  
+
+/Applications/MAMP/htdocs/pixelcure2014/wp-content/themes/chemistry/includes/options/slider.php:
+    7   *
+    8   * @package WordPress
+    9:  * @subpackage chemistry   10:  * @since Sandbox 2.0
+   11   */
+   12  
+
+/Applications/MAMP/htdocs/pixelcure2014/wp-content/themes/chemistry/includes/types/meta.php:
+    6   *
+    7   * @package WordPress
+    8:  * @subpackage chemistry    9:  * @since Sandbox 2.0
+   10   */
+   11  
+
+/Applications/MAMP/htdocs/pixelcure2014/wp-content/themes/chemistry/includes/types/type-pages.php:
+    6   *
+    7   * @package WordPress
+    8:  * @subpackage chemistry    9:  * @since Sandbox 2.0
+   10   */
+   11   /************************************************************************************/
+
+/Applications/MAMP/htdocs/pixelcure2014/wp-content/themes/chemistry/includes/types/type-posts.php:
+    6   *
+    7   * @package WordPress
+    8:  * @subpackage chemistry    9:  * @since Sandbox 2.0
+   10   */
+   11   /************************************************************************************/
+
+/Applications/MAMP/htdocs/pixelcure2014/wp-content/themes/chemistry/includes/types/type-sample.php:
+    6   *
+    7   * @package WordPress
+    8:  * @subpackage chemistry    9:  * @since Sandbox 2.0
+   10   */
+   11  
+
+/Applications/MAMP/htdocs/pixelcure2014/wp-content/themes/chemistry/includes/types/type.php:
+    6   *
+    7   * @package WordPress
+    8:  * @subpackage chemistry    9:  * @since Sandbox 2.0
+   10   */
+   11  
+
+/Applications/MAMP/htdocs/pixelcure2014/wp-content/themes/chemistry/includes/widgets/widget-sample.php:
+    6   *
+    7   * @package WordPress
+    8:  * @subpackage chemistry    9:  * @since Sandbox 2.0
+   10   */
+   11  
+
+/Applications/MAMP/htdocs/pixelcure2014/wp-content/themes/chemistry/index.php:
+    4   *
+    5   * @package WordPress
+    6:  * @subpackage chemistry    7:  */
+    8  
+    9  	get_header(); 
+
+/Applications/MAMP/htdocs/pixelcure2014/wp-content/themes/chemistry/loops/loop-sample.php:
+    4   *
+    5   * @package WordPress
+    6:  * @subpackage chemistry    7:  * @since Sandbox 2.0
+    8   */
+    9  ?>
+
+/Applications/MAMP/htdocs/pixelcure2014/wp-content/themes/chemistry/loops/loop.php:
+    4   *
+    5   * @package WordPress
+    6:  * @subpackage chemistry    7:  * @since Sandbox 2.0
+    8   */
+    9  ?>
+
+/Applications/MAMP/htdocs/pixelcure2014/wp-content/themes/chemistry/page.php:
+    4   *
+    5   * @package WordPress
+    6:  * @subpackage chemistry    7:  * @since Sandbox 2.0
+    8   */
+    9  get_header(); ?>
+
+/Applications/MAMP/htdocs/pixelcure2014/wp-content/themes/chemistry/README.md:
+    1: chemistry    2: =======
+    3  
+    4  This is the WordPress "Sandbox" theme, originally developed at Genuine Interactive.
+
+/Applications/MAMP/htdocs/pixelcure2014/wp-content/themes/chemistry/search.php:
+    4   *
+    5   * @package WordPress
+    6:  * @subpackage chemistry    7:  * @since Sandbox 2.0
+    8   */
+    9  get_header(); ?>
+
+/Applications/MAMP/htdocs/pixelcure2014/wp-content/themes/chemistry/searchform.php:
+    4   *
+    5   * @package WordPress
+    6:  * @subpackage chemistry    7:  * @since Sandbox 2.0
+    8   */
+    9  ?>
+
+/Applications/MAMP/htdocs/pixelcure2014/wp-content/themes/chemistry/sidebar.php:
+    4   *
+    5   * @package WordPress
+    6:  * @subpackage chemistry    7:  * @since Sandbox 2.0
+    8   */
+    9  ?>
+
+/Applications/MAMP/htdocs/pixelcure2014/wp-content/themes/chemistry/single-samples.php:
+    4   *
+    5   * @package WordPress
+    6:  * @subpackage chemistry    7:  * @since Sandbox 2.0
+    8   */
+    9  get_header(); ?>
+
+/Applications/MAMP/htdocs/pixelcure2014/wp-content/themes/chemistry/single.php:
+    4   *
+    5   * @package WordPress
+    6:  * @subpackage chemistry    7:  * @since Sandbox 2.0
+    8   */
+    9  get_header(); ?>
+
+/Applications/MAMP/htdocs/pixelcure2014/wp-content/themes/chemistry/style.css:
+    1  /*
+    2: Theme Name: chemistry    3: Theme URI: http://www.wordpress.org
+    4  Author: Genuine Interactive
+    5  Author URI: http://www.genuineinteractive.com
+
+/Applications/MAMP/htdocs/pixelcure2014/wp-content/themes/chemistry/templates/sample.php:
+    5   * Template Name: Sample
+    6   * @package WordPress
+    7:  * @subpackage chemistry    8:  * @since Sandbox 2.0
+    9   */
+   10  get_header(); ?>
+
+30 matches across 30 files
