@@ -17,9 +17,8 @@ if(is_home){
 
 		
 <section class="row top">
-	<div class="intro-outer">
-		
-		<div class="intro col span_12">
+
+		<div class="intro col span_7">
 			<h1>
 				On an initiative to cure the broken<br />pixels shattered across the web
 			</h1>
@@ -27,12 +26,9 @@ if(is_home){
 				Currently, I'm a UI developer at <a href="http://www.genuineinteractive.com" target="_blank">Genuine Interactive</a>, in Boston.
 			</p>
 		</div><!-- end intro -->
-
-		<img src="<?php bloginfo(template_url); ?>/app/images/intro-bg.svg" class="intro-bg" alt="Pixel Cure" />
 	
-	</div><!-- end intro outer -->
 
-	<div class="recipe col span_4">
+	<div class="recipe col span_5">
 		<h1>Let me fill you in on some of my secret <span class="teal">ingredients</span> to my recipe..</h1>
 	</div><!-- end recipe -->
 	
@@ -44,7 +40,7 @@ if(is_home){
 
 	<div class="callouts inner-wrapper">
 		
-		<div class="callout the-doctor col span_9">
+		<aside class="callout the-doctor col span_6">
 			<h1>The Chemist</h1>
 			<p>
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
@@ -52,8 +48,13 @@ if(is_home){
 				quod cumque atque provident amet sapiente aperiam molestiae earum 
 				assumenda. Quas ullam pariatur error
 			</p>
-			<a href="#" class="learn-more">View the Lab</a>
-		</div><!-- end design column -->		
+			<a href="#" class="learn-more">The Chemist</a>
+		</aside><!-- end design column -->		
+
+		<aside class="callout scroll-now col span_6">
+			<img class="left" src="<?php bloginfo(template_url); ?>/app/images/scroll.svg" alt="Scroll Down" />
+			<h1>Scroll down to view the labratory</h1>
+		</aside><!-- end scroll now -->
 
 		<div class="clear"></div><!-- end clear -->
 
@@ -63,7 +64,7 @@ if(is_home){
 
 </section> <!-- / end bottom section row -->
 
-<img src="<?php bloginfo(template_url); ?>/app/images/divider.svg" alt="Pixel Cure" >
+<img class="home-divider" src="<?php bloginfo(template_url); ?>/app/images/divider.svg" alt="Pixel Cure" >
 	
 
 <section class="col span_12 beaker-row beaker-set-default">

@@ -1,67 +1,61 @@
 .row {
+
+	img.home-divider {
+		 margin: 0 0 45px 0;
+	}
+
 	&.top {	
 		position: relative;
 		position: relative;
 		min-height: 325px;
-		margin: percentage(45/960) 0;
-		
-		.intro-outer {
+		background: #3D3C3E;
+		box-shadow: 1px 1px 10px #666;
 
-			img.intro-bg {
-				position: absolute;
-				top: -72px;
-				left: 50px;
-				// width: 760px;
-				opacity: .7;
-				z-index: 0;
+		.intro {
+			border-left-width: 180px;
+			padding: 25px;
+			margin: 25px 0 0 0;
+
+			h1 {
+				@include font-size(32, 42);
+				font-family: $baseFont;
+				text-shadow: 1px 1px 1px #333;
+				color: $slate;
 			}
-	
-			.intro {
-				position: relative;
-				top: 105px;
-				border-left-width: 180px;
-				padding: 25px;
-				z-index: 2;
-
-				h1 {
-					@include font-size(32, 42);
-					font-family: $baseFont;
-					text-shadow: 1px 1px 1px #333;
-					color: $slate;
-					margin: 25px 0;
-				}
-				p {
-					color: $teal;
-					font-family: $baseFont;
-					font-weight: bold;
-					@include font-size(18, 25);
-					a {
-						border-bottom: 1px dashed $teal;
-						color: $white;
-					}
+			p {
+				color: $white;
+				font-family: $baseFont;
+				font-weight: bold;
+				@include font-size(18, 25);
+				a {
+					border-bottom: 1px dashed $teal;
+					color: $white;
 				}
 			}
-
-		} // end intro outer 
-
+		}
+			
 		.recipe {
-			margin: 45px 0 0 0;
-			position: absolute;
-			right: 0;
-			top: 50px;			
+			margin: 75px 0 0 0;		
 			z-index: 2;
 			h1 {
 				font-family: $sun;
-				color: $red;
-				@include font-size(32, 32);
+				color: $white;
+				@include font-size(32, 36);
+				padding-right: 45px;
 				text-shadow: 1px 1px 1px #333;
+				text-align: right;
+				margin: 0;
+
 				span.teal { color: $teal; }
+
 			}
 
 		}
-	}
+	} // end top
+
 	&.bottom {	
 		position: relative;
+		margin-top: -65px;
 		z-index: 3;
 		.callouts {
 			&.inner-wrapper { overflow: visible; }
@@ -87,24 +81,25 @@
 						text-shadow: 1px 1px 1px #13897A;
 					}
 				}
-				&.chemistry {
-					max-height: 400px;					
-					img.beaker-holder {
-						position: relative;
-						top: -133px;
-						width: percentage(500/320);	
-						max-width: 300px;	
+				&.scroll-now {
+					margin-top: 120px;
+					h1 {
+						color: $grey;
+						display: block;
+						float: right;
+						font-family: $sun;
+						@include font-size(32, 36);
+						margin-top: 7px;
+						padding-left: 15px;
+						width: 250px;
 					}
-				}
-				ul.callout {
-					margin: 0;
-					padding: 0;
-					li {
-					}
+					img { width: auto; display: block; }
+
 				}
 				
 			}
 		}
-	}
+	} // end bottom
+
 } // end row
 

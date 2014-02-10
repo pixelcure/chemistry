@@ -683,36 +683,62 @@ img {
 .outer-header .header aside.logo.col.span_6 {
   border-left-width: 0;
 }
-/* line 18, sass/styles/_header.scss */
+/* line 19, sass/styles/_header.scss */
+.outer-header .header aside.nav-outer {
+  float: right;
+  margin-top: 25px;
+}
+/* line 22, sass/styles/_header.scss */
+.outer-header .header aside.nav-outer ul {
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+/* line 26, sass/styles/_header.scss */
+.outer-header .header aside.nav-outer ul li {
+  list-style: none;
+  max-width: 145px;
+  float: right;
+}
+/* line 30, sass/styles/_header.scss */
+.outer-header .header aside.nav-outer ul li a {
+  background: #bad7d4;
+  color: #3d3c3e;
+  display: block;
+  font-family: "Waiting for the Sunrise", Arial, sans-serif;
+  font-size: 24px;
+  line-height: 18px;
+  font-size: 2.4rem;
+  line-height: 1.8rem;
+  padding: 15px;
+  text-align: center;
+  height: inherit;
+}
+/* line 44, sass/styles/_header.scss */
 .outer-header .header .inner-wrapper {
   width: 100% !important;
 }
 
-/* line 2, sass/styles/_homepage.scss */
+/* line 3, sass/styles/_homepage.scss */
+.row img.home-divider {
+  margin: 0 0 45px 0;
+}
+/* line 7, sass/styles/_homepage.scss */
 .row.top {
   position: relative;
   position: relative;
   min-height: 325px;
-  margin: 4.6875% 0;
+  background: #3D3C3E;
+  box-shadow: 1px 1px 10px #666;
 }
-/* line 10, sass/styles/_homepage.scss */
-.row.top .intro-outer img.intro-bg {
-  position: absolute;
-  top: -72px;
-  left: 50px;
-  opacity: .7;
-  z-index: 0;
-}
-/* line 19, sass/styles/_homepage.scss */
-.row.top .intro-outer .intro {
-  position: relative;
-  top: 105px;
+/* line 14, sass/styles/_homepage.scss */
+.row.top .intro {
   border-left-width: 180px;
   padding: 25px;
-  z-index: 2;
+  margin: 25px 0 0 0;
 }
-/* line 26, sass/styles/_homepage.scss */
-.row.top .intro-outer .intro h1 {
+/* line 19, sass/styles/_homepage.scss */
+.row.top .intro h1 {
   font-size: 32px;
   line-height: 42px;
   font-size: 3.2rem;
@@ -720,11 +746,10 @@ img {
   font-family: "Mako", Arial, Sans-serif;
   text-shadow: 1px 1px 1px #333;
   color: #bad7d4;
-  margin: 25px 0;
 }
-/* line 33, sass/styles/_homepage.scss */
-.row.top .intro-outer .intro p {
-  color: #22bdaf;
+/* line 25, sass/styles/_homepage.scss */
+.row.top .intro p {
+  color: white;
   font-family: "Mako", Arial, Sans-serif;
   font-weight: bold;
   font-size: 18px;
@@ -732,51 +757,52 @@ img {
   font-size: 1.8rem;
   line-height: 2.5rem;
 }
-/* line 38, sass/styles/_homepage.scss */
-.row.top .intro-outer .intro p a {
+/* line 30, sass/styles/_homepage.scss */
+.row.top .intro p a {
   border-bottom: 1px dashed #22bdaf;
   color: white;
 }
-/* line 47, sass/styles/_homepage.scss */
+/* line 37, sass/styles/_homepage.scss */
 .row.top .recipe {
-  margin: 45px 0 0 0;
-  position: absolute;
-  right: 0;
-  top: 50px;
+  margin: 75px 0 0 0;
   z-index: 2;
 }
-/* line 53, sass/styles/_homepage.scss */
+/* line 40, sass/styles/_homepage.scss */
 .row.top .recipe h1 {
   font-family: "Waiting for the Sunrise", Arial, sans-serif;
-  color: #f10025;
+  color: white;
   font-size: 32px;
-  line-height: 32px;
+  line-height: 36px;
   font-size: 3.2rem;
-  line-height: 3.2rem;
+  line-height: 3.6rem;
+  padding-right: 45px;
   text-shadow: 1px 1px 1px #333;
+  text-align: right;
+  margin: 0;
 }
-/* line 58, sass/styles/_homepage.scss */
+/* line 49, sass/styles/_homepage.scss */
 .row.top .recipe h1 span.teal {
   color: #22bdaf;
 }
-/* line 63, sass/styles/_homepage.scss */
+/* line 56, sass/styles/_homepage.scss */
 .row.bottom {
   position: relative;
+  margin-top: -65px;
   z-index: 3;
 }
-/* line 67, sass/styles/_homepage.scss */
+/* line 61, sass/styles/_homepage.scss */
 .row.bottom .callouts.inner-wrapper {
   overflow: visible;
 }
-/* line 70, sass/styles/_homepage.scss */
+/* line 64, sass/styles/_homepage.scss */
 .row.bottom .callouts .callout {
   padding: 1.04167% 2.60417% 2.60417% 2.60417%;
 }
-/* line 73, sass/styles/_homepage.scss */
+/* line 67, sass/styles/_homepage.scss */
 .row.bottom .callouts .callout.the-doctor {
   background: #22bdaf;
 }
-/* line 75, sass/styles/_homepage.scss */
+/* line 69, sass/styles/_homepage.scss */
 .row.bottom .callouts .callout.the-doctor h1 {
   border: 1px dashed #bad7d4;
   display: block;
@@ -789,7 +815,7 @@ img {
   color: #FFF;
   text-shadow: 1px 1px 1px #13897A;
 }
-/* line 84, sass/styles/_homepage.scss */
+/* line 78, sass/styles/_homepage.scss */
 .row.bottom .callouts .callout.the-doctor p {
   color: #e7e6e6;
   font-size: 14px;
@@ -798,21 +824,28 @@ img {
   line-height: 2.4rem;
   text-shadow: 1px 1px 1px #13897A;
 }
-/* line 90, sass/styles/_homepage.scss */
-.row.bottom .callouts .callout.chemistry {
-  max-height: 400px;
+/* line 84, sass/styles/_homepage.scss */
+.row.bottom .callouts .callout.scroll-now {
+  margin-top: 120px;
 }
-/* line 92, sass/styles/_homepage.scss */
-.row.bottom .callouts .callout.chemistry img.beaker-holder {
-  position: relative;
-  top: -133px;
-  width: 156.25%;
-  max-width: 300px;
+/* line 86, sass/styles/_homepage.scss */
+.row.bottom .callouts .callout.scroll-now h1 {
+  color: #3d3c3e;
+  display: block;
+  float: right;
+  font-family: "Waiting for the Sunrise", Arial, sans-serif;
+  font-size: 32px;
+  line-height: 36px;
+  font-size: 3.2rem;
+  line-height: 3.6rem;
+  margin-top: 7px;
+  padding-left: 15px;
+  width: 250px;
 }
-/* line 99, sass/styles/_homepage.scss */
-.row.bottom .callouts .callout ul.callout {
-  margin: 0;
-  padding: 0;
+/* line 96, sass/styles/_homepage.scss */
+.row.bottom .callouts .callout.scroll-now img {
+  width: auto;
+  display: block;
 }
 
 /* line 2, sass/styles/_beaker-set-default.scss */
