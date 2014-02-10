@@ -5,22 +5,27 @@
 	}
 
 	&.top {	
-		position: relative;
-		position: relative;
-		min-height: 325px;
 		background: #3D3C3E;
-		box-shadow: 1px 1px 10px #666;
-
+		box-shadow: 1px 1px 3px #333;
+		min-height: 325px;
+		position: relative;
 		.intro {
 			border-left-width: 180px;
 			padding: 25px;
 			margin: 25px 0 0 0;
+			@include max-screen(805px){
+				float: none;
+				margin: 0;
+				width: 100%;
+
+			}
 
 			h1 {
 				@include font-size(32, 42);
 				font-family: $baseFont;
 				text-shadow: 1px 1px 1px #333;
 				color: $slate;
+				padding-bottom: 15px;				
 			}
 			p {
 				color: $white;
@@ -37,6 +42,15 @@
 		.recipe {
 			margin: 75px 0 0 0;		
 			z-index: 2;
+
+			@include max-screen(805px){
+				
+				float: none;
+				margin:0;
+				width: 100%;
+
+			}
+
 			h1 {
 				font-family: $sun;
 				color: $white;
@@ -57,6 +71,16 @@
 		position: relative;
 		margin-top: -65px;
 		z-index: 3;
+		@include max-screen(960px){
+			margin-left: percentage(10/960);
+		}
+		
+		@include max-screen(805px){
+			float: none;
+			margin:0;
+			width: 100%;
+		}		
+		
 		.callouts {
 			&.inner-wrapper { overflow: visible; }
 
@@ -80,9 +104,24 @@
 						@include font-size(14, 24);
 						text-shadow: 1px 1px 1px #13897A;
 					}
+					@include max-screen(685px){
+						float: none;
+						margin:0;
+						width: 100%;
+						padding-left: percentage(45/960);
+					}
 				}
 				&.scroll-now {
 					margin-top: 120px;
+					@include max-screen(879px){
+						margin-top: 80px;
+						padding-right: percentage(43/960);
+					}
+					@include max-screen(670px){
+						width: 100%;
+						margin-top: 25px;
+						padding-bottom: 0;
+					}
 					h1 {
 						color: $grey;
 						display: block;
@@ -92,8 +131,31 @@
 						margin-top: 7px;
 						padding-left: 15px;
 						width: 250px;
+						@include max-screen(670px){
+							h1 {
+								float: none;
+								text-align: center;
+								width: 100%;
+							}
+						}
+						@include max-screen(896px){
+							h1 {
+								float: none;
+								width: 100%;
+								@include font-size(23, 23);
+							}
+						}
 					}
-					img { width: auto; display: block; }
+					img {
+						 	width: auto; 
+							display: block; 
+							@include max-screen(896px){
+								display: block;
+								float: none;
+								margin: 0 auto;
+							}
+
+						}
 
 				}
 				

@@ -8,7 +8,16 @@ section {
 
 		.beaker-content {
 			float: left;
-			margin: percentage(50/960) 0 0 percentage(350/960);			
+			margin: percentage(50/960) 0 0 percentage(350/960);		
+			@include max-screen(1045px){
+				float: right;
+				margin-right: percentage(40/960);
+				h1 {
+					text-align: right;
+				}
+				a { float: right; }
+				p { text-align: right; }
+			}	
 		}
 
 		&.beaker-set-two {
@@ -17,6 +26,15 @@ section {
 				position: absolute;
 				left: 100px;
 				width: 300px;
+				@include max-screen(733px){
+					left: 50px;
+				}				
+				@include max-screen(610px){
+					left: 25px;
+				}						
+				@include max-screen(510px){
+					left: 0px;
+				}		
 
 				.beaker-holder {
 					max-width: 300px;

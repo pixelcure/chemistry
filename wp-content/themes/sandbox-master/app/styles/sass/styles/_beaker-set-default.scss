@@ -10,11 +10,21 @@ section {
 			float: right;
 			width: percentage(400/960);
 			margin: percentage(50/960) percentage(350/960) 0 0;
+			@include max-screen(1045px){
+				float: left;
+				margin-left: percentage(40/960);
+			}
 			h1 {
 				color: $teal;
 				@include font-size(38, 38);
 			}
-			a.learn-more { @extend .button; width: 50%; }			
+			a.learn-more { 
+				@extend .button; 
+				width: 50%; 
+				@include max-screen(931px){
+					width: 60%;
+				}
+			}			
 		}		
 
 		&.beaker-set-default {
@@ -23,7 +33,15 @@ section {
 				position: absolute;
 				right: 100px;
 				width: 300px;
-
+				@include max-screen(733px){
+					right: 50px;
+				}
+				@include max-screen(610px){
+					right: 25px;
+				}						
+				@include max-screen(510px){
+					right: 0px;
+				}	
 				.beaker-holder {
 					max-width: 300px;
 				}
@@ -66,10 +84,10 @@ section {
 			}
 
 			.table {
-				max-width: 825px;
 				position: absolute;
 				right: 0;
-				bottom: 83px;				
+				bottom: 83px;			
+				max-width: 825px;
 			}
 
 		} // end beaker set one row

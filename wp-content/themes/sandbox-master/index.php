@@ -20,7 +20,7 @@ if(is_home){
 
 		<div class="intro col span_7">
 			<h1>
-				On an initiative to cure the broken<br />pixels shattered across the web
+				On an initiative to cure the broken pixels shattered across the web
 			</h1>
 			<p>
 				Currently, I'm a UI developer at <a href="http://www.genuineinteractive.com" target="_blank">Genuine Interactive</a>, in Boston.
@@ -77,7 +77,7 @@ if(is_home){
 			quod cumque atque provident amet sapiente aperiam molestiae earum 
 			assumenda. Quas ullam pariatur error
 		</p>
-		<a href="#" class="learn-more">Material Data Sheets</a>		
+		<a href="#" class="learn-more">Explore</a>		
 	</div><!-- / end beaker content -->
 
 	<div class="beaker-holder-container">
@@ -132,7 +132,7 @@ if(is_home){
 			quod cumque atque provident amet sapiente aperiam molestiae earum 
 			assumenda. Quas ullam pariatur error
 		</p>
-		<a href="#" class="learn-more">Material Data Sheets</a>		
+		<a href="#" class="learn-more">Explore</a>		
 	</div><!-- / end beaker content -->
 
 	<div class="beaker-holder-container">
@@ -185,7 +185,7 @@ if(is_home){
 			quod cumque atque provident amet sapiente aperiam molestiae earum 
 			assumenda. Quas ullam pariatur error
 		</p>
-		<a href="#" class="learn-more">Material Data Sheets</a>			
+		<a href="#" class="learn-more">Explore</a>			
 	</div><!-- / end beaker content -->
 
 	<div class="beaker-holder-container">

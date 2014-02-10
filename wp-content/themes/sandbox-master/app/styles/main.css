@@ -683,24 +683,42 @@ img {
 .outer-header .header aside.logo.col.span_6 {
   border-left-width: 0;
 }
-/* line 19, sass/styles/_header.scss */
+@media screen and (max-width: 930) {
+  /* line 11, sass/styles/_header.scss */
+  .outer-header .header aside.logo {
+    margin-top: 0.52083%;
+  }
+}
+@media screen and (max-width: 960px) {
+  /* line 11, sass/styles/_header.scss */
+  .outer-header .header aside.logo {
+    margin-left: 4.47917%;
+  }
+}
+/* line 25, sass/styles/_header.scss */
 .outer-header .header aside.nav-outer {
   float: right;
   margin-top: 25px;
 }
-/* line 22, sass/styles/_header.scss */
+@media screen and (max-width: 960px) {
+  /* line 25, sass/styles/_header.scss */
+  .outer-header .header aside.nav-outer {
+    margin-right: 41px;
+  }
+}
+/* line 33, sass/styles/_header.scss */
 .outer-header .header aside.nav-outer ul {
   overflow: hidden;
   margin: 0;
   padding: 0;
 }
-/* line 26, sass/styles/_header.scss */
+/* line 37, sass/styles/_header.scss */
 .outer-header .header aside.nav-outer ul li {
   list-style: none;
   max-width: 145px;
   float: right;
 }
-/* line 30, sass/styles/_header.scss */
+/* line 41, sass/styles/_header.scss */
 .outer-header .header aside.nav-outer ul li a {
   background: #bad7d4;
   color: #3d3c3e;
@@ -714,7 +732,7 @@ img {
   text-align: center;
   height: inherit;
 }
-/* line 44, sass/styles/_header.scss */
+/* line 55, sass/styles/_header.scss */
 .outer-header .header .inner-wrapper {
   width: 100% !important;
 }
@@ -725,19 +743,26 @@ img {
 }
 /* line 7, sass/styles/_homepage.scss */
 .row.top {
-  position: relative;
-  position: relative;
-  min-height: 325px;
   background: #3D3C3E;
-  box-shadow: 1px 1px 10px #666;
+  box-shadow: 1px 1px 3px #333;
+  min-height: 325px;
+  position: relative;
 }
-/* line 14, sass/styles/_homepage.scss */
+/* line 12, sass/styles/_homepage.scss */
 .row.top .intro {
   border-left-width: 180px;
   padding: 25px;
   margin: 25px 0 0 0;
 }
-/* line 19, sass/styles/_homepage.scss */
+@media screen and (max-width: 805px) {
+  /* line 12, sass/styles/_homepage.scss */
+  .row.top .intro {
+    float: none;
+    margin: 0;
+    width: 100%;
+  }
+}
+/* line 23, sass/styles/_homepage.scss */
 .row.top .intro h1 {
   font-size: 32px;
   line-height: 42px;
@@ -746,8 +771,9 @@ img {
   font-family: "Mako", Arial, Sans-serif;
   text-shadow: 1px 1px 1px #333;
   color: #bad7d4;
+  padding-bottom: 15px;
 }
-/* line 25, sass/styles/_homepage.scss */
+/* line 30, sass/styles/_homepage.scss */
 .row.top .intro p {
   color: white;
   font-family: "Mako", Arial, Sans-serif;
@@ -757,17 +783,25 @@ img {
   font-size: 1.8rem;
   line-height: 2.5rem;
 }
-/* line 30, sass/styles/_homepage.scss */
+/* line 35, sass/styles/_homepage.scss */
 .row.top .intro p a {
   border-bottom: 1px dashed #22bdaf;
   color: white;
 }
-/* line 37, sass/styles/_homepage.scss */
+/* line 42, sass/styles/_homepage.scss */
 .row.top .recipe {
   margin: 75px 0 0 0;
   z-index: 2;
 }
-/* line 40, sass/styles/_homepage.scss */
+@media screen and (max-width: 805px) {
+  /* line 42, sass/styles/_homepage.scss */
+  .row.top .recipe {
+    float: none;
+    margin: 0;
+    width: 100%;
+  }
+}
+/* line 54, sass/styles/_homepage.scss */
 .row.top .recipe h1 {
   font-family: "Waiting for the Sunrise", Arial, sans-serif;
   color: white;
@@ -780,29 +814,43 @@ img {
   text-align: right;
   margin: 0;
 }
-/* line 49, sass/styles/_homepage.scss */
+/* line 63, sass/styles/_homepage.scss */
 .row.top .recipe h1 span.teal {
   color: #22bdaf;
 }
-/* line 56, sass/styles/_homepage.scss */
+/* line 70, sass/styles/_homepage.scss */
 .row.bottom {
   position: relative;
   margin-top: -65px;
   z-index: 3;
 }
-/* line 61, sass/styles/_homepage.scss */
+@media screen and (max-width: 960px) {
+  /* line 70, sass/styles/_homepage.scss */
+  .row.bottom {
+    margin-left: 1.04167%;
+  }
+}
+@media screen and (max-width: 805px) {
+  /* line 70, sass/styles/_homepage.scss */
+  .row.bottom {
+    float: none;
+    margin: 0;
+    width: 100%;
+  }
+}
+/* line 85, sass/styles/_homepage.scss */
 .row.bottom .callouts.inner-wrapper {
   overflow: visible;
 }
-/* line 64, sass/styles/_homepage.scss */
+/* line 88, sass/styles/_homepage.scss */
 .row.bottom .callouts .callout {
   padding: 1.04167% 2.60417% 2.60417% 2.60417%;
 }
-/* line 67, sass/styles/_homepage.scss */
+/* line 91, sass/styles/_homepage.scss */
 .row.bottom .callouts .callout.the-doctor {
   background: #22bdaf;
 }
-/* line 69, sass/styles/_homepage.scss */
+/* line 93, sass/styles/_homepage.scss */
 .row.bottom .callouts .callout.the-doctor h1 {
   border: 1px dashed #bad7d4;
   display: block;
@@ -815,7 +863,7 @@ img {
   color: #FFF;
   text-shadow: 1px 1px 1px #13897A;
 }
-/* line 78, sass/styles/_homepage.scss */
+/* line 102, sass/styles/_homepage.scss */
 .row.bottom .callouts .callout.the-doctor p {
   color: #e7e6e6;
   font-size: 14px;
@@ -824,11 +872,35 @@ img {
   line-height: 2.4rem;
   text-shadow: 1px 1px 1px #13897A;
 }
-/* line 84, sass/styles/_homepage.scss */
+@media screen and (max-width: 685px) {
+  /* line 91, sass/styles/_homepage.scss */
+  .row.bottom .callouts .callout.the-doctor {
+    float: none;
+    margin: 0;
+    width: 100%;
+    padding-left: 4.6875%;
+  }
+}
+/* line 114, sass/styles/_homepage.scss */
 .row.bottom .callouts .callout.scroll-now {
   margin-top: 120px;
 }
-/* line 86, sass/styles/_homepage.scss */
+@media screen and (max-width: 879px) {
+  /* line 114, sass/styles/_homepage.scss */
+  .row.bottom .callouts .callout.scroll-now {
+    margin-top: 80px;
+    padding-right: 4.47917%;
+  }
+}
+@media screen and (max-width: 670px) {
+  /* line 114, sass/styles/_homepage.scss */
+  .row.bottom .callouts .callout.scroll-now {
+    width: 100%;
+    margin-top: 25px;
+    padding-bottom: 0;
+  }
+}
+/* line 125, sass/styles/_homepage.scss */
 .row.bottom .callouts .callout.scroll-now h1 {
   color: #3d3c3e;
   display: block;
@@ -842,10 +914,37 @@ img {
   padding-left: 15px;
   width: 250px;
 }
-/* line 96, sass/styles/_homepage.scss */
+@media screen and (max-width: 670px) {
+  /* line 135, sass/styles/_homepage.scss */
+  .row.bottom .callouts .callout.scroll-now h1 h1 {
+    float: none;
+    text-align: center;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 896px) {
+  /* line 142, sass/styles/_homepage.scss */
+  .row.bottom .callouts .callout.scroll-now h1 h1 {
+    float: none;
+    width: 100%;
+    font-size: 23px;
+    line-height: 23px;
+    font-size: 2.3rem;
+    line-height: 2.3rem;
+  }
+}
+/* line 149, sass/styles/_homepage.scss */
 .row.bottom .callouts .callout.scroll-now img {
   width: auto;
   display: block;
+}
+@media screen and (max-width: 896px) {
+  /* line 149, sass/styles/_homepage.scss */
+  .row.bottom .callouts .callout.scroll-now img {
+    display: block;
+    float: none;
+    margin: 0 auto;
+  }
 }
 
 /* line 2, sass/styles/_beaker-set-default.scss */
@@ -864,7 +963,14 @@ section.beaker-row .beaker-content {
   width: 41.66667%;
   margin: 5.20833% 36.45833% 0 0;
 }
-/* line 13, sass/styles/_beaker-set-default.scss */
+@media screen and (max-width: 1045px) {
+  /* line 9, sass/styles/_beaker-set-default.scss */
+  section.beaker-row .beaker-content {
+    float: left;
+    margin-left: 4.16667%;
+  }
+}
+/* line 17, sass/styles/_beaker-set-default.scss */
 section.beaker-row .beaker-content h1 {
   color: #22bdaf;
   font-size: 38px;
@@ -872,41 +978,65 @@ section.beaker-row .beaker-content h1 {
   font-size: 3.8rem;
   line-height: 3.8rem;
 }
-/* line 17, sass/styles/_beaker-set-default.scss */
+/* line 21, sass/styles/_beaker-set-default.scss */
 section.beaker-row .beaker-content a.learn-more {
   width: 50%;
 }
-/* line 22, sass/styles/_beaker-set-default.scss */
+@media screen and (max-width: 931px) {
+  /* line 21, sass/styles/_beaker-set-default.scss */
+  section.beaker-row .beaker-content a.learn-more {
+    width: 60%;
+  }
+}
+/* line 32, sass/styles/_beaker-set-default.scss */
 section.beaker-row.beaker-set-default .beaker-holder-container {
   position: absolute;
   right: 100px;
   width: 300px;
 }
-/* line 27, sass/styles/_beaker-set-default.scss */
+@media screen and (max-width: 733px) {
+  /* line 32, sass/styles/_beaker-set-default.scss */
+  section.beaker-row.beaker-set-default .beaker-holder-container {
+    right: 50px;
+  }
+}
+@media screen and (max-width: 610px) {
+  /* line 32, sass/styles/_beaker-set-default.scss */
+  section.beaker-row.beaker-set-default .beaker-holder-container {
+    right: 25px;
+  }
+}
+@media screen and (max-width: 510px) {
+  /* line 32, sass/styles/_beaker-set-default.scss */
+  section.beaker-row.beaker-set-default .beaker-holder-container {
+    right: 0px;
+  }
+}
+/* line 45, sass/styles/_beaker-set-default.scss */
 section.beaker-row.beaker-set-default .beaker-holder-container .beaker-holder {
   max-width: 300px;
 }
-/* line 31, sass/styles/_beaker-set-default.scss */
+/* line 49, sass/styles/_beaker-set-default.scss */
 section.beaker-row.beaker-set-default .beaker-holder-container .stir {
   max-width: 35px;
   position: absolute;
   top: 1px;
   left: 106px;
 }
-/* line 40, sass/styles/_beaker-set-default.scss */
+/* line 58, sass/styles/_beaker-set-default.scss */
 section.beaker-row.beaker-set-default .beaker-container {
   position: absolute;
   top: 265px;
   left: 45px;
 }
-/* line 45, sass/styles/_beaker-set-default.scss */
+/* line 63, sass/styles/_beaker-set-default.scss */
 section.beaker-row.beaker-set-default .beaker-container .beaker .beaker-1 {
   max-width: 160px;
   position: absolute;
   top: 0;
   left: 0;
 }
-/* line 51, sass/styles/_beaker-set-default.scss */
+/* line 69, sass/styles/_beaker-set-default.scss */
 section.beaker-row.beaker-set-default .beaker-container .beaker .beaker-1-top {
   display: none;
   max-width: 68px;
@@ -914,19 +1044,19 @@ section.beaker-row.beaker-set-default .beaker-container .beaker .beaker-1-top {
   top: 9px;
   left: 48px;
 }
-/* line 60, sass/styles/_beaker-set-default.scss */
+/* line 78, sass/styles/_beaker-set-default.scss */
 section.beaker-row.beaker-set-default .beaker-container .beaker-contents {
   max-width: 145px;
   position: absolute;
   top: 63px;
   left: 7px;
 }
-/* line 68, sass/styles/_beaker-set-default.scss */
+/* line 86, sass/styles/_beaker-set-default.scss */
 section.beaker-row.beaker-set-default .table {
-  max-width: 825px;
   position: absolute;
   right: 0;
   bottom: 83px;
+  max-width: 825px;
 }
 
 /* line 2, sass/styles/_beaker-set-two.scss */
@@ -944,41 +1074,78 @@ section.beaker-set-two .beaker-content {
   float: left;
   margin: 5.20833% 0 0 36.45833%;
 }
-/* line 16, sass/styles/_beaker-set-two.scss */
+@media screen and (max-width: 1045px) {
+  /* line 9, sass/styles/_beaker-set-two.scss */
+  section.beaker-set-two .beaker-content {
+    float: right;
+    margin-right: 4.16667%;
+  }
+  /* line 15, sass/styles/_beaker-set-two.scss */
+  section.beaker-set-two .beaker-content h1 {
+    text-align: right;
+  }
+  /* line 18, sass/styles/_beaker-set-two.scss */
+  section.beaker-set-two .beaker-content a {
+    float: right;
+  }
+  /* line 19, sass/styles/_beaker-set-two.scss */
+  section.beaker-set-two .beaker-content p {
+    text-align: right;
+  }
+}
+/* line 25, sass/styles/_beaker-set-two.scss */
 section.beaker-set-two.beaker-set-two .beaker-holder-container {
   position: absolute;
   left: 100px;
   width: 300px;
 }
-/* line 21, sass/styles/_beaker-set-two.scss */
+@media screen and (max-width: 733px) {
+  /* line 25, sass/styles/_beaker-set-two.scss */
+  section.beaker-set-two.beaker-set-two .beaker-holder-container {
+    left: 50px;
+  }
+}
+@media screen and (max-width: 610px) {
+  /* line 25, sass/styles/_beaker-set-two.scss */
+  section.beaker-set-two.beaker-set-two .beaker-holder-container {
+    left: 25px;
+  }
+}
+@media screen and (max-width: 510px) {
+  /* line 25, sass/styles/_beaker-set-two.scss */
+  section.beaker-set-two.beaker-set-two .beaker-holder-container {
+    left: 0px;
+  }
+}
+/* line 39, sass/styles/_beaker-set-two.scss */
 section.beaker-set-two.beaker-set-two .beaker-holder-container .beaker-holder {
   max-width: 300px;
 }
-/* line 25, sass/styles/_beaker-set-two.scss */
+/* line 43, sass/styles/_beaker-set-two.scss */
 section.beaker-set-two.beaker-set-two .beaker-holder-container .stir {
   max-width: 35px;
   position: absolute;
   top: 1px;
   left: 153px;
 }
-/* line 34, sass/styles/_beaker-set-two.scss */
+/* line 52, sass/styles/_beaker-set-two.scss */
 section.beaker-set-two.beaker-set-two .beaker-container {
   position: absolute;
   top: 208px;
   left: 70px;
 }
-/* line 39, sass/styles/_beaker-set-two.scss */
+/* line 57, sass/styles/_beaker-set-two.scss */
 section.beaker-set-two.beaker-set-two .beaker-container .beaker .beaker-1 {
   max-width: 160px;
   position: absolute;
   top: 0;
   left: 0;
 }
-/* line 44, sass/styles/_beaker-set-two.scss */
+/* line 62, sass/styles/_beaker-set-two.scss */
 section.beaker-set-two.beaker-set-two .beaker-container .beaker .beaker-1 img {
   width: 200px;
 }
-/* line 48, sass/styles/_beaker-set-two.scss */
+/* line 66, sass/styles/_beaker-set-two.scss */
 section.beaker-set-two.beaker-set-two .beaker-container .beaker .beaker-1-top {
   display: none;
   max-width: 68px;
@@ -986,17 +1153,17 @@ section.beaker-set-two.beaker-set-two .beaker-container .beaker .beaker-1-top {
   top: 9px;
   left: 48px;
 }
-/* line 57, sass/styles/_beaker-set-two.scss */
+/* line 75, sass/styles/_beaker-set-two.scss */
 section.beaker-set-two.beaker-set-two .beaker-container .beaker-contents {
   position: absolute;
   top: 100px;
   left: 10px;
 }
-/* line 61, sass/styles/_beaker-set-two.scss */
+/* line 79, sass/styles/_beaker-set-two.scss */
 section.beaker-set-two.beaker-set-two .beaker-container .beaker-contents img {
   width: 180px;
 }
-/* line 67, sass/styles/_beaker-set-two.scss */
+/* line 85, sass/styles/_beaker-set-two.scss */
 section.beaker-set-two.beaker-set-two .table {
   max-width: 825px;
   position: absolute;
