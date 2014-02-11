@@ -26,6 +26,9 @@ section {
 				position: absolute;
 				left: 100px;
 				width: 300px;
+				-webkit-transition: left 0.5s;
+				-moz-transition: left 0.5s;
+				-msie-transition: left 0.5s;
 				@include max-screen(733px){
 					left: 50px;
 				}				

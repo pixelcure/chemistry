@@ -46,11 +46,16 @@
 						<img src="<?php bloginfo(template_url); ?>/app/images/logo.svg" alt="Pixel Cure" />
 					</a>	
 				</aside><!-- / end logo -->
-
+				
+				
 				<aside class="nav-outer col span_6">
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu' => 'menu' ) ); ?>
 				</aside><!-- / end col span 6 nav outer -->
 			
+				<a href="#" id="navTrigger" class="nav-trigger">
+					<img src="<?php bloginfo(template_url); ?>/app/images/hidden-menu-icon.svg" alt="Navigation" />
+				</a><!-- / end nav trigger -->
+
 			</div><!-- / end inner wrapper -->
 		</section>
 		

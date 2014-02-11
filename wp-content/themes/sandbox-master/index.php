@@ -30,6 +30,7 @@ if(is_home){
 
 	<div class="recipe col span_5">
 		<h1>Let me fill you in on some of my secret <span class="teal">ingredients</span> to my recipe..</h1>
+		<h1 class="hidden">Scroll to View my Labratory . . .</h1>
 	</div><!-- end recipe -->
 	
 	<div class="clear"></div><!-- end clear -->

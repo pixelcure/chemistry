@@ -14,9 +14,11 @@
 			}
 			width: percentage(190/960);
 			max-width: percentage(300/960);
+			
 			@include max-screen(930){
 				margin-top: percentage(5/960);
 			}
+			
 			@include max-screen(960px){
 				margin-left: percentage(43/960);
 			}
@@ -34,21 +36,39 @@
 				overflow: hidden;
 				margin: 0;
 				padding: 0;
+				@include max-screen(545px){
+					display: none;
+				}				
 				li {
 					list-style: none;
 					max-width: 145px;
 					float: right;
 					a {
-						background: $slate;
+						border: 1px dashed $grey;
 						color: $grey;
 						display: block;
 						font-family: $sun;
 						@include font-size(24, 18);
-						padding: 15px;
+						padding: 10px;
 						text-align: center;
 						height: inherit;
 					}
 				}
+			}
+		}
+
+		.nav-trigger {
+			display: none;
+			position: absolute;
+			right: 0;
+			top: 0;
+			img {
+				width: 30%;
+				float: right;
+				margin: 25px;
+			}
+			@include max-screen(545px){
+				display: block;
 			}
 		}
 

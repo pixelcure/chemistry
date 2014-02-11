@@ -1,7 +1,10 @@
-.row {
+section {
 
 	img.home-divider {
 		 margin: 0 0 45px 0;
+		 @include max-screen(364px){
+		 	width: 102%;
+		 }
 	}
 
 	&.top {	
@@ -9,24 +12,36 @@
 		box-shadow: 1px 1px 3px #333;
 		min-height: 325px;
 		position: relative;
+
 		.intro {
 			border-left-width: 180px;
-			padding: 25px;
-			margin: 25px 0 0 0;
-			@include max-screen(805px){
-				float: none;
-				margin: 0;
-				width: 100%;
+			padding: 25px percentage(10/960);
+			margin-top: 25px;
+			
+			@include max-screen(1090px){
+				margin-top: 0;
+			}			
 
+			@include max-screen(730px){
+				border-bottom: 1px solid #666;
+				float: none;
+				padding-bottom: 15px;
+				margin-bottom: 25px;
+				width: 100%;
 			}
 
 			h1 {
+				color: $slate;
 				@include font-size(32, 42);
 				font-family: $baseFont;
 				text-shadow: 1px 1px 1px #333;
-				color: $slate;
-				padding-bottom: 15px;				
+				margin-top: 0;		
+				padding-bottom: 15px;		
+				@include max-screen(730px){
+					padding-top: 0;
+				}			
 			}
+
 			p {
 				color: $white;
 				font-family: $baseFont;
@@ -40,30 +55,47 @@
 		}
 			
 		.recipe {
-			margin: 75px 0 0 0;		
+			margin: 80px 0 0 0;		
 			z-index: 2;
-
-			@include max-screen(805px){
-				
-				float: none;
-				margin:0;
+			padding-right: percentage(30/960);
+			@include max-screen(730px){
+				border-left-width: 186px;				
+				padding: 0px;
+				margin-top: 0;
 				width: 100%;
-
+			}			
+			@include max-screen(682px){
+				padding-right: 35px;
 			}
-
 			h1 {
 				font-family: $sun;
 				color: $white;
 				@include font-size(32, 36);
-				padding-right: 45px;
 				text-shadow: 1px 1px 1px #333;
 				text-align: right;
 				margin: 0;
-
 				span.teal { color: $teal; }
 
-			}
+				@include max-screen(730px){
+					@include font-size(22, 22);
+					text-align: left;
+				}
 
+				@include max-screen(390px){
+					@include font-size(18, 18);
+				}
+
+			}
+			h1.hidden { 
+				display: none; 
+				@include max-screen(730px){
+					color: $slate;
+					display: block;
+					margin-top: 20px;
+					margin: 20px 0 25px 0;
+					@include font-size(30px);					
+				}
+			}
 		}
 	} // end top
 
@@ -71,15 +103,18 @@
 		position: relative;
 		margin-top: -65px;
 		z-index: 3;
-		@include max-screen(960px){
-			margin-left: percentage(10/960);
-		}
 		
-		@include max-screen(805px){
-			float: none;
-			margin:0;
-			width: 100%;
+		@include max-screen(955px){
+			// margin-left: -20px;
 		}		
+
+		@include max-screen(915px){
+			// margin-left: 0;
+		}
+
+		@include max-screen(730px){
+			margin-top: 0;
+		}
 		
 		.callouts {
 			&.inner-wrapper { overflow: visible; }
@@ -95,7 +130,7 @@
 						display: block;
 						padding: 10px;
 						margin-top: 15px;
-						@include font-size(32, 32);
+						@include font-size(28, 28);
 						color: #FFF;
 						text-shadow: 1px 1px 1px #13897A;						
 					}
@@ -104,24 +139,43 @@
 						@include font-size(14, 24);
 						text-shadow: 1px 1px 1px #13897A;
 					}
-					@include max-screen(685px){
+					@include max-screen(960px){
+						border-left-width: 110px;
+
+					}						
+					@include max-screen(913px){
+						border-left-width: 140px;
+
+					}							
+					@include max-screen(913px){
+						border-left-width: 140px;
+
+					}					
+					@include max-screen(832px){
+						border-left-width: 170px;
+
+					}					
+					@include max-screen(832px){
+						border-left-width: 170px;
+
+					}							
+					@include max-screen(730px){
+						border-left-width: 80px;
 						float: none;
-						margin:0;
+						padding-left: 100px;
 						width: 100%;
-						padding-left: percentage(45/960);
-					}
+
+					}					
 				}
 				&.scroll-now {
 					margin-top: 120px;
-					@include max-screen(879px){
-						margin-top: 80px;
-						padding-right: percentage(43/960);
-					}
-					@include max-screen(670px){
-						width: 100%;
-						margin-top: 25px;
-						padding-bottom: 0;
-					}
+					@include max-screen(805px){
+						border-left-width: 0;
+						margin-top: 60px;
+					}	
+					@include max-screen(730px){
+						display: none;
+					}					
 					h1 {
 						color: $grey;
 						display: block;
@@ -131,30 +185,19 @@
 						margin-top: 7px;
 						padding-left: 15px;
 						width: 250px;
-						@include max-screen(670px){
-							h1 {
-								float: none;
-								text-align: center;
-								width: 100%;
-							}
-						}
-						@include max-screen(896px){
-							h1 {
-								float: none;
-								width: 100%;
-								@include font-size(23, 23);
-							}
+						@include max-screen(805px){
+							float: none;
+							text-align: center;
+							width: 100%;							
 						}
 					}
 					img {
 						 	width: auto; 
 							display: block; 
-							@include max-screen(896px){
-								display: block;
+							@include max-screen(805px){
 								float: none;
 								margin: 0 auto;
 							}
-
 						}
 
 				}

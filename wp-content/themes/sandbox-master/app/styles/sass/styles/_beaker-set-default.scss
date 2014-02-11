@@ -12,7 +12,7 @@ section {
 			margin: percentage(50/960) percentage(350/960) 0 0;
 			@include max-screen(1045px){
 				float: left;
-				margin-left: percentage(40/960);
+				margin-left: percentage(35/960);
 			}
 			h1 {
 				color: $teal;
@@ -33,6 +33,9 @@ section {
 				position: absolute;
 				right: 100px;
 				width: 300px;
+				-webkit-transition: right 0.5s;
+				-moz-transition: right 0.5s;
+				-msie-transition: right 0.5s;				
 				@include max-screen(733px){
 					right: 50px;
 				}

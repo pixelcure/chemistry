@@ -1,0 +1,36 @@
+.footer {
+	border-top: 1px solid #CCC;
+	padding: percentage(25/960) percentage(35/960);
+	.left {
+		h1 {
+			color: $teal;
+			@include font-size(13, 18);
+		}
+		@include max-screen(630px){
+			float: none;
+		}
+	}
+	.right {	
+		
+		@include max-screen(630px){
+			float: none;
+		}
+
+		ul {
+			list-style: none;
+			overflow: hidden;
+			padding-left: 0;
+			width: 100%;
+			li {
+				float: left;
+				margin-right: 15px;
+				a {
+					font-weight: bold;
+					color: $grey;
+				}
+				&:last-child { margin-right: 0; }
+			}
+		}
+	}
+	
+}
