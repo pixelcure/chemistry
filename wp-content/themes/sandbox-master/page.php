@@ -8,13 +8,70 @@
  */
 get_header(); ?>
 
-<?php the_post(); ?>
+<section class="inner-page overflow-hidden">
+	
+	<div class="top-inner-title col span_12">
+		<div class="inner-wrapper">
+			
+			<h1 class="title"><?php the_title(); ?></h1>
 
-<h1><?php the_title(); ?></h1>
+		</div><!-- / end inner wrapper -->
+		
+	</div><!-- / end col span 12, title top -->
+	
+	<!-- 	<img src="<?php bloginfo(template_url); ?>/app/images/divider.svg" alt="Divider" class="divider"> -->
 
-<p><?php the_content(); ?></p>
+	<div class="outer-content col span_12">
+		
+			<section class="inner-wrapper content">
+				
+				<div class="sub-header">
+					
+					<p>
+						Below are some of the recent projects I've been working on. Click on the image to learn more.
+					</p>	
 
-<hr />
+				</div><!-- / end sub header -->
+				
+				<div class="row sub-content">
 
-<?php get_sidebar(); ?>
+
+						<ul class="projects-container">
+							
+							<li class="item col span_4">
+								<div class="mask"></div><!-- / end mask -->
+								<span>MPC 2000 XL</span>
+								<img src="<?php bloginfo(template_url); ?>/app/images/design/mpc.png" alt="MPC 2000 XL" />
+
+							</li><!-- / end item -->							
+
+							<li class="item col span_4">
+								<img src="<?php bloginfo(template_url); ?>/app/images/design/mpc.png" alt="MPC 2000 XL" />
+							</li><!-- / end item -->							
+
+							<li class="item col span_4">
+								<img src="<?php bloginfo(template_url); ?>/app/images/design/mpc.png" alt="MPC 2000 XL" />
+							</li><!-- / end item -->	
+							<li class="item col span_4">
+								<img src="<?php bloginfo(template_url); ?>/app/images/design/mpc.png" alt="MPC 2000 XL" />
+							</li><!-- / end item -->					
+
+						</ul><!-- / end projects container -->
+					
+				</div><!-- / end sub content area -->
+
+
+
+
+				<?php the_post(); ?>
+				
+				<p><?php the_content(); ?></p>
+			
+			</section><!-- ./ end content inner wrapper -->
+		
+	</div><!-- / end outer content -->
+
+</section><!-- / end page -->
+
+
 <?php get_footer(); ?>

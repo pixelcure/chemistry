@@ -555,28 +555,28 @@ Span 12:    100%
     width: 100%;
   }
 }
-/* line 1, sass/core/_helpers.scss */
+/* line 5, sass/core/_helpers.scss */
 .left {
   float: left;
 }
 
-/* line 4, sass/core/_helpers.scss */
+/* line 8, sass/core/_helpers.scss */
 .right {
   float: right;
 }
 
-/* line 7, sass/core/_helpers.scss */
+/* line 11, sass/core/_helpers.scss */
 .no-padding {
   padding-left: 0 !important;
   padding-right: 0 !important;
 }
 
-/* line 11, sass/core/_helpers.scss */
+/* line 15, sass/core/_helpers.scss */
 .overflow-hidden {
   overflow: hidden;
 }
 
-/* line 12, sass/core/_helpers.scss */
+/* line 16, sass/core/_helpers.scss */
 .clear {
   clear: both;
   height: 0;
@@ -604,23 +604,25 @@ use this to insert a custom logo into the dashboard
   margin-top: 20px;
 }
 
-/* line 1, sass/styles/_layout.scss */
+/* line 6, sass/styles/_layout.scss */
 html {
   font-size: 62.5%;
 }
 
-/* line 4, sass/styles/_layout.scss */
+/* line 9, sass/styles/_layout.scss */
 body {
   background: #e7e6e6;
+  color: #3d3c3e;
+  font-family: "Mako", Arial, Sans-serif;
 }
 
-/* line 8, sass/styles/_layout.scss */
+/* line 15, sass/styles/_layout.scss */
 a {
   color: #3d3c3e;
   text-decoration: none;
 }
 
-/* line 13, sass/styles/_layout.scss */
+/* line 20, sass/styles/_layout.scss */
 p {
   font-family: "Mako", Arial, Sans-serif;
   font-size: 14px;
@@ -629,19 +631,20 @@ p {
   line-height: 2.5rem;
 }
 
-/* line 18, sass/styles/_layout.scss */
+/* line 25, sass/styles/_layout.scss */
 img {
   width: 100%;
   height: auto;
 }
 
-/* line 24, sass/styles/_layout.scss */
+/* line 31, sass/styles/_layout.scss */
 .button, section.bottom .callouts .callout a, section.beaker-row .beaker-content a.learn-more {
   display: block;
   background: #3d3c3e;
   box-shadow: 1px 1px 0 #333;
   border: 1px #bad7d4;
   font-weight: bold;
+  text-shadow: none;
   color: #e7e6e6;
   font-family: "Mako", Arial, Sans-serif;
   text-align: center;
@@ -652,16 +655,15 @@ img {
   line-height: 4rem;
 }
 
-/* line 38, sass/styles/_layout.scss */
+/* line 45, sass/styles/_layout.scss */
 .inner-wrapper {
   width: 100%;
   max-width: 960px;
   margin: 0 auto;
   overflow: hidden;
-  z-index: 10;
 }
 
-/* line 1, sass/styles/_header.scss */
+/* line 6, sass/styles/_header.scss */
 .outer-header {
   background: #e7e6e6;
   border-bottom: 3px solid #f10025;
@@ -670,225 +672,574 @@ img {
   width: 100%;
   z-index: 2;
 }
-/* line 8, sass/styles/_header.scss */
+@media screen and (max-width: 600px) {
+  /* line 6, sass/styles/_header.scss */
+  .outer-header {
+    overflow: visible;
+  }
+}
+/* line 16, sass/styles/_header.scss */
 .outer-header .header {
   padding-top: 5px;
 }
-/* line 11, sass/styles/_header.scss */
+/* line 19, sass/styles/_header.scss */
 .outer-header .header aside.logo {
   width: 19.79167%;
   max-width: 31.25%;
 }
-/* line 12, sass/styles/_header.scss */
+/* line 20, sass/styles/_header.scss */
 .outer-header .header aside.logo.col.span_6 {
   border-left-width: 0;
 }
+/* line 23, sass/styles/_header.scss */
+.outer-header .header aside.logo.col.span_6 img {
+  min-width: 181px;
+}
+@media screen and (max-width: 940px) {
+  /* line 23, sass/styles/_header.scss */
+  .outer-header .header aside.logo.col.span_6 img {
+    margin-top: 10px;
+  }
+}
 @media screen and (max-width: 930) {
-  /* line 11, sass/styles/_header.scss */
+  /* line 19, sass/styles/_header.scss */
   .outer-header .header aside.logo {
     margin-top: 0.52083%;
   }
 }
 @media screen and (max-width: 960px) {
-  /* line 11, sass/styles/_header.scss */
+  /* line 19, sass/styles/_header.scss */
   .outer-header .header aside.logo {
     margin-left: 4.47917%;
   }
 }
-/* line 27, sass/styles/_header.scss */
+/* line 42, sass/styles/_header.scss */
 .outer-header .header aside.nav-outer {
+  display: block;
   float: right;
   margin-top: 25px;
 }
+/* line 46, sass/styles/_header.scss */
+.outer-header .header aside.nav-outer .hidden-cross {
+  display: none;
+}
+@media screen and (max-width: 940px) {
+  /* line 42, sass/styles/_header.scss */
+  .outer-header .header aside.nav-outer {
+    margin-top: 30px;
+  }
+}
 @media screen and (max-width: 960px) {
-  /* line 27, sass/styles/_header.scss */
+  /* line 42, sass/styles/_header.scss */
   .outer-header .header aside.nav-outer {
     margin-right: 41px;
   }
 }
-/* line 35, sass/styles/_header.scss */
+@media screen and (max-width: 896px) {
+  /* line 42, sass/styles/_header.scss */
+  .outer-header .header aside.nav-outer {
+    width: 60%;
+  }
+  /* line 58, sass/styles/_header.scss */
+  .outer-header .header aside.nav-outer li {
+    margin-right: 5px;
+  }
+}
+@media screen and (max-width: 896px) {
+  /* line 42, sass/styles/_header.scss */
+  .outer-header .header aside.nav-outer {
+    width: 65%;
+  }
+  /* line 63, sass/styles/_header.scss */
+  .outer-header .header aside.nav-outer li {
+    margin-right: 5px;
+  }
+  /* line 65, sass/styles/_header.scss */
+  .outer-header .header aside.nav-outer li a {
+    font-size: 21px;
+    line-height: 18px;
+    font-size: 2.1rem;
+    line-height: 1.8rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  /* line 42, sass/styles/_header.scss */
+  .outer-header .header aside.nav-outer {
+    display: none;
+    background: #22bdaf;
+    position: absolute;
+    height: 1000px;
+    left: 0;
+    top: 78px;
+    width: 100%;
+    z-index: 10;
+  }
+  /* line 82, sass/styles/_header.scss */
+  .outer-header .header aside.nav-outer .hidden-cross {
+    display: block;
+    position: relative;
+    top: -49.5px;
+  }
+}
+/* line 90, sass/styles/_header.scss */
 .outer-header .header aside.nav-outer ul {
   overflow: hidden;
   margin: 0;
   padding: 0;
 }
-@media screen and (max-width: 545px) {
-  /* line 35, sass/styles/_header.scss */
-  .outer-header .header aside.nav-outer ul {
-    display: none;
+@media screen and (max-width: 900px) {
+  /* line 95, sass/styles/_header.scss */
+  .outer-header .header aside.nav-outer ul li {
+    margin-right: 0;
   }
 }
-/* line 42, sass/styles/_header.scss */
+@media screen and (max-width: 600px) {
+  /* line 90, sass/styles/_header.scss */
+  .outer-header .header aside.nav-outer ul {
+    position: relative;
+    z-index: 5;
+  }
+}
+/* line 101, sass/styles/_header.scss */
 .outer-header .header aside.nav-outer ul li {
   list-style: none;
   max-width: 145px;
+  margin-right: 15px;
   float: right;
 }
-/* line 46, sass/styles/_header.scss */
+/* line 106, sass/styles/_header.scss */
+.outer-header .header aside.nav-outer ul li:first-child {
+  margin-right: 0;
+}
+@media screen and (max-width: 600px) {
+  /* line 101, sass/styles/_header.scss */
+  .outer-header .header aside.nav-outer ul li {
+    padding-bottom: 15px;
+    float: none;
+    margin: 0 auto;
+    max-width: 90%;
+    width: 90%;
+  }
+  /* line 115, sass/styles/_header.scss */
+  .outer-header .header aside.nav-outer ul li:first-child {
+    margin: auto;
+  }
+}
+/* line 119, sass/styles/_header.scss */
 .outer-header .header aside.nav-outer ul li a {
-  border: 1px dashed #3d3c3e;
+  background: rgba(34, 189, 175, 0.1);
   color: #3d3c3e;
   display: block;
-  font-family: "Waiting for the Sunrise", Arial, sans-serif;
   font-size: 24px;
   line-height: 18px;
   font-size: 2.4rem;
   line-height: 1.8rem;
+  font-family: "Waiting for the Sunrise", Arial, sans-serif;
+  letter-spacing: 0.08em;
   padding: 10px;
   text-align: center;
+  text-shadow: 1px 1px 1px #CCC;
+  text-transform: lowercase;
   height: inherit;
 }
-/* line 60, sass/styles/_header.scss */
+@media screen and (max-width: 693px) {
+  /* line 119, sass/styles/_header.scss */
+  .outer-header .header aside.nav-outer ul li a {
+    background: none;
+    padding: 10px 5px 0 0;
+    text-shadow: 1px 1px 1px #333;
+  }
+}
+@media screen and (max-width: 600px) {
+  /* line 119, sass/styles/_header.scss */
+  .outer-header .header aside.nav-outer ul li a {
+    color: #22bdaf;
+    font-size: 24px;
+    line-height: 24px;
+    font-size: 2.4rem;
+    line-height: 2.4rem;
+  }
+}
+/* line 145, sass/styles/_header.scss */
 .outer-header .header .nav-trigger {
   display: none;
   position: absolute;
   right: 0;
   top: 0;
 }
-/* line 65, sass/styles/_header.scss */
-.outer-header .header .nav-trigger img {
+/* line 150, sass/styles/_header.scss */
+.outer-header .header .nav-trigger img.open {
   width: 30%;
   float: right;
-  margin: 25px;
+  margin: 32px 0px 25px;
 }
-@media screen and (max-width: 545px) {
-  /* line 60, sass/styles/_header.scss */
+/* line 155, sass/styles/_header.scss */
+.outer-header .header .nav-trigger img.close {
+  display: none;
+  width: 30%;
+  float: right;
+  margin: 32px 0px 25px;
+}
+@media screen and (max-width: 600px) {
+  /* line 145, sass/styles/_header.scss */
   .outer-header .header .nav-trigger {
     display: block;
+    z-index: 15;
   }
 }
-/* line 75, sass/styles/_header.scss */
+/* line 167, sass/styles/_header.scss */
 .outer-header .header .inner-wrapper {
   width: 100% !important;
 }
 
-/* line 1, sass/styles/_footer.scss */
+/* line 5, sass/styles/_footer.scss */
 .footer {
-  border-top: 1px solid #CCC;
+  border-top: 1px solid #f10025;
+  margin-top: 35px;
+}
+/* line 10, sass/styles/_footer.scss */
+.footer .footer-inner {
+  margin-top: 5px;
+  border-top: 2px solid #22bdaf;
+}
+/* line 13, sass/styles/_footer.scss */
+.footer .footer-inner .footer-inner-inner {
   padding: 2.60417% 3.64583%;
 }
-/* line 5, sass/styles/_footer.scss */
-.footer .left h1 {
-  color: #22bdaf;
-  font-size: 13px;
+/* line 16, sass/styles/_footer.scss */
+.footer .footer-inner .footer-inner-inner .top-button {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  margin: 25px auto;
+}
+/* line 21, sass/styles/_footer.scss */
+.footer .footer-inner .footer-inner-inner .top-button img {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+/* line 26, sass/styles/_footer.scss */
+.footer .footer-inner .footer-inner-inner .top-button a.top {
+  font-size: 18px;
   line-height: 18px;
-  font-size: 1.3rem;
+  font-size: 1.8rem;
+  line-height: 1.8rem;
+  bottom: 38px;
+  color: #3d3c3e;
+  display: block;
+  font-family: "Mako", Arial, Sans-serif;
+  font-weight: bold;
+  margin: 0 auto;
+  position: relative;
+  right: -58px;
+  text-transform: uppercase;
+  width: 150px;
+}
+/* line 42, sass/styles/_footer.scss */
+.footer .footer-inner .footer-inner-inner .left h1 {
+  color: #22bdaf;
+  font-size: 12px;
+  line-height: 18px;
+  font-size: 1.2rem;
   line-height: 1.8rem;
 }
-@media screen and (max-width: 630px) {
-  /* line 4, sass/styles/_footer.scss */
-  .footer .left {
+@media screen and (max-width: 530px) {
+  /* line 41, sass/styles/_footer.scss */
+  .footer .footer-inner .footer-inner-inner .left {
     float: none;
   }
 }
-@media screen and (max-width: 630px) {
-  /* line 13, sass/styles/_footer.scss */
-  .footer .right {
+@media screen and (max-width: 530px) {
+  /* line 50, sass/styles/_footer.scss */
+  .footer .footer-inner .footer-inner-inner .right {
     float: none;
   }
 }
-/* line 19, sass/styles/_footer.scss */
-.footer .right ul {
+/* line 56, sass/styles/_footer.scss */
+.footer .footer-inner .footer-inner-inner .right ul {
   list-style: none;
   overflow: hidden;
   padding-left: 0;
   width: 100%;
 }
-/* line 24, sass/styles/_footer.scss */
-.footer .right ul li {
+/* line 62, sass/styles/_footer.scss */
+.footer .footer-inner .footer-inner-inner .right ul li {
   float: left;
   margin-right: 15px;
 }
-/* line 27, sass/styles/_footer.scss */
-.footer .right ul li a {
+/* line 65, sass/styles/_footer.scss */
+.footer .footer-inner .footer-inner-inner .right ul li a {
   font-weight: bold;
+  font-size: 12px;
+  line-height: 18px;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
   color: #3d3c3e;
 }
-/* line 31, sass/styles/_footer.scss */
-.footer .right ul li:last-child {
-  margin-right: 0;
+/* line 70, sass/styles/_footer.scss */
+.footer .footer-inner .footer-inner-inner .right ul li:first-child {
+  margin-left: 0;
 }
-
-/* line 3, sass/styles/_homepage.scss */
-section img.home-divider {
-  margin: 0 0 45px 0;
-}
-@media screen and (max-width: 364px) {
-  /* line 3, sass/styles/_homepage.scss */
-  section img.home-divider {
-    width: 102%;
+@media screen and (max-width: 530px) {
+  /* line 72, sass/styles/_footer.scss */
+  .footer .footer-inner .footer-inner-inner .right ul li:first-child {
+    margin-left: 0;
   }
 }
-/* line 10, sass/styles/_homepage.scss */
+
+/* line 7, sass/styles/_inner.scss */
+section.inner-page div.top-inner-title {
+  background: #3D3C3E;
+  box-shadow: 1px 1px 3px #333;
+  height: 70px;
+}
+/* line 14, sass/styles/_inner.scss */
+section.inner-page div.top-inner-title h1 {
+  background: #22BDAF;
+  box-shadow: -1px 1px 1px #555;
+  color: #e7e6e6;
+  font-size: 34px;
+  line-height: 39px;
+  font-size: 3.4rem;
+  line-height: 3.9rem;
+  margin-top: 30px;
+  padding: 15px;
+  position: relative;
+  width: 450px;
+}
+@media screen and (max-width: 479px) {
+  /* line 14, sass/styles/_inner.scss */
+  section.inner-page div.top-inner-title h1 {
+    background: inherit;
+    margin-top: 0;
+    width: 100%;
+  }
+}
+/* line 33, sass/styles/_inner.scss */
+section.inner-page .outer-content {
+  margin-top: 70px;
+}
+/* line 35, sass/styles/_inner.scss */
+section.inner-page .outer-content.about {
+  margin-top: 130px;
+}
+/* line 38, sass/styles/_inner.scss */
+section.inner-page .outer-content.about p {
+  text-shadow: 1px 2px 1px white;
+}
+/* line 41, sass/styles/_inner.scss */
+section.inner-page .outer-content.about a.button, section.inner-page .outer-content.about section.bottom .callouts .callout a, section.bottom .callouts .callout section.inner-page .outer-content.about a, section.inner-page .outer-content.about section.beaker-row .beaker-content a.learn-more, section.beaker-row .beaker-content section.inner-page .outer-content.about a.learn-more {
+  width: 20.83333%;
+}
+/* line 45, sass/styles/_inner.scss */
+section.inner-page .outer-content .sub-header {
+  border-bottom: 1px solid #bad7d4;
+  padding-bottom: 25px;
+  margin-bottom: 25px;
+}
+/* line 49, sass/styles/_inner.scss */
+section.inner-page .outer-content .sub-header p {
+  font-size: 16px;
+  line-height: 36px;
+  font-size: 1.6rem;
+  line-height: 3.6rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  text-shadow: 1px 2px 1px white;
+}
+/* line 57, sass/styles/_inner.scss */
+section.inner-page .outer-content .inner-wrapper {
+  width: 960px;
+}
+/* line 62, sass/styles/_inner.scss */
+section.inner-page .outer-content .inner-wrapper .sub-content ul {
+  overflow: hidden;
+}
+/* line 64, sass/styles/_inner.scss */
+section.inner-page .outer-content .inner-wrapper .sub-content ul li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+/* line 65, sass/styles/_inner.scss */
+section.inner-page .outer-content .inner-wrapper .sub-content ul li.item {
+  background: white;
+  float: left;
+  width: 500px;
+  max-height: 500px;
+  max-width: 500px;
+}
+/* line 71, sass/styles/_inner.scss */
+section.inner-page .outer-content .inner-wrapper .sub-content ul li.item img {
+  display: block;
+  margin: 75px auto;
+  width: 80%;
+  height: auto;
+}
+/* line 78, sass/styles/_inner.scss */
+section.inner-page .outer-content .inner-wrapper .sub-content ul li:first-child {
+  border-left-width: 80px;
+}
+
+/* line 5, sass/styles/_homepage.scss */
+img.home-divider {
+  margin: 0 25px 45px 0;
+}
+@media screen and (max-width: 500px) {
+  /* line 5, sass/styles/_homepage.scss */
+  img.home-divider {
+    margin: 0 45px 0 0;
+  }
+}
+
+/* line 14, sass/styles/_homepage.scss */
+section .col:first-child {
+  border-left-width: 0;
+}
+@media screen and (max-width: 1133px) {
+  /* line 14, sass/styles/_homepage.scss */
+  section .col:first-child {
+    border-left-width: 80px;
+  }
+}
+/* line 22, sass/styles/_homepage.scss */
 section.top {
   background: #3D3C3E;
   box-shadow: 1px 1px 3px #333;
-  min-height: 325px;
+  min-height: 380px;
   position: relative;
 }
-/* line 16, sass/styles/_homepage.scss */
+/* line 29, sass/styles/_homepage.scss */
 section.top .intro {
   border-left-width: 180px;
-  padding: 25px 1.04167%;
+  padding: 25px 25px 0 1.04167%;
   margin-top: 25px;
 }
-@media screen and (max-width: 1090px) {
-  /* line 16, sass/styles/_homepage.scss */
+/* line 34, sass/styles/_homepage.scss */
+section.top .intro img.cross {
+  position: absolute;
+  height: auto;
+  left: 160px;
+  top: -31px;
+  margin-left: 51px;
+  width: 425px;
+  z-index: 0;
+}
+@media screen and (max-width: 740px) {
+  /* line 34, sass/styles/_homepage.scss */
+  section.top .intro img.cross {
+    top: -31px;
+    left: 95px;
+  }
+}
+@media screen and (max-width: 417px) {
+  /* line 34, sass/styles/_homepage.scss */
+  section.top .intro img.cross {
+    width: 314px;
+  }
+}
+@media screen and (max-width: 740px) {
+  /* line 29, sass/styles/_homepage.scss */
   section.top .intro {
     margin-top: 0;
   }
 }
 @media screen and (max-width: 730px) {
-  /* line 16, sass/styles/_homepage.scss */
+  /* line 29, sass/styles/_homepage.scss */
   section.top .intro {
     border-bottom: 1px solid #666;
     float: none;
     padding-bottom: 15px;
-    margin-bottom: 25px;
+    margin: 0 0 25px 0;
     width: 100%;
   }
 }
-/* line 33, sass/styles/_homepage.scss */
+/* line 66, sass/styles/_homepage.scss */
 section.top .intro h1 {
   color: #bad7d4;
-  font-size: 32px;
-  line-height: 42px;
-  font-size: 3.2rem;
-  line-height: 4.2rem;
+  font-size: 25px;
+  line-height: 32px;
+  font-size: 2.5rem;
+  line-height: 3.2rem;
   font-family: "Mako", Arial, Sans-serif;
   text-shadow: 1px 1px 1px #333;
+  left: 255px;
   margin-top: 0;
   padding-bottom: 15px;
+  position: relative;
+  top: -42px;
+  width: 153px;
+  z-index: 1;
 }
-@media screen and (max-width: 730px) {
-  /* line 33, sass/styles/_homepage.scss */
+@media screen and (max-width: 740px) {
+  /* line 66, sass/styles/_homepage.scss */
   section.top .intro h1 {
-    padding-top: 0;
+    left: 195px;
+    top: -19px;
   }
 }
-/* line 45, sass/styles/_homepage.scss */
+@media screen and (max-width: 417px) {
+  /* line 66, sass/styles/_homepage.scss */
+  section.top .intro h1 {
+    left: 130px;
+    top: -16px;
+    width: 130px;
+    font-size: 16px;
+    line-height: 32px;
+    font-size: 1.6rem;
+    line-height: 3.2rem;
+  }
+}
+/* line 94, sass/styles/_homepage.scss */
 section.top .intro p {
-  color: white;
+  color: #3d3c3e;
+  font-size: 20px;
+  line-height: 32px;
+  font-size: 2rem;
+  line-height: 3.2rem;
   font-family: "Mako", Arial, Sans-serif;
   font-weight: bold;
-  font-size: 18px;
-  line-height: 25px;
-  font-size: 1.8rem;
-  line-height: 2.5rem;
+  position: relative;
+  left: 52px;
+  margin-top: 0 !important;
+  top: -30px;
+  width: 150px;
+  z-index: 1;
 }
-/* line 50, sass/styles/_homepage.scss */
+/* line 106, sass/styles/_homepage.scss */
 section.top .intro p a {
-  border-bottom: 1px dashed #22bdaf;
-  color: white;
+  border-bottom: 1px dashed #f10025;
+  color: #22bdaf;
 }
-/* line 57, sass/styles/_homepage.scss */
+@media screen and (max-width: 740px) {
+  /* line 94, sass/styles/_homepage.scss */
+  section.top .intro p {
+    top: -10px;
+    left: -10px;
+  }
+}
+@media screen and (max-width: 417px) {
+  /* line 94, sass/styles/_homepage.scss */
+  section.top .intro p {
+    font-size: 15px;
+    line-height: 24px;
+    font-size: 1.5rem;
+    line-height: 2.4rem;
+    top: -4px;
+    left: -21px;
+    text-align: right;
+    width: 125px;
+  }
+}
+/* line 128, sass/styles/_homepage.scss */
 section.top .recipe {
-  margin: 80px 0 0 0;
+  margin: 140px 0 0 0;
   z-index: 2;
   padding-right: 3.125%;
 }
 @media screen and (max-width: 730px) {
-  /* line 57, sass/styles/_homepage.scss */
+  /* line 128, sass/styles/_homepage.scss */
   section.top .recipe {
     border-left-width: 186px;
     padding: 0px;
@@ -897,12 +1248,12 @@ section.top .recipe {
   }
 }
 @media screen and (max-width: 682px) {
-  /* line 57, sass/styles/_homepage.scss */
+  /* line 128, sass/styles/_homepage.scss */
   section.top .recipe {
     padding-right: 35px;
   }
 }
-/* line 70, sass/styles/_homepage.scss */
+/* line 141, sass/styles/_homepage.scss */
 section.top .recipe h1 {
   font-family: "Waiting for the Sunrise", Arial, sans-serif;
   color: white;
@@ -914,12 +1265,12 @@ section.top .recipe h1 {
   text-align: right;
   margin: 0;
 }
-/* line 77, sass/styles/_homepage.scss */
+/* line 148, sass/styles/_homepage.scss */
 section.top .recipe h1 span.teal {
   color: #22bdaf;
 }
 @media screen and (max-width: 730px) {
-  /* line 70, sass/styles/_homepage.scss */
+  /* line 141, sass/styles/_homepage.scss */
   section.top .recipe h1 {
     font-size: 22px;
     line-height: 22px;
@@ -929,7 +1280,7 @@ section.top .recipe h1 span.teal {
   }
 }
 @media screen and (max-width: 390px) {
-  /* line 70, sass/styles/_homepage.scss */
+  /* line 141, sass/styles/_homepage.scss */
   section.top .recipe h1 {
     font-size: 18px;
     line-height: 18px;
@@ -937,48 +1288,57 @@ section.top .recipe h1 span.teal {
     line-height: 1.8rem;
   }
 }
-/* line 89, sass/styles/_homepage.scss */
+/* line 160, sass/styles/_homepage.scss */
 section.top .recipe h1.hidden {
   display: none;
 }
 @media screen and (max-width: 730px) {
-  /* line 89, sass/styles/_homepage.scss */
+  /* line 160, sass/styles/_homepage.scss */
   section.top .recipe h1.hidden {
     color: #bad7d4;
     display: block;
     margin-top: 20px;
     margin: 20px 0 25px 0;
-    font-size: 30pxpx;
-    line-height: 45pxpx;
-    font-size: 3pxrem;
-    line-height: 4.5pxrem;
+    font-size: 17px;
+    line-height: 17px;
+    font-size: 1.7rem;
+    line-height: 1.7rem;
   }
 }
-/* line 102, sass/styles/_homepage.scss */
+@media screen and (max-width: 320px) {
+  /* line 160, sass/styles/_homepage.scss */
+  section.top .recipe h1.hidden {
+    font-size: 14px;
+    line-height: 14px;
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+  }
+}
+/* line 176, sass/styles/_homepage.scss */
 section.bottom {
   position: relative;
-  margin-top: -65px;
-  z-index: 3;
+  z-index: 1;
 }
 @media screen and (max-width: 730px) {
-  /* line 102, sass/styles/_homepage.scss */
+  /* line 176, sass/styles/_homepage.scss */
   section.bottom {
     margin-top: 0;
   }
 }
-/* line 120, sass/styles/_homepage.scss */
+/* line 185, sass/styles/_homepage.scss */
 section.bottom .callouts.inner-wrapper {
   overflow: visible;
 }
-/* line 123, sass/styles/_homepage.scss */
+/* line 188, sass/styles/_homepage.scss */
 section.bottom .callouts .callout {
   padding: 1.04167% 2.60417% 2.60417% 2.60417%;
 }
-/* line 126, sass/styles/_homepage.scss */
+/* line 191, sass/styles/_homepage.scss */
 section.bottom .callouts .callout.the-doctor {
   background: #22bdaf;
+  margin-top: -10px;
 }
-/* line 128, sass/styles/_homepage.scss */
+/* line 194, sass/styles/_homepage.scss */
 section.bottom .callouts .callout.the-doctor h1 {
   border: 1px dashed #bad7d4;
   display: block;
@@ -991,7 +1351,7 @@ section.bottom .callouts .callout.the-doctor h1 {
   color: #FFF;
   text-shadow: 1px 1px 1px #13897A;
 }
-/* line 137, sass/styles/_homepage.scss */
+/* line 203, sass/styles/_homepage.scss */
 section.bottom .callouts .callout.the-doctor p {
   color: #e7e6e6;
   font-size: 14px;
@@ -1001,138 +1361,207 @@ section.bottom .callouts .callout.the-doctor p {
   text-shadow: 1px 1px 1px #13897A;
 }
 @media screen and (max-width: 960px) {
-  /* line 126, sass/styles/_homepage.scss */
+  /* line 191, sass/styles/_homepage.scss */
   section.bottom .callouts .callout.the-doctor {
     border-left-width: 110px;
   }
 }
 @media screen and (max-width: 913px) {
-  /* line 126, sass/styles/_homepage.scss */
+  /* line 191, sass/styles/_homepage.scss */
   section.bottom .callouts .callout.the-doctor {
     border-left-width: 140px;
   }
 }
 @media screen and (max-width: 913px) {
-  /* line 126, sass/styles/_homepage.scss */
+  /* line 191, sass/styles/_homepage.scss */
   section.bottom .callouts .callout.the-doctor {
     border-left-width: 140px;
   }
 }
 @media screen and (max-width: 832px) {
-  /* line 126, sass/styles/_homepage.scss */
+  /* line 191, sass/styles/_homepage.scss */
   section.bottom .callouts .callout.the-doctor {
     border-left-width: 170px;
   }
 }
 @media screen and (max-width: 832px) {
-  /* line 126, sass/styles/_homepage.scss */
+  /* line 191, sass/styles/_homepage.scss */
   section.bottom .callouts .callout.the-doctor {
     border-left-width: 170px;
   }
 }
 @media screen and (max-width: 730px) {
-  /* line 126, sass/styles/_homepage.scss */
+  /* line 191, sass/styles/_homepage.scss */
   section.bottom .callouts .callout.the-doctor {
     border-left-width: 80px;
     float: none;
+    margin-top: 0;
     padding-left: 100px;
     width: 100%;
   }
 }
-/* line 170, sass/styles/_homepage.scss */
+/* line 237, sass/styles/_homepage.scss */
 section.bottom .callouts .callout.scroll-now {
-  margin-top: 120px;
+  margin-top: 80px;
 }
 @media screen and (max-width: 805px) {
-  /* line 170, sass/styles/_homepage.scss */
+  /* line 237, sass/styles/_homepage.scss */
   section.bottom .callouts .callout.scroll-now {
     border-left-width: 0;
-    margin-top: 60px;
   }
 }
 @media screen and (max-width: 730px) {
-  /* line 170, sass/styles/_homepage.scss */
+  /* line 237, sass/styles/_homepage.scss */
   section.bottom .callouts .callout.scroll-now {
     display: none;
   }
 }
-/* line 179, sass/styles/_homepage.scss */
+/* line 245, sass/styles/_homepage.scss */
 section.bottom .callouts .callout.scroll-now h1 {
   color: #3d3c3e;
   display: block;
-  float: right;
   font-family: "Waiting for the Sunrise", Arial, sans-serif;
   font-size: 32px;
   line-height: 36px;
   font-size: 3.2rem;
   line-height: 3.6rem;
-  margin-top: 7px;
+  margin-top: 15px;
   padding-left: 15px;
-  width: 250px;
+  width: 350px;
 }
 @media screen and (max-width: 805px) {
-  /* line 179, sass/styles/_homepage.scss */
+  /* line 245, sass/styles/_homepage.scss */
   section.bottom .callouts .callout.scroll-now h1 {
-    float: none;
-    text-align: center;
     width: 100%;
+    text-align: center !important;
   }
 }
-/* line 194, sass/styles/_homepage.scss */
+/* line 258, sass/styles/_homepage.scss */
 section.bottom .callouts .callout.scroll-now img {
-  width: auto;
   display: block;
+  float: left;
+  margin-top: 10px;
+  padding-right: 20px;
+  width: 90px;
 }
 @media screen and (max-width: 805px) {
-  /* line 194, sass/styles/_homepage.scss */
+  /* line 258, sass/styles/_homepage.scss */
   section.bottom .callouts .callout.scroll-now img {
     float: none;
     margin: 0 auto;
+    padding-right: 0;
   }
 }
 
-/* line 2, sass/styles/_beaker-set-default.scss */
+/* line 6, sass/styles/_beaker-set-default.scss */
 section.beaker-row {
   position: relative;
   min-height: 699px;
+  overflow: hidden;
   z-index: 0;
 }
-/* line 7, sass/styles/_beaker-set-default.scss */
+@media screen and (max-width: 500px) {
+  /* line 6, sass/styles/_beaker-set-default.scss */
+  section.beaker-row {
+    min-height: 385px;
+    margin-bottom: 50px;
+  }
+}
+/* line 17, sass/styles/_beaker-set-default.scss */
 section.beaker-row img {
   height: auto;
 }
-/* line 9, sass/styles/_beaker-set-default.scss */
+/* line 19, sass/styles/_beaker-set-default.scss */
+section.beaker-row h1.hidden-title {
+  color: #22bdaf;
+  display: none;
+  font-size: 34px;
+  line-height: 38px;
+  font-size: 3.4rem;
+  line-height: 3.8rem;
+}
+@media screen and (max-width: 500px) {
+  /* line 19, sass/styles/_beaker-set-default.scss */
+  section.beaker-row h1.hidden-title {
+    display: inline;
+    position: relative;
+    text-shadow: 1px 1px 1px #CCC;
+    top: 51px;
+    left: 15px;
+  }
+}
+@media screen and (max-width: 400px) {
+  /* line 19, sass/styles/_beaker-set-default.scss */
+  section.beaker-row h1.hidden-title {
+    font-size: 32px;
+    line-height: 32px;
+    font-size: 3.2rem;
+    line-height: 3.2rem;
+  }
+}
+/* line 35, sass/styles/_beaker-set-default.scss */
 section.beaker-row .beaker-content {
   float: right;
   width: 41.66667%;
   margin: 5.20833% 36.45833% 0 0;
+  z-index: 5;
 }
 @media screen and (max-width: 1045px) {
-  /* line 9, sass/styles/_beaker-set-default.scss */
+  /* line 35, sass/styles/_beaker-set-default.scss */
   section.beaker-row .beaker-content {
     float: left;
     margin-left: 3.64583%;
   }
 }
-/* line 17, sass/styles/_beaker-set-default.scss */
+/* line 44, sass/styles/_beaker-set-default.scss */
 section.beaker-row .beaker-content h1 {
   color: #22bdaf;
+  text-shadow: 1px 1px 1px #CCC;
   font-size: 38px;
   line-height: 38px;
   font-size: 3.8rem;
   line-height: 3.8rem;
 }
-/* line 21, sass/styles/_beaker-set-default.scss */
+@media screen and (max-width: 500px) {
+  /* line 44, sass/styles/_beaker-set-default.scss */
+  section.beaker-row .beaker-content h1 {
+    display: none;
+  }
+}
+/* line 52, sass/styles/_beaker-set-default.scss */
+section.beaker-row .beaker-content p {
+  margin-bottom: 35px;
+  padding: 0 7px;
+  text-shadow: 1px 1px 1px #CCC;
+}
+@media screen and (max-width: 500px) {
+  /* line 35, sass/styles/_beaker-set-default.scss */
+  section.beaker-row .beaker-content {
+    float: none;
+    width: 93%;
+    margin-top: 0;
+    position: relative;
+    bottom: -105px;
+  }
+}
+/* line 64, sass/styles/_beaker-set-default.scss */
 section.beaker-row .beaker-content a.learn-more {
   width: 50%;
+  margin-left: 6px;
 }
 @media screen and (max-width: 931px) {
-  /* line 21, sass/styles/_beaker-set-default.scss */
+  /* line 64, sass/styles/_beaker-set-default.scss */
   section.beaker-row .beaker-content a.learn-more {
     width: 60%;
   }
 }
-/* line 32, sass/styles/_beaker-set-default.scss */
+@media screen and (max-width: 931px) {
+  /* line 64, sass/styles/_beaker-set-default.scss */
+  section.beaker-row .beaker-content a.learn-more {
+    width: 60%;
+  }
+}
+/* line 80, sass/styles/_beaker-set-default.scss */
 section.beaker-row.beaker-set-default .beaker-holder-container {
   position: absolute;
   right: 100px;
@@ -1142,48 +1571,86 @@ section.beaker-row.beaker-set-default .beaker-holder-container {
   -msie-transition: right 0.5s;
 }
 @media screen and (max-width: 733px) {
-  /* line 32, sass/styles/_beaker-set-default.scss */
+  /* line 80, sass/styles/_beaker-set-default.scss */
   section.beaker-row.beaker-set-default .beaker-holder-container {
     right: 50px;
   }
 }
 @media screen and (max-width: 610px) {
-  /* line 32, sass/styles/_beaker-set-default.scss */
+  /* line 80, sass/styles/_beaker-set-default.scss */
   section.beaker-row.beaker-set-default .beaker-holder-container {
     right: 25px;
   }
 }
 @media screen and (max-width: 510px) {
-  /* line 32, sass/styles/_beaker-set-default.scss */
+  /* line 80, sass/styles/_beaker-set-default.scss */
   section.beaker-row.beaker-set-default .beaker-holder-container {
     right: 0px;
   }
 }
-/* line 48, sass/styles/_beaker-set-default.scss */
-section.beaker-row.beaker-set-default .beaker-holder-container .beaker-holder {
-  max-width: 300px;
+@media screen and (max-width: 500px) {
+  /* line 80, sass/styles/_beaker-set-default.scss */
+  section.beaker-row.beaker-set-default .beaker-holder-container {
+    width: 80px;
+    top: 10px;
+  }
 }
-/* line 52, sass/styles/_beaker-set-default.scss */
+/* line 101, sass/styles/_beaker-set-default.scss */
+section.beaker-row.beaker-set-default .beaker-holder-container .beaker-holder {
+  width: 300px;
+}
+@media screen and (max-width: 500px) {
+  /* line 101, sass/styles/_beaker-set-default.scss */
+  section.beaker-row.beaker-set-default .beaker-holder-container .beaker-holder {
+    width: 60px;
+  }
+}
+/* line 108, sass/styles/_beaker-set-default.scss */
 section.beaker-row.beaker-set-default .beaker-holder-container .stir {
-  max-width: 35px;
+  width: 35px;
   position: absolute;
   top: 1px;
   left: 106px;
 }
-/* line 61, sass/styles/_beaker-set-default.scss */
+@media screen and (max-width: 500px) {
+  /* line 108, sass/styles/_beaker-set-default.scss */
+  section.beaker-row.beaker-set-default .beaker-holder-container .stir {
+    width: 9px;
+    top: -4px;
+    left: 21px;
+  }
+}
+/* line 122, sass/styles/_beaker-set-default.scss */
 section.beaker-row.beaker-set-default .beaker-container {
   position: absolute;
   top: 265px;
   left: 45px;
 }
-/* line 66, sass/styles/_beaker-set-default.scss */
+@media screen and (max-width: 500px) {
+  /* line 122, sass/styles/_beaker-set-default.scss */
+  section.beaker-row.beaker-set-default .beaker-container {
+    width: 48px;
+    position: absolute;
+    top: 29px;
+    left: 3px;
+  }
+}
+/* line 133, sass/styles/_beaker-set-default.scss */
 section.beaker-row.beaker-set-default .beaker-container .beaker .beaker-1 {
   max-width: 160px;
   position: absolute;
   top: 0;
   left: 0;
 }
-/* line 72, sass/styles/_beaker-set-default.scss */
+@media screen and (max-width: 500px) {
+  /* line 133, sass/styles/_beaker-set-default.scss */
+  section.beaker-row.beaker-set-default .beaker-container .beaker .beaker-1 {
+    top: 21px;
+    left: 5px;
+    width: 35px;
+  }
+}
+/* line 144, sass/styles/_beaker-set-default.scss */
 section.beaker-row.beaker-set-default .beaker-container .beaker .beaker-1-top {
   display: none;
   max-width: 68px;
@@ -1191,111 +1658,213 @@ section.beaker-row.beaker-set-default .beaker-container .beaker .beaker-1-top {
   top: 9px;
   left: 48px;
 }
-/* line 81, sass/styles/_beaker-set-default.scss */
+/* line 153, sass/styles/_beaker-set-default.scss */
 section.beaker-row.beaker-set-default .beaker-container .beaker-contents {
   max-width: 145px;
   position: absolute;
   top: 63px;
   left: 7px;
 }
-/* line 89, sass/styles/_beaker-set-default.scss */
+@media screen and (max-width: 500px) {
+  /* line 153, sass/styles/_beaker-set-default.scss */
+  section.beaker-row.beaker-set-default .beaker-container .beaker-contents {
+    top: 34px;
+    left: 6px;
+    width: 33px;
+  }
+}
+/* line 166, sass/styles/_beaker-set-default.scss */
 section.beaker-row.beaker-set-default .table {
   position: absolute;
   right: 0;
   bottom: 83px;
   max-width: 825px;
 }
+@media screen and (max-width: 500px) {
+  /* line 166, sass/styles/_beaker-set-default.scss */
+  section.beaker-row.beaker-set-default .table {
+    top: 129px;
+  }
+}
 
-/* line 2, sass/styles/_beaker-set-two.scss */
+/* line 6, sass/styles/_beaker-set-two.scss */
 section.beaker-set-two {
   position: relative;
   min-height: 699px;
   z-index: 0;
 }
-/* line 7, sass/styles/_beaker-set-two.scss */
+/* line 11, sass/styles/_beaker-set-two.scss */
 section.beaker-set-two img {
   height: auto;
 }
-/* line 9, sass/styles/_beaker-set-two.scss */
+@media screen and (max-width: 500px) {
+  /* line 6, sass/styles/_beaker-set-two.scss */
+  section.beaker-set-two {
+    min-height: 385px;
+  }
+}
+/* line 17, sass/styles/_beaker-set-two.scss */
+section.beaker-set-two h1.hidden-title {
+  color: #22bdaf;
+  display: none;
+  font-size: 34px;
+  line-height: 38px;
+  font-size: 3.4rem;
+  line-height: 3.8rem;
+}
+@media screen and (max-width: 500px) {
+  /* line 17, sass/styles/_beaker-set-two.scss */
+  section.beaker-set-two h1.hidden-title {
+    display: inline;
+    position: relative;
+    top: 51px;
+    left: 180px;
+    text-align: right;
+  }
+}
+/* line 30, sass/styles/_beaker-set-two.scss */
 section.beaker-set-two .beaker-content {
   float: left;
   margin: 5.20833% 0 0 36.45833%;
 }
 @media screen and (max-width: 1045px) {
-  /* line 9, sass/styles/_beaker-set-two.scss */
+  /* line 30, sass/styles/_beaker-set-two.scss */
   section.beaker-set-two .beaker-content {
     float: right;
     margin-right: 4.16667%;
   }
-  /* line 15, sass/styles/_beaker-set-two.scss */
+  /* line 36, sass/styles/_beaker-set-two.scss */
   section.beaker-set-two .beaker-content h1 {
     text-align: right;
   }
-  /* line 18, sass/styles/_beaker-set-two.scss */
+  /* line 39, sass/styles/_beaker-set-two.scss */
   section.beaker-set-two .beaker-content a {
     float: right;
   }
-  /* line 19, sass/styles/_beaker-set-two.scss */
+  /* line 40, sass/styles/_beaker-set-two.scss */
   section.beaker-set-two .beaker-content p {
     text-align: right;
+    margin-bottom: 35px;
   }
 }
-/* line 25, sass/styles/_beaker-set-two.scss */
+@media screen and (max-width: 500px) {
+  /* line 30, sass/styles/_beaker-set-two.scss */
+  section.beaker-set-two .beaker-content {
+    float: none;
+    position: relative;
+    margin: 0;
+    bottom: -105px;
+    width: 93%;
+  }
+  /* line 48, sass/styles/_beaker-set-two.scss */
+  section.beaker-set-two .beaker-content a {
+    float: left;
+    margin: 15px 0 0 23px;
+  }
+  /* line 51, sass/styles/_beaker-set-two.scss */
+  section.beaker-set-two .beaker-content a.learn-more {
+    margin-left: 18px !important;
+  }
+  /* line 55, sass/styles/_beaker-set-two.scss */
+  section.beaker-set-two .beaker-content p {
+    text-align: left;
+    padding-left: 20px;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 500px) and (max-width: 500px) {
+  /* line 55, sass/styles/_beaker-set-two.scss */
+  section.beaker-set-two .beaker-content p {
+    margin-top: 10px;
+  }
+}
+/* line 68, sass/styles/_beaker-set-two.scss */
 section.beaker-set-two.beaker-set-two .beaker-holder-container {
   position: absolute;
   left: 100px;
   width: 300px;
-  -webkit-transition: left 0.5s;
-  -moz-transition: left 0.5s;
-  -msie-transition: left 0.5s;
 }
 @media screen and (max-width: 733px) {
-  /* line 25, sass/styles/_beaker-set-two.scss */
+  /* line 68, sass/styles/_beaker-set-two.scss */
   section.beaker-set-two.beaker-set-two .beaker-holder-container {
     left: 50px;
   }
 }
 @media screen and (max-width: 610px) {
-  /* line 25, sass/styles/_beaker-set-two.scss */
+  /* line 68, sass/styles/_beaker-set-two.scss */
   section.beaker-set-two.beaker-set-two .beaker-holder-container {
     left: 25px;
   }
 }
 @media screen and (max-width: 510px) {
-  /* line 25, sass/styles/_beaker-set-two.scss */
+  /* line 68, sass/styles/_beaker-set-two.scss */
   section.beaker-set-two.beaker-set-two .beaker-holder-container {
     left: 0px;
   }
 }
-/* line 42, sass/styles/_beaker-set-two.scss */
+@media screen and (max-width: 500px) {
+  /* line 68, sass/styles/_beaker-set-two.scss */
+  section.beaker-set-two.beaker-set-two .beaker-holder-container {
+    width: 111px;
+    top: 10px;
+    left: 20px;
+  }
+}
+/* line 89, sass/styles/_beaker-set-two.scss */
 section.beaker-set-two.beaker-set-two .beaker-holder-container .beaker-holder {
   max-width: 300px;
 }
-/* line 46, sass/styles/_beaker-set-two.scss */
+@media screen and (max-width: 500px) {
+  /* line 89, sass/styles/_beaker-set-two.scss */
+  section.beaker-set-two.beaker-set-two .beaker-holder-container .beaker-holder {
+    max-width: 60px;
+  }
+}
+/* line 96, sass/styles/_beaker-set-two.scss */
 section.beaker-set-two.beaker-set-two .beaker-holder-container .stir {
-  max-width: 35px;
+  width: 35px;
   position: absolute;
   top: 1px;
   left: 153px;
 }
-/* line 55, sass/styles/_beaker-set-two.scss */
+@media screen and (max-width: 500px) {
+  /* line 96, sass/styles/_beaker-set-two.scss */
+  section.beaker-set-two.beaker-set-two .beaker-holder-container .stir {
+    width: 9px;
+    top: -4px;
+    left: 29px;
+  }
+}
+/* line 110, sass/styles/_beaker-set-two.scss */
 section.beaker-set-two.beaker-set-two .beaker-container {
   position: absolute;
   top: 208px;
   left: 70px;
 }
-/* line 60, sass/styles/_beaker-set-two.scss */
+@media screen and (max-width: 500px) {
+  /* line 110, sass/styles/_beaker-set-two.scss */
+  section.beaker-set-two.beaker-set-two .beaker-container {
+    position: absolute;
+    top: -33px;
+    left: 10px;
+  }
+}
+/* line 120, sass/styles/_beaker-set-two.scss */
 section.beaker-set-two.beaker-set-two .beaker-container .beaker .beaker-1 {
-  max-width: 160px;
+  width: 200px;
   position: absolute;
   top: 0;
   left: 0;
 }
-/* line 65, sass/styles/_beaker-set-two.scss */
-section.beaker-set-two.beaker-set-two .beaker-container .beaker .beaker-1 img {
-  width: 200px;
+@media screen and (max-width: 500px) {
+  /* line 120, sass/styles/_beaker-set-two.scss */
+  section.beaker-set-two.beaker-set-two .beaker-container .beaker .beaker-1 {
+    left: 1px;
+    top: 68px;
+    width: 45px;
+  }
 }
-/* line 69, sass/styles/_beaker-set-two.scss */
+/* line 131, sass/styles/_beaker-set-two.scss */
 section.beaker-set-two.beaker-set-two .beaker-container .beaker .beaker-1-top {
   display: none;
   max-width: 68px;
@@ -1303,31 +1872,38 @@ section.beaker-set-two.beaker-set-two .beaker-container .beaker .beaker-1-top {
   top: 9px;
   left: 48px;
 }
-/* line 78, sass/styles/_beaker-set-two.scss */
+/* line 140, sass/styles/_beaker-set-two.scss */
 section.beaker-set-two.beaker-set-two .beaker-container .beaker-contents {
   position: absolute;
   top: 100px;
   left: 10px;
 }
-/* line 82, sass/styles/_beaker-set-two.scss */
+/* line 144, sass/styles/_beaker-set-two.scss */
 section.beaker-set-two.beaker-set-two .beaker-container .beaker-contents img {
   width: 180px;
 }
-/* line 88, sass/styles/_beaker-set-two.scss */
+@media screen and (max-width: 500px) {
+  /* line 140, sass/styles/_beaker-set-two.scss */
+  section.beaker-set-two.beaker-set-two .beaker-container .beaker-contents {
+    width: 41px;
+    top: 91px;
+    left: 3px;
+  }
+  /* line 151, sass/styles/_beaker-set-two.scss */
+  section.beaker-set-two.beaker-set-two .beaker-container .beaker-contents img {
+    width: 100%;
+  }
+}
+/* line 158, sass/styles/_beaker-set-two.scss */
 section.beaker-set-two.beaker-set-two .table {
   max-width: 825px;
   position: absolute;
   left: 0;
   bottom: 83px;
 }
-
-/* line 42, sass/main.scss */
-.col:first-child {
-  border-left-width: 0;
-}
-@media screen and (max-width: 1133px) {
-  /* line 42, sass/main.scss */
-  .col:first-child {
-    border-left-width: 80px;
+@media screen and (max-width: 500px) {
+  /* line 158, sass/styles/_beaker-set-two.scss */
+  section.beaker-set-two.beaker-set-two .table {
+    top: 129px;
   }
 }

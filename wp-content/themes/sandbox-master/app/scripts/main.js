@@ -42,14 +42,97 @@ require([
     'superscrollorama'
 ], function (_, Backbone, $, tweenmax, superscrollorama) {
 
-    var headerElements = $.superscrollorama({
-        triggerAtCenter : true,
+
+    function responsiveMenu(){
+        var $trigger = $('#navTrigger');
+        var $menu = $('.header .nav-outer');
+        var screenHeight = $(document).height();
+
+        $trigger.on('click', function(){
+
+            if(!$(this).hasClass('active') ){
+    
+               $trigger.addClass('active').find('img.open').hide();
+               $trigger.find('img.close').show();
+
+               $menu.css('height', screenHeight).fadeIn();
+            } else {
+
+                $trigger.removeClass('active').find('img.close').hide();
+                $trigger.find('img.open').show();
+
+                $menu.hide();
+
+            }
+
+        });
+    
+    }
+
+    responsiveMenu();
+
+
+
+
+
+    var callOutElements = $.superscrollorama({
+        triggerAtCenter : 'top',
         playOutAnimations : true
-    });
+    }); // end call out elements
+
+    var beakerElements = $.superscrollorama({
+        triggerAtCenter : 'bottom',
+        playOutAnimations : true
+    }); // end beaker elements
 
 
-    // headElements.addTween('.logo', TweenMax.from('.logo', .5, {css:{left:-100}}));
+    var footerElements = $.superscrollorama({
+        triggerAtCenter : false,
+        playOutAnimations : true
+    }); // end footer elements
 
-    TweenMax.from('.logo', .5, {css:{left:-100}});
+    var innerElements = $.superscrollorama({
+        triggerAtCenter : false,
+        playOutAnimations : true
+    }); // end inner elements
+
+
+
+    // beakerElements.addTween('#devContents',
+    //         TweenMax.from( $('#devContents'), .5, 
+    //         {
+    //             css : { 
+
+    //                 opacity: .3 
+
+    //             }
+    //         } // end tm from
+    //     ), 0, -800
+    // ); // end dev Contents Fade In
+
+    // beakerElements.addTween('#beakerDev',
+    //         TweenMax.from( $('#beakerDev'), .5, 
+    //         {
+    //             css : { 
+
+    //                 right: -300 
+
+    //             }
+    //         } // end tm from
+    //     ), 0, -500
+    // ); // end Dev Beaker    
+
+    // beakerElements.addTween('#devCopy',
+    //         TweenMax.from( $('#devCopy'), .5, 
+    //         {
+    //             css : { 
+
+    //                 left: -400 
+
+    //             }
+    //         } // end tm from
+    //     ), 0, -500
+    // ); // end Content
+    
 
 });

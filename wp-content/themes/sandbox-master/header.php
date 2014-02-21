@@ -11,7 +11,7 @@
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width">
-<title><?php wp_title(''); ?></title>
+<title>PixelCure | <?php wp_title(''); ?></title>
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>">
 <!-- <link rel="stylesheet" href="<?php bloginfo(template_url); ?>/styles/layout.css"> -->
@@ -34,7 +34,7 @@
 
 <body <?php body_class(); ?>>
 
-<div class="wrapper row">
+<div class="wrapper row overflow-hidden" id="#top">
 	<section class="outer-header overflow-hidden">	
 		
 		<section class="header col span_12">
@@ -49,11 +49,19 @@
 				
 				
 				<aside class="nav-outer col span_6">
-					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu' => 'menu' ) ); ?>
+					<div class="menu-outer">
+						
+						<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu' => 'menu' ) ); ?>
+						<div class="hidden-cross">
+							<img src="<?php bloginfo(template_url); ?>/app/images/menu-cross.svg" alt="Pixel Cure" />
+						</div><!-- ./ end hidden cross -->
+
+					</div><!-- / end menu outer -->
 				</aside><!-- / end col span 6 nav outer -->
 			
 				<a href="#" id="navTrigger" class="nav-trigger">
-					<img src="<?php bloginfo(template_url); ?>/app/images/hidden-menu-icon.svg" alt="Navigation" />
+					<img class="open" src="<?php bloginfo(template_url); ?>/app/images/hidden-menu-icon.svg" alt="Navigation" />
+					<img class="close" src="<?php bloginfo(template_url); ?>/app/images/closer-menu-icon.svg" alt="Navigation" />
 				</a><!-- / end nav trigger -->
 
 			</div><!-- / end inner wrapper -->

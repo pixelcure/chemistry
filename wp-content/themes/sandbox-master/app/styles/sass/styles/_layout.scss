@@ -1,8 +1,15 @@
+///////////////////////////////////////////////////////
+// Layout, Global Styles
+//////////////////////////////////////////////////////	
+
+
 html {
 	font-size: 62.5%;
 }
 body {
 	background: $offWhite;
+	color: $grey;
+	font-family: $baseFont;
 }
  
 a { 
@@ -27,7 +34,7 @@ img {
 	box-shadow: 1px 1px 0 #333;
 	border: 1px  $slate;
 	font-weight: bold;
-	// text-shadow: 1px 1px 1px #9B021F;
+	text-shadow: none;
 	color: $offWhite;
 	font-family: $baseFont;
 	text-align: center;
@@ -40,7 +47,7 @@ img {
 	max-width: 960px;
 	margin: 0 auto;
 	overflow: hidden;
-	z-index: 10;
+	// z-index: 10;
 }
 
 

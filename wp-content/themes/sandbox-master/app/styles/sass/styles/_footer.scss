@@ -1,36 +1,82 @@
-.footer {
-	border-top: 1px solid #CCC;
-	padding: percentage(25/960) percentage(35/960);
-	.left {
-		h1 {
-			color: $teal;
-			@include font-size(13, 18);
-		}
-		@include max-screen(630px){
-			float: none;
-		}
-	}
-	.right {	
-		
-		@include max-screen(630px){
-			float: none;
-		}
+///////////////////////////////////////////////////////
+// Footer
+//////////////////////////////////////////////////////	
 
-		ul {
-			list-style: none;
-			overflow: hidden;
-			padding-left: 0;
-			width: 100%;
-			li {
-				float: left;
-				margin-right: 15px;
-				a {
-					font-weight: bold;
-					color: $grey;
+.footer {
+	border-top: 1px solid $red;
+	margin-top: 35px;
+	// border-left-width: 0;
+
+	.footer-inner {
+		margin-top: 5px;
+		border-top: 2px solid $teal;
+			.footer-inner-inner {
+				padding: percentage(25/960) percentage(35/960);
+
+				.top-button {
+					width: 100px;
+					height: 100px;
+					position: relative;
+					margin: 25px auto;
+					img {
+						width: 100%;
+						height: auto;
+						margin: 0 auto;
+					}
+					a.top {
+						@include font-size(18, 18);
+						bottom: 38px;
+						color: $grey;
+						display: block;
+						font-family: $baseFont;
+						font-weight: bold;
+						margin: 0 auto;
+						position: relative;
+						right: -58px;
+						text-transform: uppercase;
+						width: 150px;
+					}
 				}
-				&:last-child { margin-right: 0; }
-			}
-		}
-	}
+
+				.left {
+					h1 {
+						color: $teal;
+						@include font-size(12, 18);
+					}
+					@include max-screen(530px){
+						float: none;
+					}
+				}
+				.right {	
+					
+					@include max-screen(530px){
+						float: none;
+					}
+
+					ul {
+						list-style: none;
+						overflow: hidden;
+						padding-left: 0;
+						width: 100%;
+					
+						li {
+							float: left;
+							margin-right: 15px;
+							a {
+								font-weight: bold;
+								@include font-size(12, 18);
+								color: $grey;
+							}
+							&:first-child { margin-left: 0; }
+							@include max-screen(530px){
+								&:first-child { margin-left: 0; }
+							}
+						}
+					}
+				}
+			
+			};
+
+		} // end footer inner
 	
 }

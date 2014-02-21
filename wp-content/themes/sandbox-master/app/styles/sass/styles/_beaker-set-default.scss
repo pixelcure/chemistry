@@ -1,26 +1,74 @@
+///////////////////////////////////////////////////////
+// Beaker Set Default
+//////////////////////////////////////////////////////	
+
 section {
 	&.beaker-row {
 		position: relative;
 		min-height: 699px;
+		overflow: hidden;
 		z-index: 0;
 
+		@include max-screen(500px){
+			min-height: 385px;
+			margin-bottom: 50px;		
+		}
+
 		img { height: auto; }
+
+		h1.hidden-title {
+			color: $teal;
+			display: none;
+			@include font-size(34, 38);
+			@include max-screen(500px){
+				display: inline;
+				position: relative;
+				text-shadow: 1px 1px 1px #CCC;
+				top: 51px;
+				left: 15px;
+			}
+			@include max-screen(400px){
+				@include font-size(32, 32);
+			}			
+		}
 
 		.beaker-content {
 			float: right;
 			width: percentage(400/960);
 			margin: percentage(50/960) percentage(350/960) 0 0;
+			z-index: 5;
 			@include max-screen(1045px){
 				float: left;
 				margin-left: percentage(35/960);
 			}
 			h1 {
 				color: $teal;
+				text-shadow: 1px 1px 1px #CCC;
 				@include font-size(38, 38);
+				@include max-screen(500px){
+					display: none;
+				}
+			}
+			p {
+				margin-bottom: 35px;
+				padding: 0 7px;
+				text-shadow: 1px 1px 1px #CCC;
+			}
+			@include max-screen(500px){
+				float: none;
+				width: 93%;
+				margin-top: 0;
+				position: relative;
+				bottom: -105px;			
 			}
 			a.learn-more { 
 				@extend .button; 
 				width: 50%; 
+				margin-left: 6px;
+				@include max-screen(931px){
+					width: 60%;
+				}				
+
 				@include max-screen(931px){
 					width: 60%;
 				}
@@ -45,15 +93,28 @@ section {
 				@include max-screen(510px){
 					right: 0px;
 				}	
+
+				@include max-screen(500px){
+					width: 80px;
+					top: 10px;
+				}
 				.beaker-holder {
-					max-width: 300px;
+					width: 300px;
+					@include max-screen(500px){
+						width: 60px;
+					}
 				}
 
 				.stir {
-					max-width: 35px;
+					width: 35px;
 					position: absolute;
 					top: 1px;
 					left: 106px;
+					@include max-screen(500px){
+						width: 9px;
+						top: -4px;
+						left: 21px;
+					}
 				}	
 
 			} // end beaker holder container --
@@ -62,12 +123,23 @@ section {
 				position: absolute;
 				top: 265px;
 				left: 45px;
+				@include max-screen(500px){
+					width: 48px;
+					position: absolute;
+					top: 29px;
+					left: 3px;
+				}
 				.beaker {
 						.beaker-1 {
 							max-width: 160px;
 							position: absolute;
 							top: 0;
-							left: 0;							
+							left: 0;
+							@include max-screen(500px){
+								top: 21px;
+								left: 5px;
+								width: 35px;		
+							}							
 						}
 						.beaker-1-top {
 							display: none;
@@ -82,7 +154,12 @@ section {
 					max-width: 145px;
 					position: absolute;
 					top: 63px;
-					left: 7px;					
+					left: 7px;
+					@include max-screen(500px){
+						top: 34px;
+						left: 6px;
+						width: 33px;
+					}					
 				}
 			}
 
@@ -91,6 +168,9 @@ section {
 				right: 0;
 				bottom: 83px;			
 				max-width: 825px;
+				@include max-screen(500px){
+					top: 129px;
+				}
 			}
 
 		} // end beaker set one row

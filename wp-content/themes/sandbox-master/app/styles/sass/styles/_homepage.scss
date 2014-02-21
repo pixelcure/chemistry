@@ -1,61 +1,132 @@
+///////////////////////////////////////////////////////
+// Homepage
+//////////////////////////////////////////////////////	
+
+img.home-divider {
+	 margin: 0 25px 45px 0;
+	 @include max-screen(500px){
+	 	margin: 0 45px 0 0;
+	 }
+}
+
 section {
 
-	img.home-divider {
-		 margin: 0 0 45px 0;
-		 @include max-screen(364px){
-		 	width: 102%;
-		 }
+	.col:first-child {
+
+		border-left-width: 0;
+		@include max-screen(1133px){
+			border-left-width: 80px;
+		}
 	}
 
 	&.top {	
 		background: #3D3C3E;
 		box-shadow: 1px 1px 3px #333;
-		min-height: 325px;
+		min-height: 380px;
 		position: relative;
+
 
 		.intro {
 			border-left-width: 180px;
-			padding: 25px percentage(10/960);
+			padding: 25px 25px 0 percentage(10/960);
 			margin-top: 25px;
+
+			img.cross {
+				position: absolute;
+				height: auto;
+				left: 160px;
+				top: -31px;
+				margin-left: 51px;
+				width: 425px;
+				z-index:0;			
+				
+				@include max-screen(740px){
+					top: -31px;
+					left: 95px;
+				}						
+
+				@include max-screen(417px){
+					width: 314px;
+				}						
+
+			}
 			
-			@include max-screen(1090px){
+			@include max-screen(740px){
 				margin-top: 0;
-			}			
+			}
 
 			@include max-screen(730px){
 				border-bottom: 1px solid #666;
 				float: none;
 				padding-bottom: 15px;
-				margin-bottom: 25px;
+				margin: 0 0 25px 0;
 				width: 100%;
 			}
 
 			h1 {
 				color: $slate;
-				@include font-size(32, 42);
+				@include font-size(25, 32);
 				font-family: $baseFont;
 				text-shadow: 1px 1px 1px #333;
+				left: 255px;
 				margin-top: 0;		
-				padding-bottom: 15px;		
-				@include max-screen(730px){
-					padding-top: 0;
-				}			
+				padding-bottom: 15px;
+				position: relative;
+				top: -42px;		
+				width: 153px;
+				z-index: 1;		
+				
+				
+				@include max-screen(740px){
+					left: 195px;
+					top: -19px;
+				}
+
+				@include max-screen(417px){
+					left: 130px;
+					top: -16px;
+					width: 130px;
+					@include font-size(16, 32);
+				}				
+
 			}
 
 			p {
-				color: $white;
+				color: $grey;
+				@include font-size(20, 32);
 				font-family: $baseFont;
 				font-weight: bold;
-				@include font-size(18, 25);
+				position: relative;
+				left: 52px;
+				margin-top: 0!important;
+				top: -30px;
+				width: 150px;
+				z-index: 1;
+				
 				a {
-					border-bottom: 1px dashed $teal;
-					color: $white;
+					border-bottom: 1px dashed $red;
+					color: $teal;
 				}
+				
+
+				@include max-screen(740px){
+					top: -10px;
+					left: -10px;
+				}
+
+				@include max-screen(417px){
+					@include font-size(15, 24);
+					top: -4px;
+					left: -21px;
+					text-align: right;
+					width: 125px;
+				}				
+
 			}
 		}
 			
 		.recipe {
-			margin: 80px 0 0 0;		
+			margin: 140px 0 0 0;		
 			z-index: 2;
 			padding-right: percentage(30/960);
 			@include max-screen(730px){
@@ -93,7 +164,10 @@ section {
 					display: block;
 					margin-top: 20px;
 					margin: 20px 0 25px 0;
-					@include font-size(30px);					
+					@include font-size(17, 17);					
+				}
+				@include max-screen(320px){
+					@include font-size(14, 14)
 				}
 			}
 		}
@@ -101,16 +175,7 @@ section {
 
 	&.bottom {	
 		position: relative;
-		margin-top: -65px;
-		z-index: 3;
-		
-		@include max-screen(955px){
-			// margin-left: -20px;
-		}		
-
-		@include max-screen(915px){
-			// margin-left: 0;
-		}
+		z-index: 1;
 
 		@include max-screen(730px){
 			margin-top: 0;
@@ -125,6 +190,7 @@ section {
 				a { @extend .button; }
 				&.the-doctor {
 					background: $teal;
+					margin-top: -10px;
 					h1 {
 						border: 1px dashed $slate;
 						display: block;
@@ -162,16 +228,16 @@ section {
 					@include max-screen(730px){
 						border-left-width: 80px;
 						float: none;
+						margin-top: 0;
 						padding-left: 100px;
 						width: 100%;
 
 					}					
 				}
 				&.scroll-now {
-					margin-top: 120px;
+					margin-top: 80px;
 					@include max-screen(805px){
 						border-left-width: 0;
-						margin-top: 60px;
 					}	
 					@include max-screen(730px){
 						display: none;
@@ -179,24 +245,26 @@ section {
 					h1 {
 						color: $grey;
 						display: block;
-						float: right;
 						font-family: $sun;
 						@include font-size(32, 36);
-						margin-top: 7px;
+						margin-top: 15px;
 						padding-left: 15px;
-						width: 250px;
+						width: 350px;
 						@include max-screen(805px){
-							float: none;
-							text-align: center;
-							width: 100%;							
+							width: 100%;	
+							text-align: center!important;						
 						}
 					}
 					img {
-						 	width: auto; 
-							display: block; 
+							display: block;
+							float: left;
+							margin-top: 10px;
+							padding-right: 20px;
+							width: 90px;
 							@include max-screen(805px){
 								float: none;
 								margin: 0 auto;
+								padding-right: 0;
 							}
 						}
 
@@ -204,7 +272,7 @@ section {
 				
 			}
 		}
+
 	} // end bottom
 
 } // end row
-

@@ -36,13 +36,3 @@ $sun : 'Waiting for the Sunrise', Arial, sans-serif;
 @import "styles/beaker-set-two.scss";
 //@import "styles/beaker-set-three.scss";
 
-
-
-
-.col:first-child {
-
-	border-left-width: 0;
-	@include max-screen(1133px){
-		border-left-width: 80px;
-	}
-}
