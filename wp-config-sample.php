@@ -16,13 +16,13 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', 'paultib1_cure');
+define('DB_NAME', '');
 
 /** MySQL database username */
-define('DB_USER', 'paultib1_pixel');
+define('DB_USER', '');
 
 /** MySQL database password */
-define('DB_PASSWORD', 'cure2014pixels');
+define('DB_PASSWORD', '');
 
 /** MySQL hostname */
 define('DB_HOST', 'localhost');
@@ -42,14 +42,14 @@ define('DB_COLLATE', '');
  *
  * @since 2.6.0
  */
-define('AUTH_KEY',         'Qri+6-ZI%EJ|%5~-wt86;NeH-YLXxh:<smm?XYB[?:f3`ZK5u$7qc&g~F7fP2a}p');
-define('SECURE_AUTH_KEY',  'GDV,S }cT?k>d>+qWn{1rgUwH3]5v,tUf%sa$y9RB[Gl=nkyLo)EE6&s|76Mm#o`');
-define('LOGGED_IN_KEY',    'z:pijg/e-@{+Gb7RKzZ rAm|n-F$|yMB`1[etq#(u9h@D^{OcgDNhYkP0>-QhtBp');
-define('NONCE_KEY',        '+ nTIoW15*a~ -m8$7^nq{w`yF2o^8{.+j<L@**@`XswLg5?7!m?tI?f2hG3Q1Y5');
-define('AUTH_SALT',        '>ttYwARy^>U<4YA+r;nI0+r#Cl~D<`@~q.$4|i/52nzjSTJW7v-0/;;JS^25d>I8');
-define('SECURE_AUTH_SALT', 'I-QwLPH,4vJ?|f8M$6Qh%9Uq i6C$u|+=QsuzT%X[auGDAX8kSh<vs8lsiVE2}V%');
-define('LOGGED_IN_SALT',   'U8ff%jjq}q}^6jJ}fgP9|s%fKYDS$SAnxIOE`x;h|l&/WjO#SY_t3Xq~OA#7+[{=');
-define('NONCE_SALT',       '><@eGyiaq=muKF|3GTvOwAx[cxeD[mlB:4b($+5y[%?-Bjnj]IcST*M+0ZpK~arW');
+define( 'AUTH_KEY',         'put your unique phrase here' );
+define( 'SECURE_AUTH_KEY',  'put your unique phrase here' );
+define( 'LOGGED_IN_KEY',    'put your unique phrase here' );
+define( 'NONCE_KEY',        'put your unique phrase here' );
+define( 'AUTH_SALT',        'put your unique phrase here' );
+define( 'SECURE_AUTH_SALT', 'put your unique phrase here' );
+define( 'LOGGED_IN_SALT',   'put your unique phrase here' );
+define( 'NONCE_SALT',       'put your unique phrase here' );
 
 /**#@-*/
 
@@ -70,15 +70,6 @@ $table_prefix  = 'wp_';
  * language support.
  */
 define('WPLANG', '');
-
-/**
- * For developers: WordPress debugging mode.
- *
- * Change this to true to enable the display of notices during development.
- * It is strongly recommended that plugin and theme developers use WP_DEBUG
- * in their development environments.
- */
-define('WP_DEBUG', false);
 
 /* That's all, stop editing! Happy blogging. */
 
