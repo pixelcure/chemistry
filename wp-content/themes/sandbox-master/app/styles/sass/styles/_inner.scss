@@ -32,6 +32,7 @@ section.inner-page {
 
 	.outer-content {
 		margin-top: 70px;
+
 		&.about {
 			margin-top: 130px;
 			
@@ -45,7 +46,11 @@ section.inner-page {
 		.sub-header {
 			border-bottom: 1px solid $slate;
 			padding-bottom: 25px;
-			margin: 75px 0 25px 0;
+			margin: 75px 0 50px 75px;
+			@include max-screen(945px){
+				padding: 25px;
+				margin-top: 0;
+			}
 			p {
 				@include font-size(16, 36);
 				letter-spacing: 0.05em;
@@ -56,10 +61,12 @@ section.inner-page {
 
 		.inner-wrapper {
 			width: 100%;
-			margin: 0 0 0 percentage(200/960);
 
 			.sub-content {
-				
+				margin-left: 75px;
+				@include max-screen(945px){
+					padding: 0 25px 25px 25px;
+				}
 				// Projects
 				ul {
 					overflow: hidden;
@@ -77,6 +84,19 @@ section.inner-page {
 							height: auto;
 							max-height: 300px;
 							max-width: 300px;
+							@include max-screen(645px){
+								float: none;
+								max-width: 100%;
+								max-height: 100%;
+								width: 98%;
+								margin: 25px 0 25px 5px;
+								&:first-child {
+									margin-top: 0;
+								}
+							}
+							@include max-screen(370px){
+								width: 97%;
+							}
 							&:hover {
 								border-color: $grey;
 							}

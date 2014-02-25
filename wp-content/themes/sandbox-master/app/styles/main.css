@@ -1032,25 +1032,32 @@ section.inner-page div.top-inner-title h1 {
 section.inner-page .outer-content {
   margin-top: 70px;
 }
-/* line 35, sass/styles/_inner.scss */
+/* line 36, sass/styles/_inner.scss */
 section.inner-page .outer-content.about {
   margin-top: 130px;
 }
-/* line 38, sass/styles/_inner.scss */
+/* line 39, sass/styles/_inner.scss */
 section.inner-page .outer-content.about p {
   text-shadow: 1px 2px 1px white;
 }
-/* line 41, sass/styles/_inner.scss */
+/* line 42, sass/styles/_inner.scss */
 section.inner-page .outer-content.about a.button, section.inner-page .outer-content.about section.bottom .callouts .callout a, section.bottom .callouts .callout section.inner-page .outer-content.about a, section.inner-page .outer-content.about section.beaker-row .beaker-content a.learn-more, section.beaker-row .beaker-content section.inner-page .outer-content.about a.learn-more {
   width: 20.83333%;
 }
-/* line 45, sass/styles/_inner.scss */
+/* line 46, sass/styles/_inner.scss */
 section.inner-page .outer-content .sub-header {
   border-bottom: 1px solid #bad7d4;
   padding-bottom: 25px;
-  margin: 75px 0 25px 0;
+  margin: 75px 0 50px 75px;
 }
-/* line 49, sass/styles/_inner.scss */
+@media screen and (max-width: 945px) {
+  /* line 46, sass/styles/_inner.scss */
+  section.inner-page .outer-content .sub-header {
+    padding: 25px;
+    margin-top: 0;
+  }
+}
+/* line 54, sass/styles/_inner.scss */
 section.inner-page .outer-content .sub-header p {
   font-size: 16px;
   line-height: 36px;
@@ -1060,23 +1067,32 @@ section.inner-page .outer-content .sub-header p {
   text-transform: uppercase;
   text-shadow: 1px 2px 1px white;
 }
-/* line 57, sass/styles/_inner.scss */
+/* line 62, sass/styles/_inner.scss */
 section.inner-page .outer-content .inner-wrapper {
   width: 100%;
-  margin: 0 0 0 20.83333%;
 }
-/* line 64, sass/styles/_inner.scss */
+/* line 65, sass/styles/_inner.scss */
+section.inner-page .outer-content .inner-wrapper .sub-content {
+  margin-left: 75px;
+}
+@media screen and (max-width: 945px) {
+  /* line 65, sass/styles/_inner.scss */
+  section.inner-page .outer-content .inner-wrapper .sub-content {
+    padding: 0 25px 25px 25px;
+  }
+}
+/* line 71, sass/styles/_inner.scss */
 section.inner-page .outer-content .inner-wrapper .sub-content ul {
   overflow: hidden;
   padding: 0;
 }
-/* line 67, sass/styles/_inner.scss */
+/* line 74, sass/styles/_inner.scss */
 section.inner-page .outer-content .inner-wrapper .sub-content ul li {
   list-style: none;
   padding: 0;
   margin: 0;
 }
-/* line 68, sass/styles/_inner.scss */
+/* line 75, sass/styles/_inner.scss */
 section.inner-page .outer-content .inner-wrapper .sub-content ul li.item {
   background: white;
   border: 1px solid #22bdaf;
@@ -1090,22 +1106,42 @@ section.inner-page .outer-content .inner-wrapper .sub-content ul li.item {
   max-height: 300px;
   max-width: 300px;
 }
-/* line 80, sass/styles/_inner.scss */
+@media screen and (max-width: 645px) {
+  /* line 75, sass/styles/_inner.scss */
+  section.inner-page .outer-content .inner-wrapper .sub-content ul li.item {
+    float: none;
+    max-width: 100%;
+    max-height: 100%;
+    width: 98%;
+    margin: 25px 0 25px 5px;
+  }
+  /* line 93, sass/styles/_inner.scss */
+  section.inner-page .outer-content .inner-wrapper .sub-content ul li.item:first-child {
+    margin-top: 0;
+  }
+}
+@media screen and (max-width: 370px) {
+  /* line 75, sass/styles/_inner.scss */
+  section.inner-page .outer-content .inner-wrapper .sub-content ul li.item {
+    width: 97%;
+  }
+}
+/* line 100, sass/styles/_inner.scss */
 section.inner-page .outer-content .inner-wrapper .sub-content ul li.item:hover {
   border-color: #3d3c3e;
 }
-/* line 83, sass/styles/_inner.scss */
+/* line 103, sass/styles/_inner.scss */
 section.inner-page .outer-content .inner-wrapper .sub-content ul li.item img {
   display: block;
   margin: 5.20833% auto 5.3125%;
   width: 80%;
   height: auto;
 }
-/* line 89, sass/styles/_inner.scss */
+/* line 109, sass/styles/_inner.scss */
 section.inner-page .outer-content .inner-wrapper .sub-content ul li.item span {
   display: none;
 }
-/* line 92, sass/styles/_inner.scss */
+/* line 112, sass/styles/_inner.scss */
 section.inner-page .outer-content .inner-wrapper .sub-content ul li:nth-child(3n+3) {
   margin-right: 0;
 }
