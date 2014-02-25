@@ -107,4 +107,22 @@ if ( !function_exists('get_custom_field') ) {
 		echo $custom_field;
 	}
 }
+
+// add_action( 'init', 'beaker_posttype' );
+// function beaker_posttype() {
+// 	register_post_type( 'home_beaker',
+// 		array(
+// 			'labels' => array(
+// 				'name' => __( 'Beakers' ),
+// 				'singular_name' => __( 'Beaker' )
+// 			),
+// 			'supports' => array('title', 'editor', 'thumbnail', 'custom-fields', 'page-attributes', 
+// 			),
+// 			'public' => true,
+// 			'has_archive' => true,
+// 			'rewrite' => array('slug' => 'beakers'),
+// 		)
+// 	);
+// }
+
 ?>

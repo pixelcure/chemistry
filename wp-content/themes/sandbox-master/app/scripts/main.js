@@ -48,6 +48,16 @@ require([
         var $menu = $('.header .nav-outer');
         var screenHeight = $(document).height();
 
+        
+        $(window).resize(function(){
+
+            var width = $(this).width();
+            
+            if(width > 599){
+                $menu.show();
+            }
+        });
+
         $trigger.on('click', function(){
 
             if(!$(this).hasClass('active') ){
@@ -71,6 +81,14 @@ require([
 
     responsiveMenu();
 
+
+    var $body = $("html");
+    var $imgScroll = $('#pixelScroll');
+
+    $imgScroll.on('click', function(){
+        $body.animate({scrollTop:0}, '500');    
+
+    });
 
 
 

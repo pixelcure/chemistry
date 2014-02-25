@@ -17,7 +17,7 @@ if(is_home){
 	<section class="row top">
 
 			<div class="intro col span_7">
-				<img id="introCross" class="cross" src="<?php bloginfo(template_url); ?>/app/images/square-bg.svg" alt="Pixel Cure" />
+				<img class="cross" src="<?php bloginfo(template_url); ?>/app/images/square-bg.svg" alt="Pixel Cure" />
 				<h1>
 					I'm a designer and developer living in Boston
 				</h1>
@@ -52,7 +52,7 @@ if(is_home){
 			</aside><!-- end design column -->		
 
 			<aside class="callout scroll-now col span_6">
-				<img class="left" src="<?php bloginfo(template_url); ?>/app/images/scroll.svg" alt="Scroll Down" />
+				<img class="left" id="pixelScroll" src="<?php bloginfo(template_url); ?>/app/images/scroll.svg" alt="Scroll Down" />
 				<h1>Scroll down to view the labratory</h1>
 			</aside><!-- end scroll now -->
 

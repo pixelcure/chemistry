@@ -45,7 +45,7 @@ section.inner-page {
 		.sub-header {
 			border-bottom: 1px solid $slate;
 			padding-bottom: 25px;
-			margin-bottom: 25px;
+			margin: 75px 0 25px 0;
 			p {
 				@include font-size(16, 36);
 				letter-spacing: 0.05em;
@@ -55,29 +55,46 @@ section.inner-page {
 		}
 
 		.inner-wrapper {
-			width: 960px;
+			width: 100%;
+			margin: 0 0 0 percentage(200/960);
+
 			.sub-content {
 				
 				// Projects
 				ul {
 					overflow: hidden;
+					padding: 0;
 					li {
 						&.item {
 							background: $white;
+							border: 1px solid $teal;
+							-webkit-box-shadow: inset 0px -1px 10px $slate;
+							-moz-box-shadow: inset 0px -1px 10px $slate;
+							-msie-box-shadow: inset 0px -1px 10px $slate;
 							float: left;
-							width: 500px;
-							max-height: 500px;
-							max-width: 500px;
+							margin: 0 percentage(25/960) percentage(25/960) 0;
+							width: percentage(300/960);
+							height: auto;
+							max-height: 300px;
+							max-width: 300px;
+							&:hover {
+								border-color: $grey;
+							}
 							img {
 								display: block;
-								margin: 75px auto;
+								margin: percentage(50/960) auto percentage(51/960);
 								width: 80%;
 								height: auto;
 							}
+							span { display: none; }
+						}					
+					
+						&:nth-child(3n+3) {
+							margin-right: 0;
 						}
-						&:first-child {
-							border-left-width: 80px;
-						}
+						
+
+
 						list-style: none;
 						padding: 0;
 						margin: 0;

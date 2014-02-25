@@ -842,11 +842,23 @@ img {
   text-transform: lowercase;
   height: inherit;
 }
+/* line 131, sass/styles/_header.scss */
+.outer-header .header aside.nav-outer ul li a:hover {
+  background: #3d3c3e;
+  color: #22bdaf;
+  text-shadow: none;
+}
 @media screen and (max-width: 693px) {
   /* line 119, sass/styles/_header.scss */
   .outer-header .header aside.nav-outer ul li a {
     background: none;
     padding: 10px 5px 0 0;
+    text-shadow: 1px 1px 1px #333;
+  }
+  /* line 140, sass/styles/_header.scss */
+  .outer-header .header aside.nav-outer ul li a:hover {
+    background: none;
+    color: #3d3c3e;
     text-shadow: 1px 1px 1px #333;
   }
 }
@@ -860,20 +872,20 @@ img {
     line-height: 2.4rem;
   }
 }
-/* line 145, sass/styles/_header.scss */
+/* line 155, sass/styles/_header.scss */
 .outer-header .header .nav-trigger {
   display: none;
   position: absolute;
   right: 0;
   top: 0;
 }
-/* line 150, sass/styles/_header.scss */
+/* line 160, sass/styles/_header.scss */
 .outer-header .header .nav-trigger img.open {
   width: 30%;
   float: right;
   margin: 32px 0px 25px;
 }
-/* line 155, sass/styles/_header.scss */
+/* line 165, sass/styles/_header.scss */
 .outer-header .header .nav-trigger img.close {
   display: none;
   width: 30%;
@@ -881,13 +893,13 @@ img {
   margin: 32px 0px 25px;
 }
 @media screen and (max-width: 600px) {
-  /* line 145, sass/styles/_header.scss */
+  /* line 155, sass/styles/_header.scss */
   .outer-header .header .nav-trigger {
     display: block;
     z-index: 15;
   }
 }
-/* line 167, sass/styles/_header.scss */
+/* line 177, sass/styles/_header.scss */
 .outer-header .header .inner-wrapper {
   width: 100% !important;
 }
@@ -1036,7 +1048,7 @@ section.inner-page .outer-content.about a.button, section.inner-page .outer-cont
 section.inner-page .outer-content .sub-header {
   border-bottom: 1px solid #bad7d4;
   padding-bottom: 25px;
-  margin-bottom: 25px;
+  margin: 75px 0 25px 0;
 }
 /* line 49, sass/styles/_inner.scss */
 section.inner-page .outer-content .sub-header p {
@@ -1050,36 +1062,52 @@ section.inner-page .outer-content .sub-header p {
 }
 /* line 57, sass/styles/_inner.scss */
 section.inner-page .outer-content .inner-wrapper {
-  width: 960px;
-}
-/* line 62, sass/styles/_inner.scss */
-section.inner-page .outer-content .inner-wrapper .sub-content ul {
-  overflow: hidden;
+  width: 100%;
+  margin: 0 0 0 20.83333%;
 }
 /* line 64, sass/styles/_inner.scss */
+section.inner-page .outer-content .inner-wrapper .sub-content ul {
+  overflow: hidden;
+  padding: 0;
+}
+/* line 67, sass/styles/_inner.scss */
 section.inner-page .outer-content .inner-wrapper .sub-content ul li {
   list-style: none;
   padding: 0;
   margin: 0;
 }
-/* line 65, sass/styles/_inner.scss */
+/* line 68, sass/styles/_inner.scss */
 section.inner-page .outer-content .inner-wrapper .sub-content ul li.item {
   background: white;
+  border: 1px solid #22bdaf;
+  -webkit-box-shadow: inset 0px -1px 10px #bad7d4;
+  -moz-box-shadow: inset 0px -1px 10px #bad7d4;
+  -msie-box-shadow: inset 0px -1px 10px #bad7d4;
   float: left;
-  width: 500px;
-  max-height: 500px;
-  max-width: 500px;
+  margin: 0 2.60417% 2.60417% 0;
+  width: 31.25%;
+  height: auto;
+  max-height: 300px;
+  max-width: 300px;
 }
-/* line 71, sass/styles/_inner.scss */
+/* line 80, sass/styles/_inner.scss */
+section.inner-page .outer-content .inner-wrapper .sub-content ul li.item:hover {
+  border-color: #3d3c3e;
+}
+/* line 83, sass/styles/_inner.scss */
 section.inner-page .outer-content .inner-wrapper .sub-content ul li.item img {
   display: block;
-  margin: 75px auto;
+  margin: 5.20833% auto 5.3125%;
   width: 80%;
   height: auto;
 }
-/* line 78, sass/styles/_inner.scss */
-section.inner-page .outer-content .inner-wrapper .sub-content ul li:first-child {
-  border-left-width: 80px;
+/* line 89, sass/styles/_inner.scss */
+section.inner-page .outer-content .inner-wrapper .sub-content ul li.item span {
+  display: none;
+}
+/* line 92, sass/styles/_inner.scss */
+section.inner-page .outer-content .inner-wrapper .sub-content ul li:nth-child(3n+3) {
+  margin-right: 0;
 }
 
 /* line 5, sass/styles/_homepage.scss */

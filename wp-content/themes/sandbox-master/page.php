@@ -21,7 +21,7 @@ get_header(); ?>
 	
 	<!-- 	<img src="<?php bloginfo(template_url); ?>/app/images/divider.svg" alt="Divider" class="divider"> -->
 
-	<div class="outer-content col span_12">
+	<div class="outer-content">
 		
 			<section class="inner-wrapper content">
 				
@@ -33,26 +33,48 @@ get_header(); ?>
 
 				</div><!-- / end sub header -->
 				
-				<div class="row sub-content">
+				<div class="sub-content">
 
 
 						<ul class="projects-container">
 							
-							<li class="item col span_4">
+							<li class="item">
 								<div class="mask"></div><!-- / end mask -->
 								<span>MPC 2000 XL</span>
 								<img src="<?php bloginfo(template_url); ?>/app/images/design/mpc.png" alt="MPC 2000 XL" />
 
 							</li><!-- / end item -->							
 
-							<li class="item col span_4">
+							<li class="item">
 								<img src="<?php bloginfo(template_url); ?>/app/images/design/mpc.png" alt="MPC 2000 XL" />
 							</li><!-- / end item -->							
 
-							<li class="item col span_4">
+							<li class="item">
 								<img src="<?php bloginfo(template_url); ?>/app/images/design/mpc.png" alt="MPC 2000 XL" />
 							</li><!-- / end item -->	
-							<li class="item col span_4">
+							<li class="item">
+								<img src="<?php bloginfo(template_url); ?>/app/images/design/mpc.png" alt="MPC 2000 XL" />
+							</li><!-- / end item -->								
+							<li class="item">
+								<img src="<?php bloginfo(template_url); ?>/app/images/design/mpc.png" alt="MPC 2000 XL" />
+							</li><!-- / end item -->		
+							<li class="item">
+								<img src="<?php bloginfo(template_url); ?>/app/images/design/mpc.png" alt="MPC 2000 XL" />
+							</li><!-- / end item -->			
+							<li class="item">
+								<img src="<?php bloginfo(template_url); ?>/app/images/design/mpc.png" alt="MPC 2000 XL" />
+							</li><!-- / end item -->							
+
+							<li class="item">
+								<img src="<?php bloginfo(template_url); ?>/app/images/design/mpc.png" alt="MPC 2000 XL" />
+							</li><!-- / end item -->	
+							<li class="item">
+								<img src="<?php bloginfo(template_url); ?>/app/images/design/mpc.png" alt="MPC 2000 XL" />
+							</li><!-- / end item -->								
+							<li class="item">
+								<img src="<?php bloginfo(template_url); ?>/app/images/design/mpc.png" alt="MPC 2000 XL" />
+							</li><!-- / end item -->		
+							<li class="item">
 								<img src="<?php bloginfo(template_url); ?>/app/images/design/mpc.png" alt="MPC 2000 XL" />
 							</li><!-- / end item -->					
 

@@ -17,7 +17,7 @@ get_header(); ?>
 	
 	<!-- 	<img src="<?php bloginfo(template_url); ?>/app/images/divider.svg" alt="Divider" class="divider"> -->
 
-	<div class="outer-content about row">
+	<div class="outer-content about">
 		
 			<section class="inner-wrapper content">
 				
