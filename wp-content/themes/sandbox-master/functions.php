@@ -23,9 +23,12 @@ function sandbox_setup() {
 	// post thumbnails & custom sizes
 	add_theme_support('post-thumbnails', array( 'page', 'post', 'samples') );
 
-	// theme support for feed links
+  // featured image support
+  add_theme_support( 'post-thumbnails' );
+
+  // theme support for feed links
 	add_theme_support( 'automatic-feed-links' );
-	
+
 	// post formats
 	add_theme_support( 'post-formats', array('aside','gallery','audio','video','quote','image','chat') );
 
@@ -114,3 +117,85 @@ function sandbox_widgets_init() {
 	}
 }
 add_action( 'widgets_init', 'sandbox_widgets_init' );
+
+/************************************************************************************/
+// Intro Custom Posttype, Recipe Custom Post Type
+/************************************************************************************/
+
+add_action( 'init', 'homeIntro' );
+
+function homeIntro() {
+	register_post_type( 'homeIntroPostType',
+		array(
+			'labels' => array(
+				'name' => __( 'Introductions' ),
+				'singular_name' => __( 'Intro Paragraph' )
+			),
+			'public' => true,
+			'has_archive' => true,
+			'rewrite' => array('slug' => 'intros'),
+		)
+	);
+}
+
+add_action( 'init', 'recipeBlurb' );
+
+function recipeBlurb() {
+	register_post_type( 'recipePostType',
+		array(
+			'labels' => array(
+				'name' => __( 'Recipes' ),
+				'singular_name' => __( 'Recipe' )
+			),
+			'public' => true,
+			'has_archive' => true,
+			'rewrite' => array('slug' => 'recipes'),
+		)
+	);
+}
+
+/************************************************************************************/
+// Home Lower Callouts
+/************************************************************************************/
+
+add_action( 'init', 'bottomCallouts' );
+
+function bottomCallouts() {
+	register_post_type( 'calloutsPostType',
+		array(
+			'labels' => array(
+				'name' => __( 'Home Callouts' ),
+				'singular_name' => __( 'Callout' )
+			),
+			'public' => true,
+			'has_archive' => true,
+			'rewrite' => array('slug' => 'callouts'),
+		)
+	);
+}
+
+/************************************************************************************/
+// Portfolio Item Callouts
+/************************************************************************************/
+
+add_action( 'init', 'portfolioItems' );
+
+function portfolioItems() {
+  register_post_type( 'portfoliosPostType',
+    array(
+      'labels' => array(
+        'name' => __( 'Portfolio Items' ),
+        'singular_name' => __( 'Items' )
+      ),
+      'supports' => array(
+          'title',
+          'editor',
+          'author',
+          'thumbnail'
+      ),
+      'public' => true,
+      'has_archive' => true,
+      'rewrite' => array('slug' => 'portfolio-items'),
+    )
+  );
+}

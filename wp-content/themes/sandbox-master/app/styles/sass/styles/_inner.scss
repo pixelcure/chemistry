@@ -1,12 +1,12 @@
 ///////////////////////////////////////////////////////
 // Inner Styles
-//////////////////////////////////////////////////////	
+//////////////////////////////////////////////////////
 
 section.inner-page {
 
 	div.top-inner-title {
 		background: #3D3C3E;
-		box-shadow: 1px 1px 3px #333;	
+		box-shadow: 1px 1px 3px #333;
 		height: 70px;
 
 		// height: 70px;
@@ -35,7 +35,10 @@ section.inner-page {
 
 		&.about {
 			margin-top: 130px;
-			
+			@include max-screen(480px){
+				margin-top: 80px;
+			}
+
 			p {
 				text-shadow: 1px 2px 1px $white;
 			}
@@ -43,47 +46,65 @@ section.inner-page {
 				width: percentage(200/960);
 			}
 		}
+
 		.sub-header {
 			border-bottom: 1px solid $slate;
 			padding-bottom: 25px;
 			margin: 75px 0 50px 75px;
+
 			@include max-screen(945px){
 				padding: 25px;
 				margin-top: 0;
 			}
+
 			p {
 				@include font-size(16, 36);
 				letter-spacing: 0.05em;
 				text-transform: uppercase;
-				text-shadow: 1px 2px 1px $white;				
+				text-shadow: 1px 2px 1px $white;
 			}
 		}
 
 		.inner-wrapper {
 			width: 100%;
-
+			a.button {
+				width: 30%;
+			}
 			.sub-content {
 				margin-left: 75px;
 				@include max-screen(945px){
 					padding: 0 25px 25px 25px;
 				}
+
+				@include max-screen(670px){
+					a.button {
+						width: 80%;
+					}
+				}
+				@include max-screen(340px){
+					a.button {
+						width: 100%;
+					}
+				}
 				// Projects
 				ul {
-					overflow: hidden;
+					// overflow: hidden;
 					padding: 0;
 					li {
 						&.item {
 							background: $white;
 							border: 1px solid $teal;
+							cursor: pointer;
 							-webkit-box-shadow: inset 0px -1px 10px $slate;
 							-moz-box-shadow: inset 0px -1px 10px $slate;
 							-msie-box-shadow: inset 0px -1px 10px $slate;
 							float: left;
 							margin: 0 percentage(25/960) percentage(25/960) 0;
-							width: percentage(300/960);
+							position: relative;
 							height: auto;
 							max-height: 300px;
 							max-width: 300px;
+							width: percentage(300/960);
 							@include max-screen(645px){
 								float: none;
 								max-width: 100%;
@@ -97,36 +118,93 @@ section.inner-page {
 							@include max-screen(370px){
 								width: 97%;
 							}
+
+							span {
+								color: $teal;
+								background: rgba(0,0,0,0.7);
+								display: none;
+								@include font-size(16);
+								text-shadow: 1px 1px 1px #333;
+								min-height: 20px;
+								padding: 15px 0 15px 15px;
+								position: absolute;
+								top: 0;
+								left: 0;
+								width: 95%;
+								z-index:2;
+							}
+
+							div.hidden-description {
+								background: #BAD7D4;
+								border: 5px solid #22BDAF;
+								display: none;
+								top: -100px;
+								padding: 50px;
+								position: absolute;
+								width: 770px;
+								z-index: 10;
+									img {
+										background: #FFF;
+										border: 2px solid black;
+										box-shadow: 1px 5px 11px #000;
+										width: 100%;
+									}
+									p {
+										font-family: $sun;
+										@include font-size(18);
+									}
+							}
+
+
+
+							.mask {
+								width: 100%;
+								height: 100%;
+								background: $teal;
+								opacity: .3;
+								position: absolute;
+								z-index: 1;
+							}
+
+							span, div.mask { display: none; }
+
 							&:hover {
 								border-color: $grey;
+								div.mask {
+									display: block;
+								}
 							}
+
 							img {
 								display: block;
 								margin: percentage(50/960) auto percentage(51/960);
 								width: 80%;
 								height: auto;
 							}
-							span { display: none; }
-						}					
-					
+						}
+
 						&:nth-child(3n+3) {
 							margin-right: 0;
 						}
-						
+
 
 
 						list-style: none;
 						padding: 0;
 						margin: 0;
-					}
+					} // end LI
+				} // end UL
+
+				.container.col.span_12 {
+					border-left-width: 0;
 				}
-			
 			}
 
 
-		} // end inner wrapper 
+
+
+		} // end inner wrapper
 
 	}// end outer content
 
 } // end inner page
-

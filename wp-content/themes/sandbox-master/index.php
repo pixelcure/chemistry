@@ -18,17 +18,40 @@ if(is_home){
 
 			<div class="intro col span_7">
 				<img class="cross" src="<?php bloginfo(template_url); ?>/app/images/square-bg.svg" alt="Pixel Cure" />
+				<?php
+
+					$introArgs = array( 'post_type' => 'homeIntroPostType', 'posts_per_page' => 1 );
+					$introLoop = new WP_Query( $introArgs );
+					while ( $introLoop->have_posts() ) : $introLoop->the_post();
+					
+				?>
 				<h1>
-					I'm a designer and developer living in Boston
+					<?php	
+						the_title();
+					?>
 				</h1>
-				<p>
-					Currently, I'm a UI developer at <a href="http://www.genuineinteractive.com" target="_blank">Genuine Interactive</a>
-				</p>
+				<?php
+					the_content();
+					endwhile;
+				?>
 			</div><!-- end intro -->
 		
 
 		<div class="recipe col span_5" id="recipeHero">
-			<h1>Let me fill you in on some of my secret <span class="teal">ingredients</span> to my recipe..</h1>
+
+			<?php
+
+				$recipeArgs = array( 'post_type' => 'recipePostType', 'posts_per_page' => 1 );
+				$recipeLoop = new WP_Query( $recipeArgs );
+				while ( $recipeLoop->have_posts() ) : $recipeLoop->the_post();
+				
+					the_content();
+
+				endwhile;
+			?>
+
+			<!-- <h1>Let me fill you in on some of my secret <span class="teal">ingredients</span> to my recipe..</h1> -->
+			
 			<h1 class="hidden">Scroll to View my Labratory . . .</h1>
 		</div><!-- end recipe -->
 		
@@ -41,14 +64,32 @@ if(is_home){
 		<div class="callouts inner-wrapper">
 			
 			<aside class="callout the-doctor col span_6" id="chemistCallout">
-				<h1>The Chemist</h1>
+			<?php
+
+				$args = array( 'post_type' => 'calloutsPostType', 'posts_per_page' => 1 );
+				$loop = new WP_Query( $args );
+				while ( $loop->have_posts() ) : $loop->the_post();
+				
+				
+			?>				
+			<h1>
+				<?php
+					the_title();
+				?>
+			</h1>
+			<?php
+					the_content();
+
+				endwhile;
+			?>
+<!-- 				<h1>The Chemist</h1>
 				<p>
 					Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
 					Nam recusandae nemo necessitatibus sint expedita tempore dolores 
 					quod cumque atque provident amet sapiente aperiam molestiae earum 
 					assumenda. Quas ullam pariatur error
 				</p>
-				<a href="#" class="learn-more">The Chemist</a>
+				<a href="#" class="learn-more">The Chemist</a> -->
 			</aside><!-- end design column -->		
 
 			<aside class="callout scroll-now col span_6">

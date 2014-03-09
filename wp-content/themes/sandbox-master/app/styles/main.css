@@ -3,7 +3,7 @@
 /* Waiting for the Sunrise Typeface */
 /* Mako Typeface */
 /* Base Font */
-/*! normalize.css v2.1.0 | MIT License | git.io/normalize */
+/* normalize.css v2.1.0 | MIT License | git.io/normalize */
 /* ==========================================================================
    HTML5 display definitions
    ========================================================================== */
@@ -1036,28 +1036,34 @@ section.inner-page .outer-content {
 section.inner-page .outer-content.about {
   margin-top: 130px;
 }
-/* line 39, sass/styles/_inner.scss */
+@media screen and (max-width: 480px) {
+  /* line 36, sass/styles/_inner.scss */
+  section.inner-page .outer-content.about {
+    margin-top: 80px;
+  }
+}
+/* line 42, sass/styles/_inner.scss */
 section.inner-page .outer-content.about p {
   text-shadow: 1px 2px 1px white;
 }
-/* line 42, sass/styles/_inner.scss */
+/* line 45, sass/styles/_inner.scss */
 section.inner-page .outer-content.about a.button, section.inner-page .outer-content.about section.bottom .callouts .callout a, section.bottom .callouts .callout section.inner-page .outer-content.about a, section.inner-page .outer-content.about section.beaker-row .beaker-content a.learn-more, section.beaker-row .beaker-content section.inner-page .outer-content.about a.learn-more {
   width: 20.83333%;
 }
-/* line 46, sass/styles/_inner.scss */
+/* line 49, sass/styles/_inner.scss */
 section.inner-page .outer-content .sub-header {
   border-bottom: 1px solid #bad7d4;
   padding-bottom: 25px;
   margin: 75px 0 50px 75px;
 }
 @media screen and (max-width: 945px) {
-  /* line 46, sass/styles/_inner.scss */
+  /* line 49, sass/styles/_inner.scss */
   section.inner-page .outer-content .sub-header {
     padding: 25px;
     margin-top: 0;
   }
 }
-/* line 54, sass/styles/_inner.scss */
+/* line 59, sass/styles/_inner.scss */
 section.inner-page .outer-content .sub-header p {
   font-size: 16px;
   line-height: 36px;
@@ -1067,47 +1073,64 @@ section.inner-page .outer-content .sub-header p {
   text-transform: uppercase;
   text-shadow: 1px 2px 1px white;
 }
-/* line 62, sass/styles/_inner.scss */
+/* line 67, sass/styles/_inner.scss */
 section.inner-page .outer-content .inner-wrapper {
   width: 100%;
 }
-/* line 65, sass/styles/_inner.scss */
+/* line 69, sass/styles/_inner.scss */
+section.inner-page .outer-content .inner-wrapper a.button, section.inner-page .outer-content .inner-wrapper section.bottom .callouts .callout a, section.bottom .callouts .callout section.inner-page .outer-content .inner-wrapper a, section.inner-page .outer-content .inner-wrapper section.beaker-row .beaker-content a.learn-more, section.beaker-row .beaker-content section.inner-page .outer-content .inner-wrapper a.learn-more {
+  width: 30%;
+}
+/* line 72, sass/styles/_inner.scss */
 section.inner-page .outer-content .inner-wrapper .sub-content {
   margin-left: 75px;
 }
 @media screen and (max-width: 945px) {
-  /* line 65, sass/styles/_inner.scss */
+  /* line 72, sass/styles/_inner.scss */
   section.inner-page .outer-content .inner-wrapper .sub-content {
     padding: 0 25px 25px 25px;
   }
 }
-/* line 71, sass/styles/_inner.scss */
+@media screen and (max-width: 670px) {
+  /* line 79, sass/styles/_inner.scss */
+  section.inner-page .outer-content .inner-wrapper .sub-content a.button, section.inner-page .outer-content .inner-wrapper .sub-content section.bottom .callouts .callout a, section.bottom .callouts .callout section.inner-page .outer-content .inner-wrapper .sub-content a, section.inner-page .outer-content .inner-wrapper .sub-content section.beaker-row .beaker-content a.learn-more, section.beaker-row .beaker-content section.inner-page .outer-content .inner-wrapper .sub-content a.learn-more {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 340px) {
+  /* line 84, sass/styles/_inner.scss */
+  section.inner-page .outer-content .inner-wrapper .sub-content a.button, section.inner-page .outer-content .inner-wrapper .sub-content section.bottom .callouts .callout a, section.bottom .callouts .callout section.inner-page .outer-content .inner-wrapper .sub-content a, section.inner-page .outer-content .inner-wrapper .sub-content section.beaker-row .beaker-content a.learn-more, section.beaker-row .beaker-content section.inner-page .outer-content .inner-wrapper .sub-content a.learn-more {
+    width: 100%;
+  }
+}
+/* line 89, sass/styles/_inner.scss */
 section.inner-page .outer-content .inner-wrapper .sub-content ul {
-  overflow: hidden;
   padding: 0;
 }
-/* line 74, sass/styles/_inner.scss */
+/* line 92, sass/styles/_inner.scss */
 section.inner-page .outer-content .inner-wrapper .sub-content ul li {
   list-style: none;
   padding: 0;
   margin: 0;
 }
-/* line 75, sass/styles/_inner.scss */
+/* line 93, sass/styles/_inner.scss */
 section.inner-page .outer-content .inner-wrapper .sub-content ul li.item {
   background: white;
   border: 1px solid #22bdaf;
+  cursor: pointer;
   -webkit-box-shadow: inset 0px -1px 10px #bad7d4;
   -moz-box-shadow: inset 0px -1px 10px #bad7d4;
   -msie-box-shadow: inset 0px -1px 10px #bad7d4;
   float: left;
   margin: 0 2.60417% 2.60417% 0;
-  width: 31.25%;
+  position: relative;
   height: auto;
   max-height: 300px;
   max-width: 300px;
+  width: 31.25%;
 }
 @media screen and (max-width: 645px) {
-  /* line 75, sass/styles/_inner.scss */
+  /* line 93, sass/styles/_inner.scss */
   section.inner-page .outer-content .inner-wrapper .sub-content ul li.item {
     float: none;
     max-width: 100%;
@@ -1115,35 +1138,96 @@ section.inner-page .outer-content .inner-wrapper .sub-content ul li.item {
     width: 98%;
     margin: 25px 0 25px 5px;
   }
-  /* line 93, sass/styles/_inner.scss */
+  /* line 113, sass/styles/_inner.scss */
   section.inner-page .outer-content .inner-wrapper .sub-content ul li.item:first-child {
     margin-top: 0;
   }
 }
 @media screen and (max-width: 370px) {
-  /* line 75, sass/styles/_inner.scss */
+  /* line 93, sass/styles/_inner.scss */
   section.inner-page .outer-content .inner-wrapper .sub-content ul li.item {
     width: 97%;
   }
 }
-/* line 100, sass/styles/_inner.scss */
+/* line 121, sass/styles/_inner.scss */
+section.inner-page .outer-content .inner-wrapper .sub-content ul li.item span {
+  color: #22bdaf;
+  background: rgba(0, 0, 0, 0.7);
+  display: none;
+  font-size: 16px;
+  line-height: 24px;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  text-shadow: 1px 1px 1px #333;
+  min-height: 20px;
+  padding: 15px 0 15px 15px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 95%;
+  z-index: 2;
+}
+/* line 136, sass/styles/_inner.scss */
+section.inner-page .outer-content .inner-wrapper .sub-content ul li.item div.hidden-description {
+  background: #BAD7D4;
+  border: 5px solid #22BDAF;
+  display: none;
+  top: -100px;
+  padding: 50px;
+  position: absolute;
+  width: 770px;
+  z-index: 10;
+}
+/* line 145, sass/styles/_inner.scss */
+section.inner-page .outer-content .inner-wrapper .sub-content ul li.item div.hidden-description img {
+  background: #FFF;
+  border: 2px solid black;
+  box-shadow: 1px 5px 11px #000;
+  width: 100%;
+}
+/* line 151, sass/styles/_inner.scss */
+section.inner-page .outer-content .inner-wrapper .sub-content ul li.item div.hidden-description p {
+  font-family: "Waiting for the Sunrise", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 27px;
+  font-size: 1.8rem;
+  line-height: 2.7rem;
+}
+/* line 159, sass/styles/_inner.scss */
+section.inner-page .outer-content .inner-wrapper .sub-content ul li.item .mask {
+  width: 100%;
+  height: 100%;
+  background: #22bdaf;
+  opacity: .3;
+  position: absolute;
+  z-index: 1;
+}
+/* line 168, sass/styles/_inner.scss */
+section.inner-page .outer-content .inner-wrapper .sub-content ul li.item span, section.inner-page .outer-content .inner-wrapper .sub-content ul li.item div.mask {
+  display: none;
+}
+/* line 170, sass/styles/_inner.scss */
 section.inner-page .outer-content .inner-wrapper .sub-content ul li.item:hover {
   border-color: #3d3c3e;
 }
-/* line 103, sass/styles/_inner.scss */
+/* line 172, sass/styles/_inner.scss */
+section.inner-page .outer-content .inner-wrapper .sub-content ul li.item:hover div.mask {
+  display: block;
+}
+/* line 177, sass/styles/_inner.scss */
 section.inner-page .outer-content .inner-wrapper .sub-content ul li.item img {
   display: block;
   margin: 5.20833% auto 5.3125%;
   width: 80%;
   height: auto;
 }
-/* line 109, sass/styles/_inner.scss */
-section.inner-page .outer-content .inner-wrapper .sub-content ul li.item span {
-  display: none;
-}
-/* line 112, sass/styles/_inner.scss */
+/* line 185, sass/styles/_inner.scss */
 section.inner-page .outer-content .inner-wrapper .sub-content ul li:nth-child(3n+3) {
   margin-right: 0;
+}
+/* line 197, sass/styles/_inner.scss */
+section.inner-page .outer-content .inner-wrapper .sub-content .container.col.span_12 {
+  border-left-width: 0;
 }
 
 /* line 5, sass/styles/_homepage.scss */
