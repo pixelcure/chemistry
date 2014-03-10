@@ -28,8 +28,11 @@ $sun : 'Waiting for the Sunrise', Arial, sans-serif;
 @import "styles/layout.scss";
 @import "styles/header.scss";
 @import "styles/footer.scss";
-@import "styles/inner.scss";
 @import "styles/homepage.scss";
+
+// Inner Pages
+@import "styles/inner.scss";
+@import "styles/design.scss";
 
 // Homepage Lab
 @import "styles/beaker-set-default.scss";
