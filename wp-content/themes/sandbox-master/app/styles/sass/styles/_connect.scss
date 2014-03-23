@@ -1,0 +1,135 @@
+///////////////////////////////////////////////////////
+// Connect
+//////////////////////////////////////////////////////	
+
+.outer-content.connect {
+
+	padding-top: 50px;
+
+	.col:first-child {
+		border-left-width: 80px;
+	}
+
+	p {
+		@include font-size(16, 36);
+		letter-spacing: 0.05em;
+		padding-bottom: 25px;
+		text-transform: uppercase;
+		text-shadow: 1px 2px 1px $white;
+
+		sup.required { color: red; }
+	}
+
+	.social-media-sidebar {
+
+		h2 {
+			@include font-size(24, 24);
+			text-align: right;
+		}
+		ul.social-media {
+			padding: 0;
+			margin: 0;
+			li {
+				list-style: none;
+				float: right;
+				margin-right: percentage(50/960);
+				a {					
+					display: block;
+					height: 50px;
+					text-indent: -9999px;
+					width: 50px;
+					&.linked-in {
+						background: url('../images/linked-icon.svg') no-repeat;
+						background-size: contain;
+						width: 45px;
+					}				
+					&.git-hub {
+						background: url('../images/git-icon.svg') no-repeat;
+						background-size: contain;
+					}				
+					&.twitter {
+						background: url('../images/twitter-icon.svg') no-repeat;
+						background-size: contain;
+					}
+				}
+			}
+		}
+
+	}
+
+	.contact-form {
+		fieldset {
+				border: none;
+				
+				br { display: none; }
+
+				label {
+					display: block;
+					@include font-size(16, 16);
+					margin-bottom: 10px;
+					sup {
+						@include font-size(14, 14);
+						color: $red;
+					}
+				}
+
+				span.wpcf7-not-valid-tip {
+					@include font-size(12, 12);
+					padding-top: 5px;
+				}
+
+				input[type='text'], 	
+				input[type='email'], 
+				textarea {
+						background: $slate;
+						border: 1px solid $teal;
+						@include font-size(20, 20);
+						font-family: $sun;
+						letter-spacing: 0.09em;
+						outline: none;
+						height: 30px;
+						width: 100%;
+						&:focus {
+							border-color: $slate;
+						}
+					}
+
+				input[type="submit"] {
+					@extend .button;
+					margin-top: 15px;
+					width: 150px;
+
+				}
+
+				textarea {
+					height: 100px;
+					resize: none;
+				}
+
+		}
+
+		div.wpcf7-validation-errors {
+			color: $red;
+			border: 2px solid $red;
+			background: $slate;
+			box-shadow: -1px 1px 1px #555;
+			@include font-size(24, 34);
+			font-family: $sun;
+			padding: 20px;
+		}
+
+
+		div.wpcf7-mail-sent-ok {
+			border: 2px solid $teal;
+			background: $slate;
+			box-shadow: -1px 1px 1px #555;
+			color: $grey;
+			@include font-size(24, 34);
+			font-family: $sun;
+			text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+			padding: 20px;
+		}	
+	}
+
+
+} // end outer content connect
