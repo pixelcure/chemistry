@@ -40,6 +40,10 @@ img {
 	text-align: center;
 	font-weight: bold;
 	@include font-size(20, 40);
+	&:hover {
+		background: $slate;
+		color: $grey;
+	}
 }
 
 .inner-wrapper {

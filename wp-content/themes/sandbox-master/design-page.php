@@ -51,13 +51,16 @@ get_header(); ?>
 
 								<?php
 
-										the_content();
+									the_content();
 
-								if ( has_post_thumbnail() ) {
-											the_post_thumbnail();
-										}
-
-								?>
+									if ( has_post_thumbnail() ) {
+												?>
+										<a href="#">
+											<?php	the_post_thumbnail(); ?>
+										</a>
+									<?php
+									}
+									?>
 							</li>
 							<?php
 								endwhile;

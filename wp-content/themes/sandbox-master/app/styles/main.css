@@ -638,7 +638,7 @@ img {
 }
 
 /* line 31, sass/styles/_layout.scss */
-.button, section.bottom .callouts .callout a, section.beaker-row .beaker-content a.learn-more {
+.button, section.bottom .callouts .callout a, .outer-content.connect .contact-form fieldset input[type="submit"], section.beaker-row .beaker-content a.learn-more {
   display: block;
   background: #3d3c3e;
   box-shadow: 1px 1px 0 #333;
@@ -654,8 +654,13 @@ img {
   font-size: 2rem;
   line-height: 4rem;
 }
+/* line 43, sass/styles/_layout.scss */
+.button:hover, section.bottom .callouts .callout a:hover, .outer-content.connect .contact-form fieldset input[type="submit"]:hover, section.beaker-row .beaker-content a.learn-more:hover {
+  background: #bad7d4;
+  color: #3d3c3e;
+}
 
-/* line 45, sass/styles/_layout.scss */
+/* line 49, sass/styles/_layout.scss */
 .inner-wrapper {
   width: 100%;
   max-width: 960px;
@@ -778,7 +783,7 @@ img {
   .outer-header .header aside.nav-outer .hidden-cross {
     display: block;
     position: relative;
-    top: -49.5px;
+    top: -196px;
   }
 }
 /* line 90, sass/styles/_header.scss */
@@ -905,33 +910,39 @@ img {
 }
 
 /* line 5, sass/styles/_footer.scss */
+body.home .footer {
+  display: none;
+  margin-top: 0;
+}
+
+/* line 7, sass/styles/_footer.scss */
 .footer {
   border-top: 1px solid #f10025;
   margin-top: 35px;
 }
-/* line 10, sass/styles/_footer.scss */
+/* line 12, sass/styles/_footer.scss */
 .footer .footer-inner {
   margin-top: 5px;
   border-top: 2px solid #22bdaf;
 }
-/* line 13, sass/styles/_footer.scss */
+/* line 15, sass/styles/_footer.scss */
 .footer .footer-inner .footer-inner-inner {
   padding: 2.60417% 3.64583%;
 }
-/* line 16, sass/styles/_footer.scss */
+/* line 18, sass/styles/_footer.scss */
 .footer .footer-inner .footer-inner-inner .top-button {
   width: 100px;
   height: 100px;
   position: relative;
   margin: 25px auto;
 }
-/* line 21, sass/styles/_footer.scss */
+/* line 23, sass/styles/_footer.scss */
 .footer .footer-inner .footer-inner-inner .top-button img {
   width: 100%;
   height: auto;
   margin: 0 auto;
 }
-/* line 26, sass/styles/_footer.scss */
+/* line 28, sass/styles/_footer.scss */
 .footer .footer-inner .footer-inner-inner .top-button a.top {
   font-size: 18px;
   line-height: 18px;
@@ -948,7 +959,7 @@ img {
   text-transform: uppercase;
   width: 150px;
 }
-/* line 42, sass/styles/_footer.scss */
+/* line 44, sass/styles/_footer.scss */
 .footer .footer-inner .footer-inner-inner .left h1 {
   color: #22bdaf;
   font-size: 12px;
@@ -957,30 +968,30 @@ img {
   line-height: 1.8rem;
 }
 @media screen and (max-width: 530px) {
-  /* line 41, sass/styles/_footer.scss */
+  /* line 43, sass/styles/_footer.scss */
   .footer .footer-inner .footer-inner-inner .left {
     float: none;
   }
 }
 @media screen and (max-width: 530px) {
-  /* line 50, sass/styles/_footer.scss */
+  /* line 52, sass/styles/_footer.scss */
   .footer .footer-inner .footer-inner-inner .right {
     float: none;
   }
 }
-/* line 56, sass/styles/_footer.scss */
+/* line 58, sass/styles/_footer.scss */
 .footer .footer-inner .footer-inner-inner .right ul {
   list-style: none;
   overflow: hidden;
   padding-left: 0;
   width: 100%;
 }
-/* line 62, sass/styles/_footer.scss */
+/* line 64, sass/styles/_footer.scss */
 .footer .footer-inner .footer-inner-inner .right ul li {
   float: left;
   margin-right: 15px;
 }
-/* line 65, sass/styles/_footer.scss */
+/* line 67, sass/styles/_footer.scss */
 .footer .footer-inner .footer-inner-inner .right ul li a {
   font-weight: bold;
   font-size: 12px;
@@ -989,52 +1000,57 @@ img {
   line-height: 1.8rem;
   color: #3d3c3e;
 }
-/* line 70, sass/styles/_footer.scss */
+/* line 72, sass/styles/_footer.scss */
 .footer .footer-inner .footer-inner-inner .right ul li:first-child {
   margin-left: 0;
 }
 @media screen and (max-width: 530px) {
-  /* line 72, sass/styles/_footer.scss */
+  /* line 74, sass/styles/_footer.scss */
   .footer .footer-inner .footer-inner-inner .right ul li:first-child {
     margin-left: 0;
   }
 }
 
-/* line 5, sass/styles/_homepage.scss */
-img.home-divider {
-  margin: 0 25px 45px 0;
+/* line 7, sass/styles/_homepage.scss */
+div.divider-outer {
+  position: relative;
+  z-index: 2;
+}
+/* line 11, sass/styles/_homepage.scss */
+div.divider-outer img.home-divider {
+  margin: 0;
 }
 @media screen and (max-width: 500px) {
-  /* line 5, sass/styles/_homepage.scss */
-  img.home-divider {
+  /* line 11, sass/styles/_homepage.scss */
+  div.divider-outer img.home-divider {
     margin: 0 45px 0 0;
   }
 }
 
-/* line 14, sass/styles/_homepage.scss */
+/* line 22, sass/styles/_homepage.scss */
 section .col:first-child {
   border-left-width: 0;
 }
 @media screen and (max-width: 1133px) {
-  /* line 14, sass/styles/_homepage.scss */
+  /* line 22, sass/styles/_homepage.scss */
   section .col:first-child {
     border-left-width: 80px;
   }
 }
-/* line 22, sass/styles/_homepage.scss */
+/* line 30, sass/styles/_homepage.scss */
 section.top {
   background: #3D3C3E;
   box-shadow: 1px 1px 3px #333;
   min-height: 380px;
   position: relative;
 }
-/* line 29, sass/styles/_homepage.scss */
+/* line 37, sass/styles/_homepage.scss */
 section.top .intro {
   border-left-width: 180px;
   padding: 25px 25px 0 1.04167%;
   margin-top: 25px;
 }
-/* line 34, sass/styles/_homepage.scss */
+/* line 42, sass/styles/_homepage.scss */
 section.top .intro img.cross {
   position: absolute;
   height: auto;
@@ -1045,26 +1061,26 @@ section.top .intro img.cross {
   z-index: 0;
 }
 @media screen and (max-width: 740px) {
-  /* line 34, sass/styles/_homepage.scss */
+  /* line 42, sass/styles/_homepage.scss */
   section.top .intro img.cross {
     top: -31px;
     left: 95px;
   }
 }
 @media screen and (max-width: 417px) {
-  /* line 34, sass/styles/_homepage.scss */
+  /* line 42, sass/styles/_homepage.scss */
   section.top .intro img.cross {
     width: 314px;
   }
 }
 @media screen and (max-width: 740px) {
-  /* line 29, sass/styles/_homepage.scss */
+  /* line 37, sass/styles/_homepage.scss */
   section.top .intro {
     margin-top: 0;
   }
 }
 @media screen and (max-width: 730px) {
-  /* line 29, sass/styles/_homepage.scss */
+  /* line 37, sass/styles/_homepage.scss */
   section.top .intro {
     border-bottom: 1px solid #666;
     float: none;
@@ -1073,7 +1089,7 @@ section.top .intro img.cross {
     width: 100%;
   }
 }
-/* line 66, sass/styles/_homepage.scss */
+/* line 74, sass/styles/_homepage.scss */
 section.top .intro h1 {
   color: #bad7d4;
   font-size: 25px;
@@ -1091,14 +1107,14 @@ section.top .intro h1 {
   z-index: 1;
 }
 @media screen and (max-width: 740px) {
-  /* line 66, sass/styles/_homepage.scss */
+  /* line 74, sass/styles/_homepage.scss */
   section.top .intro h1 {
     left: 195px;
     top: -19px;
   }
 }
 @media screen and (max-width: 417px) {
-  /* line 66, sass/styles/_homepage.scss */
+  /* line 74, sass/styles/_homepage.scss */
   section.top .intro h1 {
     left: 130px;
     top: -16px;
@@ -1109,7 +1125,7 @@ section.top .intro h1 {
     line-height: 3.2rem;
   }
 }
-/* line 94, sass/styles/_homepage.scss */
+/* line 102, sass/styles/_homepage.scss */
 section.top .intro p {
   color: #3d3c3e;
   font-size: 20px;
@@ -1125,20 +1141,20 @@ section.top .intro p {
   width: 150px;
   z-index: 1;
 }
-/* line 106, sass/styles/_homepage.scss */
+/* line 114, sass/styles/_homepage.scss */
 section.top .intro p a {
   border-bottom: 1px dashed #f10025;
   color: #22bdaf;
 }
 @media screen and (max-width: 740px) {
-  /* line 94, sass/styles/_homepage.scss */
+  /* line 102, sass/styles/_homepage.scss */
   section.top .intro p {
     top: -10px;
     left: -10px;
   }
 }
 @media screen and (max-width: 417px) {
-  /* line 94, sass/styles/_homepage.scss */
+  /* line 102, sass/styles/_homepage.scss */
   section.top .intro p {
     font-size: 15px;
     line-height: 24px;
@@ -1150,14 +1166,14 @@ section.top .intro p a {
     width: 125px;
   }
 }
-/* line 128, sass/styles/_homepage.scss */
+/* line 136, sass/styles/_homepage.scss */
 section.top .recipe {
+  padding-right: 3.125%;
   margin: 140px 0 0 0;
   z-index: 2;
-  padding-right: 3.125%;
 }
 @media screen and (max-width: 730px) {
-  /* line 128, sass/styles/_homepage.scss */
+  /* line 136, sass/styles/_homepage.scss */
   section.top .recipe {
     border-left-width: 186px;
     padding: 0px;
@@ -1166,12 +1182,12 @@ section.top .recipe {
   }
 }
 @media screen and (max-width: 682px) {
-  /* line 128, sass/styles/_homepage.scss */
+  /* line 136, sass/styles/_homepage.scss */
   section.top .recipe {
     padding-right: 35px;
   }
 }
-/* line 141, sass/styles/_homepage.scss */
+/* line 149, sass/styles/_homepage.scss */
 section.top .recipe h1 {
   font-family: "Waiting for the Sunrise", Arial, sans-serif;
   color: white;
@@ -1183,12 +1199,12 @@ section.top .recipe h1 {
   text-align: right;
   margin: 0;
 }
-/* line 148, sass/styles/_homepage.scss */
+/* line 156, sass/styles/_homepage.scss */
 section.top .recipe h1 span.teal {
   color: #22bdaf;
 }
 @media screen and (max-width: 730px) {
-  /* line 141, sass/styles/_homepage.scss */
+  /* line 149, sass/styles/_homepage.scss */
   section.top .recipe h1 {
     font-size: 22px;
     line-height: 22px;
@@ -1198,7 +1214,7 @@ section.top .recipe h1 span.teal {
   }
 }
 @media screen and (max-width: 390px) {
-  /* line 141, sass/styles/_homepage.scss */
+  /* line 149, sass/styles/_homepage.scss */
   section.top .recipe h1 {
     font-size: 18px;
     line-height: 18px;
@@ -1206,12 +1222,13 @@ section.top .recipe h1 span.teal {
     line-height: 1.8rem;
   }
 }
-/* line 160, sass/styles/_homepage.scss */
+/* line 168, sass/styles/_homepage.scss */
 section.top .recipe h1.hidden {
+  cursor: pointer;
   display: none;
 }
 @media screen and (max-width: 730px) {
-  /* line 160, sass/styles/_homepage.scss */
+  /* line 168, sass/styles/_homepage.scss */
   section.top .recipe h1.hidden {
     color: #bad7d4;
     display: block;
@@ -1224,7 +1241,7 @@ section.top .recipe h1.hidden {
   }
 }
 @media screen and (max-width: 320px) {
-  /* line 160, sass/styles/_homepage.scss */
+  /* line 168, sass/styles/_homepage.scss */
   section.top .recipe h1.hidden {
     font-size: 14px;
     line-height: 14px;
@@ -1232,31 +1249,31 @@ section.top .recipe h1.hidden {
     line-height: 1.4rem;
   }
 }
-/* line 176, sass/styles/_homepage.scss */
+/* line 185, sass/styles/_homepage.scss */
 section.bottom {
   position: relative;
   z-index: 1;
 }
 @media screen and (max-width: 730px) {
-  /* line 176, sass/styles/_homepage.scss */
+  /* line 185, sass/styles/_homepage.scss */
   section.bottom {
     margin-top: 0;
   }
 }
-/* line 185, sass/styles/_homepage.scss */
+/* line 194, sass/styles/_homepage.scss */
 section.bottom .callouts.inner-wrapper {
   overflow: visible;
 }
-/* line 188, sass/styles/_homepage.scss */
+/* line 197, sass/styles/_homepage.scss */
 section.bottom .callouts .callout {
   padding: 1.04167% 2.60417% 2.60417% 2.60417%;
 }
-/* line 191, sass/styles/_homepage.scss */
+/* line 202, sass/styles/_homepage.scss */
 section.bottom .callouts .callout.the-doctor {
   background: #22bdaf;
   margin-top: -10px;
 }
-/* line 194, sass/styles/_homepage.scss */
+/* line 205, sass/styles/_homepage.scss */
 section.bottom .callouts .callout.the-doctor h1 {
   border: 1px dashed #bad7d4;
   display: block;
@@ -1269,7 +1286,7 @@ section.bottom .callouts .callout.the-doctor h1 {
   color: #FFF;
   text-shadow: 1px 1px 1px #13897A;
 }
-/* line 203, sass/styles/_homepage.scss */
+/* line 214, sass/styles/_homepage.scss */
 section.bottom .callouts .callout.the-doctor p {
   color: #e7e6e6;
   font-size: 14px;
@@ -1279,37 +1296,37 @@ section.bottom .callouts .callout.the-doctor p {
   text-shadow: 1px 1px 1px #13897A;
 }
 @media screen and (max-width: 960px) {
-  /* line 191, sass/styles/_homepage.scss */
+  /* line 202, sass/styles/_homepage.scss */
   section.bottom .callouts .callout.the-doctor {
     border-left-width: 110px;
   }
 }
 @media screen and (max-width: 913px) {
-  /* line 191, sass/styles/_homepage.scss */
+  /* line 202, sass/styles/_homepage.scss */
   section.bottom .callouts .callout.the-doctor {
     border-left-width: 140px;
   }
 }
 @media screen and (max-width: 913px) {
-  /* line 191, sass/styles/_homepage.scss */
+  /* line 202, sass/styles/_homepage.scss */
   section.bottom .callouts .callout.the-doctor {
     border-left-width: 140px;
   }
 }
 @media screen and (max-width: 832px) {
-  /* line 191, sass/styles/_homepage.scss */
+  /* line 202, sass/styles/_homepage.scss */
   section.bottom .callouts .callout.the-doctor {
     border-left-width: 170px;
   }
 }
 @media screen and (max-width: 832px) {
-  /* line 191, sass/styles/_homepage.scss */
+  /* line 202, sass/styles/_homepage.scss */
   section.bottom .callouts .callout.the-doctor {
     border-left-width: 170px;
   }
 }
 @media screen and (max-width: 730px) {
-  /* line 191, sass/styles/_homepage.scss */
+  /* line 202, sass/styles/_homepage.scss */
   section.bottom .callouts .callout.the-doctor {
     border-left-width: 80px;
     float: none;
@@ -1318,24 +1335,30 @@ section.bottom .callouts .callout.the-doctor p {
     width: 100%;
   }
 }
-/* line 237, sass/styles/_homepage.scss */
+/* line 248, sass/styles/_homepage.scss */
 section.bottom .callouts .callout.scroll-now {
   margin-top: 80px;
 }
 @media screen and (max-width: 805px) {
-  /* line 237, sass/styles/_homepage.scss */
+  /* line 248, sass/styles/_homepage.scss */
   section.bottom .callouts .callout.scroll-now {
     border-left-width: 0;
   }
 }
 @media screen and (max-width: 730px) {
-  /* line 237, sass/styles/_homepage.scss */
+  /* line 248, sass/styles/_homepage.scss */
   section.bottom .callouts .callout.scroll-now {
     display: none;
   }
 }
-/* line 245, sass/styles/_homepage.scss */
-section.bottom .callouts .callout.scroll-now h1 {
+/* line 257, sass/styles/_homepage.scss */
+section.bottom .callouts .callout.scroll-now a {
+  background: none;
+  box-shadow: none;
+  display: block;
+}
+/* line 262, sass/styles/_homepage.scss */
+section.bottom .callouts .callout.scroll-now a h1 {
   color: #3d3c3e;
   display: block;
   font-family: "Waiting for the Sunrise", Arial, sans-serif;
@@ -1348,14 +1371,15 @@ section.bottom .callouts .callout.scroll-now h1 {
   width: 350px;
 }
 @media screen and (max-width: 805px) {
-  /* line 245, sass/styles/_homepage.scss */
-  section.bottom .callouts .callout.scroll-now h1 {
+  /* line 262, sass/styles/_homepage.scss */
+  section.bottom .callouts .callout.scroll-now a h1 {
     width: 100%;
     text-align: center !important;
   }
 }
-/* line 258, sass/styles/_homepage.scss */
-section.bottom .callouts .callout.scroll-now img {
+/* line 276, sass/styles/_homepage.scss */
+section.bottom .callouts .callout.scroll-now a img {
+  cursor: pointer;
   display: block;
   float: left;
   margin-top: 10px;
@@ -1363,12 +1387,16 @@ section.bottom .callouts .callout.scroll-now img {
   width: 90px;
 }
 @media screen and (max-width: 805px) {
-  /* line 258, sass/styles/_homepage.scss */
-  section.bottom .callouts .callout.scroll-now img {
+  /* line 276, sass/styles/_homepage.scss */
+  section.bottom .callouts .callout.scroll-now a img {
     float: none;
     margin: 0 auto;
     padding-right: 0;
   }
+}
+/* line 288, sass/styles/_homepage.scss */
+section.bottom .callouts .callout.scroll-now a img:hover {
+  opacity: .7;
 }
 
 /* line 7, sass/styles/_inner.scss */
@@ -1662,12 +1690,176 @@ ul.projects-container li:nth-child(3n+3) {
   width: 35px;
 }
 
+/* line 5, sass/styles/_connect.scss */
+.outer-content.connect {
+  padding-top: 50px;
+}
+/* line 9, sass/styles/_connect.scss */
+.outer-content.connect .col:first-child {
+  border-left-width: 80px;
+}
+/* line 13, sass/styles/_connect.scss */
+.outer-content.connect p {
+  font-size: 16px;
+  line-height: 36px;
+  font-size: 1.6rem;
+  line-height: 3.6rem;
+  letter-spacing: 0.05em;
+  padding-bottom: 25px;
+  text-transform: uppercase;
+  text-shadow: 1px 2px 1px white;
+}
+/* line 20, sass/styles/_connect.scss */
+.outer-content.connect p sup.required {
+  color: red;
+}
+/* line 25, sass/styles/_connect.scss */
+.outer-content.connect .social-media-sidebar h2 {
+  font-size: 24px;
+  line-height: 24px;
+  font-size: 2.4rem;
+  line-height: 2.4rem;
+  text-align: right;
+}
+/* line 29, sass/styles/_connect.scss */
+.outer-content.connect .social-media-sidebar ul.social-media {
+  padding: 0;
+  margin: 0;
+}
+/* line 32, sass/styles/_connect.scss */
+.outer-content.connect .social-media-sidebar ul.social-media li {
+  list-style: none;
+  float: right;
+  margin-right: 5.20833%;
+}
+/* line 36, sass/styles/_connect.scss */
+.outer-content.connect .social-media-sidebar ul.social-media li a {
+  display: block;
+  height: 50px;
+  text-indent: -9999px;
+  width: 50px;
+}
+/* line 41, sass/styles/_connect.scss */
+.outer-content.connect .social-media-sidebar ul.social-media li a.linked-in {
+  background: url("../images/linked-icon.svg") no-repeat;
+  background-size: contain;
+  width: 45px;
+}
+/* line 46, sass/styles/_connect.scss */
+.outer-content.connect .social-media-sidebar ul.social-media li a.git-hub {
+  background: url("../images/git-icon.svg") no-repeat;
+  background-size: contain;
+}
+/* line 50, sass/styles/_connect.scss */
+.outer-content.connect .social-media-sidebar ul.social-media li a.twitter {
+  background: url("../images/twitter-icon.svg") no-repeat;
+  background-size: contain;
+}
+/* line 61, sass/styles/_connect.scss */
+.outer-content.connect .contact-form fieldset {
+  border: none;
+}
+/* line 64, sass/styles/_connect.scss */
+.outer-content.connect .contact-form fieldset br {
+  display: none;
+}
+/* line 66, sass/styles/_connect.scss */
+.outer-content.connect .contact-form fieldset label {
+  display: block;
+  font-size: 16px;
+  line-height: 16px;
+  font-size: 1.6rem;
+  line-height: 1.6rem;
+  margin-bottom: 10px;
+}
+/* line 70, sass/styles/_connect.scss */
+.outer-content.connect .contact-form fieldset label sup {
+  font-size: 14px;
+  line-height: 14px;
+  font-size: 1.4rem;
+  line-height: 1.4rem;
+  color: #f10025;
+}
+/* line 76, sass/styles/_connect.scss */
+.outer-content.connect .contact-form fieldset span.wpcf7-not-valid-tip {
+  font-size: 12px;
+  line-height: 12px;
+  font-size: 1.2rem;
+  line-height: 1.2rem;
+  padding-top: 5px;
+}
+/* line 83, sass/styles/_connect.scss */
+.outer-content.connect .contact-form fieldset input[type='text'],
+.outer-content.connect .contact-form fieldset input[type='email'],
+.outer-content.connect .contact-form fieldset textarea {
+  background: #bad7d4;
+  border: 1px solid #22bdaf;
+  font-size: 20px;
+  line-height: 20px;
+  font-size: 2rem;
+  line-height: 2rem;
+  font-family: "Waiting for the Sunrise", Arial, sans-serif;
+  letter-spacing: 0.09em;
+  outline: none;
+  height: 30px;
+  width: 100%;
+}
+/* line 92, sass/styles/_connect.scss */
+.outer-content.connect .contact-form fieldset input[type='text']:focus,
+.outer-content.connect .contact-form fieldset input[type='email']:focus,
+.outer-content.connect .contact-form fieldset textarea:focus {
+  border-color: #bad7d4;
+}
+/* line 97, sass/styles/_connect.scss */
+.outer-content.connect .contact-form fieldset input[type="submit"] {
+  margin-top: 15px;
+  width: 150px;
+}
+/* line 104, sass/styles/_connect.scss */
+.outer-content.connect .contact-form fieldset textarea {
+  height: 100px;
+  resize: none;
+}
+/* line 111, sass/styles/_connect.scss */
+.outer-content.connect .contact-form div.wpcf7-validation-errors {
+  color: #f10025;
+  border: 2px solid #f10025;
+  background: #bad7d4;
+  box-shadow: -1px 1px 1px #555;
+  font-size: 24px;
+  line-height: 34px;
+  font-size: 2.4rem;
+  line-height: 3.4rem;
+  font-family: "Waiting for the Sunrise", Arial, sans-serif;
+  padding: 20px;
+}
+/* line 122, sass/styles/_connect.scss */
+.outer-content.connect .contact-form div.wpcf7-mail-sent-ok {
+  border: 2px solid #22bdaf;
+  background: #bad7d4;
+  box-shadow: -1px 1px 1px #555;
+  color: #3d3c3e;
+  font-size: 24px;
+  line-height: 34px;
+  font-size: 2.4rem;
+  line-height: 3.4rem;
+  font-family: "Waiting for the Sunrise", Arial, sans-serif;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+}
+
 /* line 6, sass/styles/_beaker-set-default.scss */
 section.beaker-row {
+  background: #d0f2ee;
+  display: none;
   position: relative;
-  min-height: 699px;
+  min-height: 675px;
   overflow: hidden;
   z-index: 0;
+}
+/* line 14, sass/styles/_beaker-set-default.scss */
+section.beaker-row.first {
+  margin-top: -35px;
 }
 @media screen and (max-width: 500px) {
   /* line 6, sass/styles/_beaker-set-default.scss */
@@ -1676,11 +1868,11 @@ section.beaker-row {
     margin-bottom: 50px;
   }
 }
-/* line 17, sass/styles/_beaker-set-default.scss */
+/* line 23, sass/styles/_beaker-set-default.scss */
 section.beaker-row img {
   height: auto;
 }
-/* line 19, sass/styles/_beaker-set-default.scss */
+/* line 25, sass/styles/_beaker-set-default.scss */
 section.beaker-row h1.hidden-title {
   color: #22bdaf;
   display: none;
@@ -1690,7 +1882,7 @@ section.beaker-row h1.hidden-title {
   line-height: 3.8rem;
 }
 @media screen and (max-width: 500px) {
-  /* line 19, sass/styles/_beaker-set-default.scss */
+  /* line 25, sass/styles/_beaker-set-default.scss */
   section.beaker-row h1.hidden-title {
     display: inline;
     position: relative;
@@ -1700,7 +1892,7 @@ section.beaker-row h1.hidden-title {
   }
 }
 @media screen and (max-width: 400px) {
-  /* line 19, sass/styles/_beaker-set-default.scss */
+  /* line 25, sass/styles/_beaker-set-default.scss */
   section.beaker-row h1.hidden-title {
     font-size: 32px;
     line-height: 32px;
@@ -1708,7 +1900,7 @@ section.beaker-row h1.hidden-title {
     line-height: 3.2rem;
   }
 }
-/* line 35, sass/styles/_beaker-set-default.scss */
+/* line 41, sass/styles/_beaker-set-default.scss */
 section.beaker-row .beaker-content {
   float: right;
   width: 41.66667%;
@@ -1716,13 +1908,13 @@ section.beaker-row .beaker-content {
   z-index: 5;
 }
 @media screen and (max-width: 1045px) {
-  /* line 35, sass/styles/_beaker-set-default.scss */
+  /* line 41, sass/styles/_beaker-set-default.scss */
   section.beaker-row .beaker-content {
     float: left;
     margin-left: 3.64583%;
   }
 }
-/* line 44, sass/styles/_beaker-set-default.scss */
+/* line 50, sass/styles/_beaker-set-default.scss */
 section.beaker-row .beaker-content h1 {
   color: #22bdaf;
   text-shadow: 1px 1px 1px #CCC;
@@ -1732,19 +1924,19 @@ section.beaker-row .beaker-content h1 {
   line-height: 3.8rem;
 }
 @media screen and (max-width: 500px) {
-  /* line 44, sass/styles/_beaker-set-default.scss */
+  /* line 50, sass/styles/_beaker-set-default.scss */
   section.beaker-row .beaker-content h1 {
     display: none;
   }
 }
-/* line 52, sass/styles/_beaker-set-default.scss */
+/* line 58, sass/styles/_beaker-set-default.scss */
 section.beaker-row .beaker-content p {
   margin-bottom: 35px;
   padding: 0 7px;
   text-shadow: 1px 1px 1px #CCC;
 }
 @media screen and (max-width: 500px) {
-  /* line 35, sass/styles/_beaker-set-default.scss */
+  /* line 41, sass/styles/_beaker-set-default.scss */
   section.beaker-row .beaker-content {
     float: none;
     width: 93%;
@@ -1753,68 +1945,69 @@ section.beaker-row .beaker-content p {
     bottom: -105px;
   }
 }
-/* line 64, sass/styles/_beaker-set-default.scss */
+/* line 70, sass/styles/_beaker-set-default.scss */
 section.beaker-row .beaker-content a.learn-more {
   width: 50%;
   margin-left: 6px;
 }
 @media screen and (max-width: 931px) {
-  /* line 64, sass/styles/_beaker-set-default.scss */
+  /* line 70, sass/styles/_beaker-set-default.scss */
   section.beaker-row .beaker-content a.learn-more {
     width: 60%;
   }
 }
 @media screen and (max-width: 931px) {
-  /* line 64, sass/styles/_beaker-set-default.scss */
+  /* line 70, sass/styles/_beaker-set-default.scss */
   section.beaker-row .beaker-content a.learn-more {
     width: 60%;
   }
 }
-/* line 80, sass/styles/_beaker-set-default.scss */
+/* line 86, sass/styles/_beaker-set-default.scss */
 section.beaker-row.beaker-set-default .beaker-holder-container {
   position: absolute;
   right: 100px;
+  bottom: 15px;
   width: 300px;
   -webkit-transition: right 0.5s;
   -moz-transition: right 0.5s;
   -msie-transition: right 0.5s;
 }
 @media screen and (max-width: 733px) {
-  /* line 80, sass/styles/_beaker-set-default.scss */
+  /* line 86, sass/styles/_beaker-set-default.scss */
   section.beaker-row.beaker-set-default .beaker-holder-container {
     right: 50px;
   }
 }
 @media screen and (max-width: 610px) {
-  /* line 80, sass/styles/_beaker-set-default.scss */
+  /* line 86, sass/styles/_beaker-set-default.scss */
   section.beaker-row.beaker-set-default .beaker-holder-container {
     right: 25px;
   }
 }
 @media screen and (max-width: 510px) {
-  /* line 80, sass/styles/_beaker-set-default.scss */
+  /* line 86, sass/styles/_beaker-set-default.scss */
   section.beaker-row.beaker-set-default .beaker-holder-container {
     right: 0px;
   }
 }
 @media screen and (max-width: 500px) {
-  /* line 80, sass/styles/_beaker-set-default.scss */
+  /* line 86, sass/styles/_beaker-set-default.scss */
   section.beaker-row.beaker-set-default .beaker-holder-container {
     width: 80px;
     top: 10px;
   }
 }
-/* line 101, sass/styles/_beaker-set-default.scss */
+/* line 108, sass/styles/_beaker-set-default.scss */
 section.beaker-row.beaker-set-default .beaker-holder-container .beaker-holder {
   width: 300px;
 }
 @media screen and (max-width: 500px) {
-  /* line 101, sass/styles/_beaker-set-default.scss */
+  /* line 108, sass/styles/_beaker-set-default.scss */
   section.beaker-row.beaker-set-default .beaker-holder-container .beaker-holder {
     width: 60px;
   }
 }
-/* line 108, sass/styles/_beaker-set-default.scss */
+/* line 115, sass/styles/_beaker-set-default.scss */
 section.beaker-row.beaker-set-default .beaker-holder-container .stir {
   width: 35px;
   position: absolute;
@@ -1822,21 +2015,21 @@ section.beaker-row.beaker-set-default .beaker-holder-container .stir {
   left: 106px;
 }
 @media screen and (max-width: 500px) {
-  /* line 108, sass/styles/_beaker-set-default.scss */
+  /* line 115, sass/styles/_beaker-set-default.scss */
   section.beaker-row.beaker-set-default .beaker-holder-container .stir {
     width: 9px;
     top: -4px;
     left: 21px;
   }
 }
-/* line 122, sass/styles/_beaker-set-default.scss */
+/* line 129, sass/styles/_beaker-set-default.scss */
 section.beaker-row.beaker-set-default .beaker-container {
   position: absolute;
   top: 265px;
   left: 45px;
 }
 @media screen and (max-width: 500px) {
-  /* line 122, sass/styles/_beaker-set-default.scss */
+  /* line 129, sass/styles/_beaker-set-default.scss */
   section.beaker-row.beaker-set-default .beaker-container {
     width: 48px;
     position: absolute;
@@ -1844,7 +2037,7 @@ section.beaker-row.beaker-set-default .beaker-container {
     left: 3px;
   }
 }
-/* line 133, sass/styles/_beaker-set-default.scss */
+/* line 140, sass/styles/_beaker-set-default.scss */
 section.beaker-row.beaker-set-default .beaker-container .beaker .beaker-1 {
   max-width: 160px;
   position: absolute;
@@ -1852,14 +2045,14 @@ section.beaker-row.beaker-set-default .beaker-container .beaker .beaker-1 {
   left: 0;
 }
 @media screen and (max-width: 500px) {
-  /* line 133, sass/styles/_beaker-set-default.scss */
+  /* line 140, sass/styles/_beaker-set-default.scss */
   section.beaker-row.beaker-set-default .beaker-container .beaker .beaker-1 {
     top: 21px;
     left: 5px;
     width: 35px;
   }
 }
-/* line 144, sass/styles/_beaker-set-default.scss */
+/* line 151, sass/styles/_beaker-set-default.scss */
 section.beaker-row.beaker-set-default .beaker-container .beaker .beaker-1-top {
   display: none;
   max-width: 68px;
@@ -1867,7 +2060,7 @@ section.beaker-row.beaker-set-default .beaker-container .beaker .beaker-1-top {
   top: 9px;
   left: 48px;
 }
-/* line 153, sass/styles/_beaker-set-default.scss */
+/* line 160, sass/styles/_beaker-set-default.scss */
 section.beaker-row.beaker-set-default .beaker-container .beaker-contents {
   max-width: 145px;
   position: absolute;
@@ -1875,31 +2068,35 @@ section.beaker-row.beaker-set-default .beaker-container .beaker-contents {
   left: 7px;
 }
 @media screen and (max-width: 500px) {
-  /* line 153, sass/styles/_beaker-set-default.scss */
+  /* line 160, sass/styles/_beaker-set-default.scss */
   section.beaker-row.beaker-set-default .beaker-container .beaker-contents {
     top: 34px;
     left: 6px;
     width: 33px;
   }
 }
-/* line 166, sass/styles/_beaker-set-default.scss */
+/* line 173, sass/styles/_beaker-set-default.scss */
 section.beaker-row.beaker-set-default .table {
   position: absolute;
   right: 0;
-  bottom: 83px;
+  bottom: -4px;
   max-width: 825px;
 }
 @media screen and (max-width: 500px) {
-  /* line 166, sass/styles/_beaker-set-default.scss */
+  /* line 173, sass/styles/_beaker-set-default.scss */
   section.beaker-row.beaker-set-default .table {
     top: 129px;
   }
+}
+/* line 186, sass/styles/_beaker-set-default.scss */
+section.beaker-row:nth-child(3n + 3) {
+  background: #bad7d4;
 }
 
 /* line 6, sass/styles/_beaker-set-two.scss */
 section.beaker-set-two {
   position: relative;
-  min-height: 699px;
+  min-height: 675px;
   z-index: 0;
 }
 /* line 11, sass/styles/_beaker-set-two.scss */
@@ -1950,7 +2147,7 @@ section.beaker-set-two .beaker-content {
   section.beaker-set-two .beaker-content a {
     float: right;
   }
-  /* line 40, sass/styles/_beaker-set-two.scss */
+  /* line 42, sass/styles/_beaker-set-two.scss */
   section.beaker-set-two .beaker-content p {
     text-align: right;
     margin-bottom: 35px;
@@ -1965,16 +2162,16 @@ section.beaker-set-two .beaker-content {
     bottom: -105px;
     width: 93%;
   }
-  /* line 48, sass/styles/_beaker-set-two.scss */
+  /* line 50, sass/styles/_beaker-set-two.scss */
   section.beaker-set-two .beaker-content a {
     float: left;
     margin: 15px 0 0 23px;
   }
-  /* line 51, sass/styles/_beaker-set-two.scss */
+  /* line 53, sass/styles/_beaker-set-two.scss */
   section.beaker-set-two .beaker-content a.learn-more {
     margin-left: 18px !important;
   }
-  /* line 55, sass/styles/_beaker-set-two.scss */
+  /* line 57, sass/styles/_beaker-set-two.scss */
   section.beaker-set-two .beaker-content p {
     text-align: left;
     padding-left: 20px;
@@ -1982,37 +2179,38 @@ section.beaker-set-two .beaker-content {
   }
 }
 @media screen and (max-width: 500px) and (max-width: 500px) {
-  /* line 55, sass/styles/_beaker-set-two.scss */
+  /* line 57, sass/styles/_beaker-set-two.scss */
   section.beaker-set-two .beaker-content p {
     margin-top: 10px;
   }
 }
-/* line 68, sass/styles/_beaker-set-two.scss */
+/* line 70, sass/styles/_beaker-set-two.scss */
 section.beaker-set-two.beaker-set-two .beaker-holder-container {
+  bottom: 17px;
   position: absolute;
   left: 100px;
   width: 300px;
 }
 @media screen and (max-width: 733px) {
-  /* line 68, sass/styles/_beaker-set-two.scss */
+  /* line 70, sass/styles/_beaker-set-two.scss */
   section.beaker-set-two.beaker-set-two .beaker-holder-container {
     left: 50px;
   }
 }
 @media screen and (max-width: 610px) {
-  /* line 68, sass/styles/_beaker-set-two.scss */
+  /* line 70, sass/styles/_beaker-set-two.scss */
   section.beaker-set-two.beaker-set-two .beaker-holder-container {
     left: 25px;
   }
 }
 @media screen and (max-width: 510px) {
-  /* line 68, sass/styles/_beaker-set-two.scss */
+  /* line 70, sass/styles/_beaker-set-two.scss */
   section.beaker-set-two.beaker-set-two .beaker-holder-container {
     left: 0px;
   }
 }
 @media screen and (max-width: 500px) {
-  /* line 68, sass/styles/_beaker-set-two.scss */
+  /* line 70, sass/styles/_beaker-set-two.scss */
   section.beaker-set-two.beaker-set-two .beaker-holder-container {
     width: 111px;
     top: 10px;
@@ -2108,7 +2306,7 @@ section.beaker-set-two.beaker-set-two .table {
   max-width: 825px;
   position: absolute;
   left: 0;
-  bottom: 83px;
+  bottom: -2px;
 }
 @media screen and (max-width: 500px) {
   /* line 158, sass/styles/_beaker-set-two.scss */

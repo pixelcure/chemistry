@@ -2,6 +2,8 @@
 // Footer
 //////////////////////////////////////////////////////	
 
+body.home .footer { display: none; margin-top: 0; }
+
 .footer {
 	border-top: 1px solid $red;
 	margin-top: 35px;

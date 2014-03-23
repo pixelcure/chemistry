@@ -4,26 +4,29 @@ define([
   'backbone',
   'jquery',
   'tweenmax',
-  'superscrollorama'
-  ], function(_, Backbone, $, tweenmax, superscrollorama){
+  'scrollmagic'
+  ], function(_, Backbone, $, tweenmax, ScrollMagic){
 	"use strict";
 
   function init () {
 
 
       var GlobalView = Backbone.View.extend({
+
         initialize : function () {
 
+          // invoke Responsive Menu
+          
           this.responsiveMenu();
-
+          
         },
 
         events : {
-          'mouseover ul.projects-container li.item' : 'itemOver'
+          'mouseover ul.projects-container li.item' : 'itemOver',
+          'click div.top-button a[title=top]' : 'scrollUp'
         },
 
         // Responsive Menu
-
         responsiveMenu : function () {
 
             var $trigger = $('#navTrigger');
@@ -35,7 +38,7 @@ define([
 
                 var width = $(this).width();
 
-                if(width > 599){
+                if(width > 0){
                     $menu.show();
                 }
             });
@@ -60,10 +63,24 @@ define([
 
             });
 
+        },
+
+        // Footer Scroll Up
+        scrollUp : function (e) {
+          e.preventDefault();
+        
+          $(document.body).animate({
+          
+            scrollTop: '0'
+          
+          }, 1000);
+
         }
 
       }); // End Global View
 
+      
+      // instantiate new Global View
 
       var globalView = new GlobalView({el : 'body'});
 

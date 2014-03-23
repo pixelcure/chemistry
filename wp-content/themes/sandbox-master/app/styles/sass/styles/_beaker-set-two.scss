@@ -5,7 +5,7 @@
 section {
 	&.beaker-set-two {
 		position: relative;
-		min-height: 699px;
+		min-height: 675px;
 		z-index: 0;
 
 		img { height: auto; }
@@ -36,7 +36,9 @@ section {
 				h1 {
 					text-align: right;
 				}
-				a { float: right; }
+				a { 
+					float: right; 
+				}
 				p { text-align: right; margin-bottom: 35px; }
 			}	
 			@include max-screen(500px){
@@ -66,12 +68,10 @@ section {
 		&.beaker-set-two {
 
 			.beaker-holder-container {
+				bottom: 17px;
 				position: absolute;
 				left: 100px;
 				width: 300px;
-				// -webkit-transition: left 0.5s;
-				// -moz-transition: left 0.5s;
-				// -msie-transition: left 0.5s;
 				@include max-screen(733px){
 					left: 50px;
 				}				
@@ -159,7 +159,7 @@ section {
 				max-width: 825px;
 				position: absolute;
 				left: 0;
-				bottom: 83px;		
+				bottom: -2px;		
 				@include max-screen(500px){
 					top: 129px;
 				}						

@@ -3,12 +3,14 @@ require([
     'jquery',
     'backbone',
     'tweenmax',
-    'superscrollorama',
+    'scrollmagic',
     'global/global.main',
-    'global/portfolio.main'
-], function (_, $, Backbone, tweenmax, superscrollorama, global, portfolio) {
+    'global/portfolio.main',
+    'global/homePageAnimations.main'
+], function (_, $, Backbone, tweenmax, ScrollMagic, global, portfolio, homePage) {
 
     global.init();
+    homePage.init();
     portfolio.init();
 
 });

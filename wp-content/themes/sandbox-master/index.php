@@ -50,9 +50,11 @@ if(is_home){
 				endwhile;
 			?>
 
-			<!-- <h1>Let me fill you in on some of my secret <span class="teal">ingredients</span> to my recipe..</h1> -->
+			<!-- 
+				<h1>Let me fill you in on some of my secret <span class="teal">ingredients</span> to my recipe..</h1> 
+			-->
 			
-			<h1 class="hidden">Scroll to View my Labratory . . .</h1>
+			<h1 class="hidden" id="scrollHiddenText">Scroll to View my Labratory . . .</h1>
 		</div><!-- end recipe -->
 		
 		<div class="clear"></div><!-- end clear -->
@@ -82,19 +84,25 @@ if(is_home){
 
 				endwhile;
 			?>
-<!-- 				<h1>The Chemist</h1>
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-					Nam recusandae nemo necessitatibus sint expedita tempore dolores 
-					quod cumque atque provident amet sapiente aperiam molestiae earum 
-					assumenda. Quas ullam pariatur error
-				</p>
-				<a href="#" class="learn-more">The Chemist</a> -->
+
+				<!--
+					<h1>The Chemist</h1>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+						Nam recusandae nemo necessitatibus sint expedita tempore dolores 
+						quod cumque atque provident amet sapiente aperiam molestiae earum 
+						assumenda. Quas ullam pariatur error
+					</p>
+					<a href="#" class="learn-more">The Chemist</a> 
+				-->
+
 			</aside><!-- end design column -->		
 
 			<aside class="callout scroll-now col span_6">
-				<img class="left" id="pixelScroll" src="<?php bloginfo(template_url); ?>/app/images/scroll.svg" alt="Scroll Down" />
-				<h1>Scroll down to view the labratory</h1>
+				<a href="#" id="pixelScroll">
+					<img class="left" src="<?php bloginfo(template_url); ?>/app/images/scroll.svg" alt="Scroll Down" />					
+					<h1>Scroll down to view the labratory</h1>
+				</a>
 			</aside><!-- end scroll now -->
 
 			<div class="clear"></div><!-- end clear -->
@@ -109,7 +117,7 @@ if(is_home){
 	</div><!-- / end divider outer -->
 		
 
-	<section class="col span_12 beaker-row beaker-set-default" id="beakerRowDev">
+	<section class="col span_12 beaker-row first beaker-set-default" id="beakerRowDev">
 		<h1 class="hidden-title" id="devHiddenTitle">Development</h1>
 		<div id="devCopy" class="beaker-content">
 			<h1>Development</h1>
@@ -119,7 +127,7 @@ if(is_home){
 				quod cumque atque provident amet sapiente aperiam molestiae earum 
 				assumenda. Quas ullam pariatur error
 			</p>
-			<a href="#" class="learn-more" id="exploreDev">Explore</a>		
+			<a href="dev/" class="learn-more" id="exploreDev">Explore</a>		
 		</div><!-- / end beaker content -->
 
 		<div class="beaker-holder-container" id="beakerDev">
@@ -170,7 +178,7 @@ if(is_home){
 				quod cumque atque provident amet sapiente aperiam molestiae earum 
 				assumenda. Quas ullam pariatur error
 			</p>
-			<a href="#" class="learn-more" id="exploreDesign">Explore</a>		
+			<a href="design/" class="learn-more" id="exploreDesign">Explore</a>		
 		</div><!-- / end beaker content -->
 
 		<div class="beaker-holder-container" id="beakerDesign">
@@ -209,7 +217,8 @@ if(is_home){
 	</section><!-- / end section beaker set two -->
 
 
-	<section class="col span_12 beaker-row beaker-set-default last" id="beakerCreative">
+
+	<section class="col span_12 beaker-row last beaker-set-default" id="beakerRowCreative">
 		<h1 class="hidden-title" id="creativeHiddenTitle">Creative Mind</h1>
 		<div id="creativeCopy" class="beaker-content">
 			<h1>Creative Mind</h1>
@@ -219,7 +228,7 @@ if(is_home){
 				quod cumque atque provident amet sapiente aperiam molestiae earum 
 				assumenda. Quas ullam pariatur error
 			</p>
-			<a href="#" class="learn-more" id="exploreCreative">Explore</a>			
+			<a href="about/" class="learn-more" id="exploreCreative">Explore</a>		
 		</div><!-- / end beaker content -->
 
 		<div class="beaker-holder-container" id="beakerCreative">
@@ -252,12 +261,13 @@ if(is_home){
 
 		</div> <! -- / end beaker container -->	
 
+
 		<div class="table" id="creativeTable">
 			<img src="<?php bloginfo(template_url); ?>/app/images/table/tabletop.svg" alt="Table" />
 		</div><!-- / end table -->
+
 	</section><!-- / end section beaker set three -->
 		
-
 <?php }else{
 
 	include(get_template_directory().'/loops/loop.php');
