@@ -233,7 +233,7 @@ define([
             var $beakerContents = $('#devContents');
 
             // Dev Beaker Animation (repeated)
-            TweenMax.from($beakerContents, 1,  { repeat: -1, yoyo: true, opacity: 0.5 });
+            TweenMax.from($beakerContents, .5,  { repeat: -1, delay: 3, yoyo: true, opacity: 0.4, ease: Power2.easeInOut });
 
         },
 
@@ -297,7 +297,7 @@ define([
           var $beakerContents = $('#designContents');
 
           // Design Beaker Animation (repeated)
-          TweenMax.from($beakerContents, 1,  { repeat: -1, yoyo: true, opacity: 0.5 });
+          TweenMax.from($beakerContents, .5,  { repeat: -1, delay: 3, yoyo: true, opacity: 0.4, ease: Power2.easeInOut });
 
         },
 
@@ -358,7 +358,7 @@ define([
           var $beakerContents = $('#creativeContents');
 
           // Creative Beaker Animation (repeated)
-          TweenMax.from($beakerContents, 1,  { repeat: -1, yoyo: true, opacity: 0.5 });
+          TweenMax.from($beakerContents, .5,  { repeat: -1, delay: 3, yoyo: true, opacity: 0.4, ease: Power2.easeInOut });
 
         }
 
