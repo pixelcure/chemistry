@@ -7,7 +7,7 @@ require([
     'global/global.main',
     'global/portfolio.main',
     'global/homePageAnimations.main'
-], function (_, $, Backbone, tweenmax, ScrollMagic, global, portfolio, homePage) {
+], function (_, $, Backbone, Tweenmax, ScrollMagic, global, portfolio, homePage) {
 
     global.init();
     homePage.init();
