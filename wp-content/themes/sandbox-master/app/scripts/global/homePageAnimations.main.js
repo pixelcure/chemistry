@@ -25,9 +25,29 @@ define([
           this.creativeBeaker();
 
           // invoke mousewheel show Scene Func
-          // this.$el.on('mousewheel', this.showScene() );
 
-          //TweenMax.from( $('.home-divider'), 1, { css: { width: 0, opacity: 0 } } );
+          this.$el.on('mousewheel', function(e) {
+            e.preventDefault();
+
+            // have we scrolled yet?
+            var hasScrolled = false;
+
+            // lets click the scroll callout / invoker
+            var $scrollNow = $('.callouts .callout.scroll-now a');
+
+            
+            if(!hasScrolled){
+  
+              $scrollNow.click();
+            }
+
+          });
+
+          // Blink our Divider (pizaz)
+          TweenMax.from( $('.home-divider'), 1, { css: { opacity: 0 } } );
+
+          // Blink our Intro Container
+          TweenMax.from( $('body.home .row.top'), 1, { css: { opacity: 0 } } );
 
         },
 
@@ -61,7 +81,7 @@ define([
           var $intro = $('.intro.col');
 
           // image Scroll Image Tween
-          TweenMax.from($intro, 1, { css: { opacity : 0 }, ease:Elastic });
+          TweenMax.to($intro, 1, { css: { opacity : 1 }, ease:Elastic });
 
         },
 
@@ -79,23 +99,17 @@ define([
 
         // show Lower Scene
 
-        showScene : function () {
-          
-          this.$el.on('mousewheel', function(e){
+        showScene : function (event) {
+            // return false;
+            event.preventDefault();
 
-            // e.preventDefault();
+            var client = event.clientY;
+
+            $(document.body).animate({
             
-            var client = e.clientY;
-
-
-            if(client > 0){
-              
-              $('.beaker.row').fadeIn();
-
-            }
+              scrollTop: '0'
             
-
-          });
+            }, 100);
 
         },   
 
@@ -108,19 +122,53 @@ define([
           
 
           // body and footer vars
-          var $body = $(document.body);
+          var $body = this.$el;
           var $footer = $('.footer');
+          var $beakerRow = $('.beaker-row');
 
-
-          $body.find('.beaker-row').fadeIn().animate({
           
-            scrollTop: '-794px'
-          
-          }, 500, function(){
+          // fade in our beakers, begin experience
+          $beakerRow.fadeIn();
 
-            $footer.fadeIn();
+          // current scrollPosition
+          var scrollTop = 0;
 
-          });
+          // if scrollTop is 0
+          if( scrollTop == 0 ){
+
+            // first transtion, new point of position
+            scrollTop = 771;
+
+            // animate to first beaker
+            $body.stop(true, true).animate({
+       
+              'scrollTop' : scrollTop
+       
+            }, 3000, function(){
+
+              // Blink our Divider (more pizaz)
+              TweenMax.from( $('.home-divider'), 1, { css: { opacity: 0 } } );
+
+            });
+
+          } else if (scrollTop == 771) {
+
+            // first transtion, new point of position
+            scrollTop = 1155;
+
+            $body.stop(true, true).animate({
+           
+              'scrollTop' : scrollTop
+           
+            }, 3000);
+
+          } // end if Scroll / Click
+
+          // turn off bind of Mouse Wheel
+          this.$el.off('mousewheel');
+
+          // Show Footer
+          $footer.fadeIn();
 
         },
 

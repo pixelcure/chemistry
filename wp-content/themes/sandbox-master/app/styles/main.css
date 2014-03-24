@@ -1049,8 +1049,9 @@ section.top .intro {
   border-left-width: 180px;
   padding: 25px 25px 0 1.04167%;
   margin-top: 25px;
+  opacity: 0;
 }
-/* line 42, sass/styles/_homepage.scss */
+/* line 43, sass/styles/_homepage.scss */
 section.top .intro img.cross {
   position: absolute;
   height: auto;
@@ -1061,14 +1062,14 @@ section.top .intro img.cross {
   z-index: 0;
 }
 @media screen and (max-width: 740px) {
-  /* line 42, sass/styles/_homepage.scss */
+  /* line 43, sass/styles/_homepage.scss */
   section.top .intro img.cross {
     top: -31px;
     left: 95px;
   }
 }
 @media screen and (max-width: 417px) {
-  /* line 42, sass/styles/_homepage.scss */
+  /* line 43, sass/styles/_homepage.scss */
   section.top .intro img.cross {
     width: 314px;
   }
@@ -1089,7 +1090,7 @@ section.top .intro img.cross {
     width: 100%;
   }
 }
-/* line 74, sass/styles/_homepage.scss */
+/* line 75, sass/styles/_homepage.scss */
 section.top .intro h1 {
   color: #bad7d4;
   font-size: 25px;
@@ -1107,14 +1108,14 @@ section.top .intro h1 {
   z-index: 1;
 }
 @media screen and (max-width: 740px) {
-  /* line 74, sass/styles/_homepage.scss */
+  /* line 75, sass/styles/_homepage.scss */
   section.top .intro h1 {
     left: 195px;
     top: -19px;
   }
 }
 @media screen and (max-width: 417px) {
-  /* line 74, sass/styles/_homepage.scss */
+  /* line 75, sass/styles/_homepage.scss */
   section.top .intro h1 {
     left: 130px;
     top: -16px;
@@ -1125,7 +1126,7 @@ section.top .intro h1 {
     line-height: 3.2rem;
   }
 }
-/* line 102, sass/styles/_homepage.scss */
+/* line 103, sass/styles/_homepage.scss */
 section.top .intro p {
   color: #3d3c3e;
   font-size: 20px;
@@ -1141,20 +1142,20 @@ section.top .intro p {
   width: 150px;
   z-index: 1;
 }
-/* line 114, sass/styles/_homepage.scss */
+/* line 115, sass/styles/_homepage.scss */
 section.top .intro p a {
   border-bottom: 1px dashed #f10025;
   color: #22bdaf;
 }
 @media screen and (max-width: 740px) {
-  /* line 102, sass/styles/_homepage.scss */
+  /* line 103, sass/styles/_homepage.scss */
   section.top .intro p {
     top: -10px;
     left: -10px;
   }
 }
 @media screen and (max-width: 417px) {
-  /* line 102, sass/styles/_homepage.scss */
+  /* line 103, sass/styles/_homepage.scss */
   section.top .intro p {
     font-size: 15px;
     line-height: 24px;
@@ -1166,14 +1167,14 @@ section.top .intro p a {
     width: 125px;
   }
 }
-/* line 136, sass/styles/_homepage.scss */
+/* line 137, sass/styles/_homepage.scss */
 section.top .recipe {
   padding-right: 3.125%;
   margin: 140px 0 0 0;
   z-index: 2;
 }
 @media screen and (max-width: 730px) {
-  /* line 136, sass/styles/_homepage.scss */
+  /* line 137, sass/styles/_homepage.scss */
   section.top .recipe {
     border-left-width: 186px;
     padding: 0px;
@@ -1182,12 +1183,12 @@ section.top .recipe {
   }
 }
 @media screen and (max-width: 682px) {
-  /* line 136, sass/styles/_homepage.scss */
+  /* line 137, sass/styles/_homepage.scss */
   section.top .recipe {
     padding-right: 35px;
   }
 }
-/* line 149, sass/styles/_homepage.scss */
+/* line 150, sass/styles/_homepage.scss */
 section.top .recipe h1 {
   font-family: "Waiting for the Sunrise", Arial, sans-serif;
   color: white;
@@ -1199,12 +1200,12 @@ section.top .recipe h1 {
   text-align: right;
   margin: 0;
 }
-/* line 156, sass/styles/_homepage.scss */
+/* line 157, sass/styles/_homepage.scss */
 section.top .recipe h1 span.teal {
   color: #22bdaf;
 }
 @media screen and (max-width: 730px) {
-  /* line 149, sass/styles/_homepage.scss */
+  /* line 150, sass/styles/_homepage.scss */
   section.top .recipe h1 {
     font-size: 22px;
     line-height: 22px;
@@ -1214,7 +1215,7 @@ section.top .recipe h1 span.teal {
   }
 }
 @media screen and (max-width: 390px) {
-  /* line 149, sass/styles/_homepage.scss */
+  /* line 150, sass/styles/_homepage.scss */
   section.top .recipe h1 {
     font-size: 18px;
     line-height: 18px;
@@ -1222,13 +1223,13 @@ section.top .recipe h1 span.teal {
     line-height: 1.8rem;
   }
 }
-/* line 168, sass/styles/_homepage.scss */
+/* line 169, sass/styles/_homepage.scss */
 section.top .recipe h1.hidden {
   cursor: pointer;
   display: none;
 }
 @media screen and (max-width: 730px) {
-  /* line 168, sass/styles/_homepage.scss */
+  /* line 169, sass/styles/_homepage.scss */
   section.top .recipe h1.hidden {
     color: #bad7d4;
     display: block;
@@ -1241,7 +1242,7 @@ section.top .recipe h1.hidden {
   }
 }
 @media screen and (max-width: 320px) {
-  /* line 168, sass/styles/_homepage.scss */
+  /* line 169, sass/styles/_homepage.scss */
   section.top .recipe h1.hidden {
     font-size: 14px;
     line-height: 14px;
@@ -1249,31 +1250,31 @@ section.top .recipe h1.hidden {
     line-height: 1.4rem;
   }
 }
-/* line 185, sass/styles/_homepage.scss */
+/* line 186, sass/styles/_homepage.scss */
 section.bottom {
   position: relative;
   z-index: 1;
 }
 @media screen and (max-width: 730px) {
-  /* line 185, sass/styles/_homepage.scss */
+  /* line 186, sass/styles/_homepage.scss */
   section.bottom {
     margin-top: 0;
   }
 }
-/* line 194, sass/styles/_homepage.scss */
+/* line 195, sass/styles/_homepage.scss */
 section.bottom .callouts.inner-wrapper {
   overflow: visible;
 }
-/* line 197, sass/styles/_homepage.scss */
+/* line 198, sass/styles/_homepage.scss */
 section.bottom .callouts .callout {
   padding: 1.04167% 2.60417% 2.60417% 2.60417%;
 }
-/* line 202, sass/styles/_homepage.scss */
+/* line 203, sass/styles/_homepage.scss */
 section.bottom .callouts .callout.the-doctor {
   background: #22bdaf;
   margin-top: -10px;
 }
-/* line 205, sass/styles/_homepage.scss */
+/* line 206, sass/styles/_homepage.scss */
 section.bottom .callouts .callout.the-doctor h1 {
   border: 1px dashed #bad7d4;
   display: block;
@@ -1286,7 +1287,7 @@ section.bottom .callouts .callout.the-doctor h1 {
   color: #FFF;
   text-shadow: 1px 1px 1px #13897A;
 }
-/* line 214, sass/styles/_homepage.scss */
+/* line 215, sass/styles/_homepage.scss */
 section.bottom .callouts .callout.the-doctor p {
   color: #e7e6e6;
   font-size: 14px;
@@ -1296,37 +1297,37 @@ section.bottom .callouts .callout.the-doctor p {
   text-shadow: 1px 1px 1px #13897A;
 }
 @media screen and (max-width: 960px) {
-  /* line 202, sass/styles/_homepage.scss */
+  /* line 203, sass/styles/_homepage.scss */
   section.bottom .callouts .callout.the-doctor {
     border-left-width: 110px;
   }
 }
 @media screen and (max-width: 913px) {
-  /* line 202, sass/styles/_homepage.scss */
+  /* line 203, sass/styles/_homepage.scss */
   section.bottom .callouts .callout.the-doctor {
     border-left-width: 140px;
   }
 }
 @media screen and (max-width: 913px) {
-  /* line 202, sass/styles/_homepage.scss */
+  /* line 203, sass/styles/_homepage.scss */
   section.bottom .callouts .callout.the-doctor {
     border-left-width: 140px;
   }
 }
 @media screen and (max-width: 832px) {
-  /* line 202, sass/styles/_homepage.scss */
+  /* line 203, sass/styles/_homepage.scss */
   section.bottom .callouts .callout.the-doctor {
     border-left-width: 170px;
   }
 }
 @media screen and (max-width: 832px) {
-  /* line 202, sass/styles/_homepage.scss */
+  /* line 203, sass/styles/_homepage.scss */
   section.bottom .callouts .callout.the-doctor {
     border-left-width: 170px;
   }
 }
 @media screen and (max-width: 730px) {
-  /* line 202, sass/styles/_homepage.scss */
+  /* line 203, sass/styles/_homepage.scss */
   section.bottom .callouts .callout.the-doctor {
     border-left-width: 80px;
     float: none;
@@ -1335,29 +1336,29 @@ section.bottom .callouts .callout.the-doctor p {
     width: 100%;
   }
 }
-/* line 248, sass/styles/_homepage.scss */
+/* line 249, sass/styles/_homepage.scss */
 section.bottom .callouts .callout.scroll-now {
   margin-top: 80px;
 }
 @media screen and (max-width: 805px) {
-  /* line 248, sass/styles/_homepage.scss */
+  /* line 249, sass/styles/_homepage.scss */
   section.bottom .callouts .callout.scroll-now {
     border-left-width: 0;
   }
 }
 @media screen and (max-width: 730px) {
-  /* line 248, sass/styles/_homepage.scss */
+  /* line 249, sass/styles/_homepage.scss */
   section.bottom .callouts .callout.scroll-now {
     display: none;
   }
 }
-/* line 257, sass/styles/_homepage.scss */
+/* line 258, sass/styles/_homepage.scss */
 section.bottom .callouts .callout.scroll-now a {
   background: none;
   box-shadow: none;
   display: block;
 }
-/* line 262, sass/styles/_homepage.scss */
+/* line 263, sass/styles/_homepage.scss */
 section.bottom .callouts .callout.scroll-now a h1 {
   color: #3d3c3e;
   display: block;
@@ -1371,13 +1372,13 @@ section.bottom .callouts .callout.scroll-now a h1 {
   width: 350px;
 }
 @media screen and (max-width: 805px) {
-  /* line 262, sass/styles/_homepage.scss */
+  /* line 263, sass/styles/_homepage.scss */
   section.bottom .callouts .callout.scroll-now a h1 {
     width: 100%;
     text-align: center !important;
   }
 }
-/* line 276, sass/styles/_homepage.scss */
+/* line 277, sass/styles/_homepage.scss */
 section.bottom .callouts .callout.scroll-now a img {
   cursor: pointer;
   display: block;
@@ -1387,14 +1388,14 @@ section.bottom .callouts .callout.scroll-now a img {
   width: 90px;
 }
 @media screen and (max-width: 805px) {
-  /* line 276, sass/styles/_homepage.scss */
+  /* line 277, sass/styles/_homepage.scss */
   section.bottom .callouts .callout.scroll-now a img {
     float: none;
     margin: 0 auto;
     padding-right: 0;
   }
 }
-/* line 288, sass/styles/_homepage.scss */
+/* line 289, sass/styles/_homepage.scss */
 section.bottom .callouts .callout.scroll-now a img:hover {
   opacity: .7;
 }
